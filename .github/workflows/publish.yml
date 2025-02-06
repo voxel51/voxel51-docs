@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - afoley/AS-483-actions-placeholder
     paths:
       - .github/workflows/web-app-build.yaml
       - placeholder/** # change this when actually built to be the source directory
