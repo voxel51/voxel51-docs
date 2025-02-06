@@ -36,3 +36,4 @@ jobs:
         with:
           path: ${{ env.BUILT_DOCS_DIR }}
           destination: ${{ secrets.GCP_DOCS_LOCATION }}
+          parent: false
