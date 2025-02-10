@@ -3,16 +3,16 @@ name: Publish Voxel51 Docs
 on:
   push:
     branches:
-      - main
-    paths:
-      - .github/workflows/web-app-build.yaml
-      - placeholder/** # change this when actually built to be the source directory
+      - main 
+    # paths:
+    #   # - .github/workflows/web-app-build.yaml
+    #   # - docs/**
 
 env:
-  BUILT_DOCS_DIR: placeholder/ # Switch this out later
+  BUILT_DOCS_DIR: site/
 
 jobs:
-  publish-docs: # You might want a build-docs section above this or a separate reusable workflow
+  publish-docs:
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
@@ -26,10 +26,29 @@ jobs:
           project_id: ${{ secrets.GCP_DOCS_PROJECT }}
           service_account: ${{ secrets.GCP_DOCS_SERVICE_ACCOUNT }}
           workload_identity_provider: ${{ secrets.GOOGLE_WORKLOAD_IDP_SECRET_NAME }}
-      
+
       - name: Set Up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install python dependencies
+        run: |
+          python -m venv .venv && \
+          . .venv/bin/activate && \
+          pip install -r requirements.txt
       
+      - name: Install NPM dependencies
+        run: yarn install
+
+      - name: Build Docs
+        run: |
+          ./build.sh --venv ./.venv/bin/activate
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+
       - name: Sync to bucket
         uses: google-github-actions/upload-cloud-storage@v2
         with:

@@ -1,0 +1,77 @@
+:root {
+  --md-text-font-family: 'Inter', sans-serif;
+
+  --voxel-bg-dark: 					rgb(29, 33, 37);
+  --md-primary-fg-color: 			rgba(255, 109, 4, 1);
+  --md-primary-fg-color--light: 	rgba(255, 109, 4, .7);
+  --md-primary-fg-color--dark: 		rgba(255, 109, 4, 1);
+
+  --md-accent-fg-color:                rgba(255, 109, 4, 1);
+  --md-accent-fg-color--transparent:   rgba(255, 109, 4, 0.1);
+  --md-accent-bg-color:                rgba(255, 109, 4, 1);
+  --md-accent-bg-color--light:         rgba(255, 109, 4, .7);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter18pt-Light.woff2') format('woff2'),
+        url('../fonts/Inter/Inter18pt-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter18pt-Bold.woff2') format('woff2'),
+        url('../fonts/Inter/Inter18pt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter18pt-Regular.woff2') format('woff2'),
+        url('../fonts/Inter/Inter18pt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,body,h1,h2,h3,h4,h5,h6,p,div,a,form,button,input,select,textarea,sup,header,section {
+	font-family: 'Inter', sans-serif;
+}
+
+.grid-3-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+.grid-3-col p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid-3-col p a {
+	display: block;
+}
+
+.grid-3-col.grid-images img {
+	max-width: 100%;
+	max-height: 70px;
+}
+
+/* Header */
+
+[dir=ltr] .md-header__title {
+	margin-left: 0;
+}
+
+.md-header__topic:first-child {
+	font-weight: 300;
+}

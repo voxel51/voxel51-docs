@@ -1,5 +1,15 @@
-# voxel51-docs
+# voxel51 Technical Documentation
 The source code for the Voxel51 documentation site - https://docs.voxel51.com
+
+To install and edit the doc:
+
+1. Make and activate a virtual environment
+2. Be in the root directory of the repo
+3. `pip install -r requirements.txt`
+4. Run `mkdocs serve`
+5.  PARTY!
+
+To build the API docs along with the general docs you should use build.sh
 
 
 
