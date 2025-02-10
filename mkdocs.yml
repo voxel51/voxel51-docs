@@ -14,7 +14,7 @@ theme:
         repo: fontawesome/brands/github
     - content.action.edit
 
-repo_url: https://github.com/thesteve0/vdoc-mkdocs
+repo_url: https://github.com/voxel51/voxel51-docs/
 edit_uri: blob/main/docs/
 
 markdown_extensions:
