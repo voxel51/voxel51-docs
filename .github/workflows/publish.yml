@@ -3,7 +3,10 @@ name: Publish Voxel51 Docs
 on:
   push:
     branches:
-      - main 
+      - main
+    paths:
+      - .github/workflows/web-app-build.yaml
+      - docs/**
 
 env:
   BUILT_DOCS_DIR: site/
