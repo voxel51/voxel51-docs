@@ -81,3 +81,5 @@ pydoctor
 mkdocs
 mkdocs-material
 mkdocs-jupyter
+
+pre-commit

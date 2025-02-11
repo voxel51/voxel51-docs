@@ -1,15 +1,15 @@
 # Using FiftyOne Datasets [¶](\#using-fiftyone-datasets "Permalink to this headline")
 
-After a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") has been loaded or created, FiftyOne provides powerful
-functionality to inspect, search, and modify it from a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset")-wide down to
+After a [`Dataset`][fiftyone_core_dataset_dataset] has been loaded or created, FiftyOne provides powerful
+functionality to inspect, search, and modify it from a [`Dataset`][fiftyone_core_dataset_dataset]-wide down to
 a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") level.
 
 The following sections provide details of how to use various aspects of a
-FiftyOne [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset").
+FiftyOne [`Dataset`][fiftyone_core_dataset_dataset].
 
 ## Datasets [¶](\#datasets "Permalink to this headline")
 
-Instantiating a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") object creates a new dataset.
+Instantiating a [`Dataset`][fiftyone_core_dataset_dataset] object creates a new dataset.
 
 ```python
 import fiftyone as fo
@@ -92,7 +92,7 @@ The following media types are available:
 | --- | --- |
 | `image` | Datasets that contain<br>[images](#image-datasets) |
 | `video` | Datasets that contain<br>[videos](#video-datasets) |
-| `3d` | Datasets that contain<br>[3D scenes](#d-datasets) |
+| `3d` | Datasets that contain<br>[3D scenes](#3d-datasets) |
 | `point-cloud` | Datasets that contain<br>[point clouds](#point-cloud-datasets) |
 | `group` | Datasets that contain<br>[grouped data slices](groups.md#groups) |
 
@@ -154,7 +154,7 @@ new package version (if necessary) the first time you load it.
 
 ### Dataset tags [¶](\#dataset-tags "Permalink to this headline")
 
-All [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") instances have a
+All [`Dataset`][fiftyone_core_dataset_dataset] instances have a
 [`tags`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.tags "fiftyone.core.dataset.Dataset.tags") property that you can use to
 store an arbitrary list of string tags.
 
@@ -237,7 +237,7 @@ fo.pprint(view.stats(include_media=True))
 
 ### Storing info [¶](\#storing-info "Permalink to this headline")
 
-All [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") instances have an
+All [`Dataset`][fiftyone_core_dataset_dataset] instances have an
 [`info`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.info "fiftyone.core.dataset.Dataset.info") property, which contains a
 dictionary that you can use to store any JSON-serializable information you wish
 about your dataset.
@@ -272,7 +272,7 @@ in-place to save the changes to the database.
 
 ### Dataset App config [¶](\#dataset-app-config "Permalink to this headline")
 
-All [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") instances have an
+All [`Dataset`][fiftyone_core_dataset_dataset] instances have an
 [`app_config`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.app_config "fiftyone.core.dataset.Dataset.app_config") property that
 contains a [`DatasetAppConfig`](../api/fiftyone.core.odm.dataset.html#fiftyone.core.odm.dataset.DatasetAppConfig "fiftyone.core.odm.dataset.DatasetAppConfig") that you can use to store dataset-specific
 settings that customize how the dataset is visualized in the
@@ -460,7 +460,7 @@ customizing the behavior of the App.
 
 ### Storing class lists [¶](\#storing-class-lists "Permalink to this headline")
 
-All [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") instances have
+All [`Dataset`][fiftyone_core_dataset_dataset] instances have
 [`classes`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.classes "fiftyone.core.dataset.Dataset.classes") and
 [`default_classes`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.default_classes "fiftyone.core.dataset.Dataset.default_classes")
 properties that you can use to store the lists of possible classes for your
@@ -515,7 +515,7 @@ properties in-place to save the changes to the database.
 
 ### Storing mask targets [¶](\#storing-mask-targets "Permalink to this headline")
 
-All [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") instances have
+All [`Dataset`][fiftyone_core_dataset_dataset] instances have
 [`mask_targets`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.mask_targets "fiftyone.core.dataset.Dataset.mask_targets") and
 [`default_mask_targets`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.default_mask_targets "fiftyone.core.dataset.Dataset.default_mask_targets")
 properties that you can use to store label strings for the pixel values of
@@ -607,7 +607,7 @@ properties in-place to save the changes to the database.
 
 ### Storing keypoint skeletons [¶](\#storing-keypoint-skeletons "Permalink to this headline")
 
-All [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") instances have
+All [`Dataset`][fiftyone_core_dataset_dataset] instances have
 [`skeletons`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.skeletons "fiftyone.core.dataset.Dataset.skeletons") and
 [`default_skeleton`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.default_skeleton "fiftyone.core.dataset.Dataset.default_skeleton")
 properties that you can use to store keypoint skeletons for [`Keypoint`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Keypoint "fiftyone.core.labels.Keypoint") field(s)
@@ -736,7 +736,7 @@ data is read only as needed by the App.
 
 ### Adding samples to a dataset [¶](\#adding-samples-to-a-dataset "Permalink to this headline")
 
-A [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") can easily be added to an existing [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset"):
+A [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") can easily be added to an existing [`Dataset`][fiftyone_core_dataset_dataset]:
 
 ```python
 dataset = fo.Dataset("example_dataset")
@@ -785,7 +785,7 @@ print(len(dataset))
 
 ### Accessing samples in a dataset [¶](\#accessing-samples-in-a-dataset "Permalink to this headline")
 
-FiftyOne provides multiple ways to access a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") in a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset").
+FiftyOne provides multiple ways to access a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") in a [`Dataset`][fiftyone_core_dataset_dataset].
 
 You can iterate over the samples in a dataset:
 
@@ -807,7 +807,7 @@ last_sample = dataset.last()
 
 Samples can be accessed directly from datasets by their IDs or their filepaths.
 [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") objects are singletons, so the same [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") instance is returned
-whenever accessing the sample from the [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset"):
+whenever accessing the sample from the [`Dataset`][fiftyone_core_dataset_dataset]:
 
 ```python
 same_sample = dataset[sample.id]
@@ -825,7 +825,7 @@ operations on samples like searching, filtering, sorting, and slicing.
 
 Note
 
-Accessing a sample by its integer index in a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") is not allowed. The
+Accessing a sample by its integer index in a [`Dataset`][fiftyone_core_dataset_dataset] is not allowed. The
 best practice is to lookup individual samples by ID or filepath, or use
 array slicing to extract a range of samples, and iterate over samples in a
 view.
@@ -839,7 +839,7 @@ dataset[0]
 
 ### Deleting samples from a dataset [¶](\#deleting-samples-from-a-dataset "Permalink to this headline")
 
-Samples can be removed from a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") through their ID, either one at a time
+Samples can be removed from a [`Dataset`][fiftyone_core_dataset_dataset] through their ID, either one at a time
 or in batches via
 [`delete_samples()`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.delete_samples "fiftyone.core.dataset.Dataset.delete_samples"):
 
@@ -853,7 +853,7 @@ dataset.delete_samples([sample_id1, sample_id2])
 
 ```
 
-Samples can also be removed from a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") by passing [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") instance(s)
+Samples can also be removed from a [`Dataset`][fiftyone_core_dataset_dataset] by passing [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") instance(s)
 or [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") instances:
 
 ```python
@@ -868,7 +868,7 @@ dataset.delete_samples(view)
 ```
 
 If a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") object in memory is deleted from a dataset, it will revert to
-a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") that has not been added to a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset"):
+a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") that has not been added to a [`Dataset`][fiftyone_core_dataset_dataset]:
 
 ```python
 print(sample.in_dataset)
@@ -888,7 +888,7 @@ A [`Field`](../api/fiftyone.core.fields.html#fiftyone.core.fields.Field "fiftyon
 sample.
 
 Fields can be dynamically created, modified, and deleted from samples on a
-per-sample basis. When a new [`Field`](../api/fiftyone.core.fields.html#fiftyone.core.fields.Field "fiftyone.core.fields.Field") is assigned to a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") in a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset"),
+per-sample basis. When a new [`Field`](../api/fiftyone.core.fields.html#fiftyone.core.fields.Field "fiftyone.core.fields.Field") is assigned to a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") in a [`Dataset`][fiftyone_core_dataset_dataset],
 it is automatically added to the dataset’s schema and thus accessible on all
 other samples in the dataset.
 
@@ -1021,7 +1021,7 @@ sample.save()
 
 ```
 
-If the [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") belongs to a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset"), the dataset’s schema will automatically
+If the [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") belongs to a [`Dataset`][fiftyone_core_dataset_dataset], the dataset’s schema will automatically
 be updated to reflect the new field:
 
 ```python
@@ -1234,7 +1234,7 @@ Note
 Declaring the value type of list fields is required if you want to filter
 by the list’s values [in the App](app.md#app-filtering).
 
-### Editing sample fields [¶](\#editing-sample-fields "Permalink to this headline")
+### Editing sample fields
 
 You can make any edits you wish to the fields of an existing [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample"):
 
@@ -1321,7 +1321,7 @@ del sample["integer_field"]
 If the [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") is not yet in a dataset, deleting a field will remove it from
 the sample. If the [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") is in a dataset, the field’s value will be `None`.
 
-Fields can also be deleted at the [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") level, in which case they are
+Fields can also be deleted at the [`Dataset`][fiftyone_core_dataset_dataset] level, in which case they are
 removed from every [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") in the dataset:
 
 ```python
@@ -2040,7 +2040,7 @@ Note
 Did you know? You can [store class lists](#storing-classes) for your
 models on your datasets.
 
-### Object detection [¶](\#object-detection "Permalink to this headline")
+### Object detection
 
 The [`Detections`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detections "fiftyone.core.labels.Detections") class represents a list of object detections in an image. The
 detections are stored in the
@@ -2066,7 +2066,7 @@ in the format:
 
 Note
 
-Did you know? FiftyOne also supports [3D detections](#d-detections)!
+Did you know? FiftyOne also supports [3D detections](#3d-detections)!
 
 In the case of model predictions, an optional confidence score for each
 detection can be stored in the
@@ -2327,7 +2327,7 @@ dimensions of the image.
 
 Note
 
-Did you know? FiftyOne also supports [3D polylines](#d-polylines)!
+Did you know? FiftyOne also supports [3D polylines](#3d-polylines)!
 
 ```python
 import fiftyone as fo
@@ -3144,7 +3144,7 @@ Note
 Did you know? You can [store class lists](#storing-classes) for your
 models on your datasets.
 
-### 3D detections [¶](\#d-detections "Permalink to this headline")
+### 3D detections
 
 The App’s [3D visualizer](app.md#app-3d-visualizer) supports rendering 3D object
 detections represented as [`Detection`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detection "fiftyone.core.labels.Detection") instances with their `label`, `location`,
@@ -3180,7 +3180,7 @@ Note
 Did you know? You can view custom attributes in the
 [App tooltip](app.md#app-sample-view) by hovering over the objects.
 
-### 3D polylines [¶](\#d-polylines "Permalink to this headline")
+### 3D polylines
 
 The App’s [3D visualizer](app.md#app-3d-visualizer) supports rendering 3D
 polylines represented as [`Polyline`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Polyline "fiftyone.core.labels.Polyline") instances with their `label` and `points3d`
@@ -4123,7 +4123,7 @@ print(dataset.first())
 
 ```
 
-## Image datasets [¶](\#image-datasets "Permalink to this headline")
+## Image datasets
 
 Any [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") whose `filepath` is a file with MIME type `image/*` is recognized
 as a image sample, and datasets composed of image samples have media type
@@ -4177,7 +4177,7 @@ session = fo.launch_app(dataset)
 
 ![quickstart](../_images/quickstart.webp)
 
-## Video datasets [¶](\#video-datasets "Permalink to this headline")
+## Video datasets
 
 Any [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") whose `filepath` is a file with MIME type `video/*` is recognized
 as a video sample, and datasets composed of video samples have media type
@@ -4352,7 +4352,7 @@ Frame fields:
 ```
 
 You can retrieve detailed information about the schema of the frames of a
-video [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") using
+video [`Dataset`][fiftyone_core_dataset_dataset] using
 [`dataset.get_frame_field_schema()`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.get_frame_field_schema "fiftyone.core.dataset.Dataset.get_frame_field_schema").
 
 The samples in video datasets can be accessed
@@ -4417,7 +4417,7 @@ session = fo.launch_app(dataset)
 
 ![quickstart-video](../_images/quickstart-video.webp)
 
-## 3D datasets [¶](\#d-datasets "Permalink to this headline")
+## 3D datasets
 
 Any [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") whose `filepath` is a file with extension `.fo3d` is
 recognized as a 3D sample, and datasets composed of 3D
@@ -4645,7 +4645,7 @@ scene.write("/path/to/scene.fo3d")
 ### 3D annotations [¶](\#d-annotations "Permalink to this headline")
 
 3D samples may contain any type and number of custom fields, including
-[3D detections](#d-detections) and [3D polylines](#d-polylines),
+[3D detections](#3d-detections) and [3D polylines](#3d-polylines),
 which are natively visualizable by the App’s
 [3D visualizer](app.md#app-3d-visualizer).
 
@@ -4675,7 +4675,7 @@ sample = fo.Sample(
 
 ```
 
-### Orthographic projection images [¶](\#orthographic-projection-images "Permalink to this headline")
+### Orthographic projection images
 
 In order to visualize 3D datasets in the App’s grid view, you can use
 [`compute_orthographic_projection_images()`](../api/fiftyone.utils.utils3d.html#fiftyone.utils.utils3d.compute_orthographic_projection_images "fiftyone.utils.utils3d.compute_orthographic_projection_images")
@@ -4741,7 +4741,7 @@ Refer to the
 [`compute_orthographic_projection_images()`](../api/fiftyone.utils.utils3d.html#fiftyone.utils.utils3d.compute_orthographic_projection_images "fiftyone.utils.utils3d.compute_orthographic_projection_images")
 documentation for available parameters to customize the projections.
 
-### Example 3D datasets [¶](\#example-3d-datasets "Permalink to this headline")
+### Example 3D datasets
 
 To get started exploring 3D datasets, try loading the
 [quickstart-3d dataset](../data/dataset_zoo/datasets.md#dataset-zoo-quickstart-3d) from the zoo:
@@ -4786,12 +4786,12 @@ session = fo.launch_app(dataset)
 
 ![quickstart-groups](../_images/quickstart-groups.webp)
 
-## Point cloud datasets [¶](\#point-cloud-datasets "Permalink to this headline")
+## Point cloud datasets
 
 Warning
 
 The `point-cloud` media type has been deprecated in favor of the
-[3D media type](#d-datasets).
+[3D media type](#3d-datasets).
 
 While we’ll keep supporting the `point-cloud` media type for backward
 compatibility, we recommend using the `3d` media type for new datasets.
@@ -4828,21 +4828,21 @@ print(sample)
 ```
 
 Point cloud samples may contain any type and number of custom fields, including
-[3D detections](#d-detections) and [3D polylines](#d-polylines),
+[3D detections](#3d-detections) and [3D polylines](#3d-polylines),
 which are natively visualizable by the App’s
 [3D visualizer](app.md#app-3d-visualizer).
 
-## DatasetViews [¶](\#datasetviews "Permalink to this headline")
+## DatasetViews
 
-Previous sections have demonstrated how to add and interact with [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset")
+Previous sections have demonstrated how to add and interact with [`Dataset`][fiftyone_core_dataset_dataset]
 components like samples, fields, and labels. The true power of FiftyOne lies in
-the ability to search, sort, filter, and explore the contents of a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset").
+the ability to search, sort, filter, and explore the contents of a [`Dataset`][fiftyone_core_dataset_dataset].
 
 Behind this power is the [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView"). Whenever an operation
 like [`match()`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView.match "fiftyone.core.view.DatasetView.match") or
 [`sort_by()`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView.sort_by "fiftyone.core.view.DatasetView.sort_by") is applied to a
 dataset, a [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") is returned. As the name implies, a [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView")
-is a _view_ into the data in your [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") that was produced by a series of
+is a _view_ into the data in your [`Dataset`][fiftyone_core_dataset_dataset] that was produced by a series of
 operations that manipulated your data in different ways.
 
 A [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") is composed of [`SampleView`](../api/fiftyone.core.sample.html#fiftyone.core.sample.SampleView "fiftyone.core.sample.SampleView") objects for a subset of the samples
@@ -4880,11 +4880,11 @@ print(complex_view.values(F("predictions.detections").length()))
 
 ```
 
-## Merging datasets [¶](\#merging-datasets "Permalink to this headline")
+## Merging datasets
 
-The [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") class provides a powerful
+The [`Dataset`][fiftyone_core_dataset_dataset] class provides a powerful
 [`merge_samples()`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.merge_samples "fiftyone.core.dataset.Dataset.merge_samples") method
-that you can use to merge the contents of another [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") or [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView")
+that you can use to merge the contents of another [`Dataset`][fiftyone_core_dataset_dataset] or [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView")
 into an existing dataset.
 
 By default, samples with the same absolute `filepath` are merged, and top-level
@@ -5036,11 +5036,11 @@ Did you know? You can also
 
 ## Batch updates [¶](\#batch-updates "Permalink to this headline")
 
-You are always free to perform any necessary modifications to a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") by
+You are always free to perform any necessary modifications to a [`Dataset`][fiftyone_core_dataset_dataset] by
 iterating over it via a Python loop and explicitly
 [performing the edits](#editing-sample-fields) that you require.
 
-However, the [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") class provides a number of methods that allow you to
+However, the [`Dataset`][fiftyone_core_dataset_dataset] class provides a number of methods that allow you to
 efficiently perform various common batch actions to your entire dataset.
 
 ### Cloning, renaming, clearing, and deleting fields [¶](\#cloning-renaming-clearing-and-deleting-fields "Permalink to this headline")
@@ -5052,7 +5052,7 @@ You can use the
 and
 [`delete_sample_field()`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.delete_sample_field "fiftyone.core.dataset.Dataset.delete_sample_field")
 methods to efficiently perform common actions on the sample fields of a
-[`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset"):
+[`Dataset`][fiftyone_core_dataset_dataset]:
 
 ```python
 import fiftyone as fo
@@ -5110,7 +5110,7 @@ dataset.delete_sample_field("predictions.detections.still_label")
 
 ### Efficient batch edits [¶](\#efficient-batch-edits "Permalink to this headline")
 
-You are always free to perform arbitrary edits to a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") by iterating over
+You are always free to perform arbitrary edits to a [`Dataset`][fiftyone_core_dataset_dataset] by iterating over
 its contents and editing the samples directly:
 
 ```python
@@ -5203,10 +5203,10 @@ Note
 When possible, using
 [`set_values()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.set_values "fiftyone.core.collections.SampleCollection.set_values")
 is often more efficient than performing the equivalent operation via an
-explicit iteration over the [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") because it avoids the need to read
+explicit iteration over the [`Dataset`][fiftyone_core_dataset_dataset] because it avoids the need to read
 [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") instances into memory and sequentially save them.
 
-Similarly, you can edit nested sample fields of a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") by iterating over
+Similarly, you can edit nested sample fields of a [`Dataset`][fiftyone_core_dataset_dataset] by iterating over
 the dataset and editing the necessary data:
 
 ```python
@@ -5276,3 +5276,4 @@ print(dataset.count_values("predictions.detections.random"))
 <!-- Reference Links -->
 [fiftyone_core_labels_label]: ../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label"
 [fiftyone_core_collections_samplecollection_set_label_values]: ../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.set_label_values "fiftyone.core.collections.SampleCollection.set_label_values"
+[fiftyone_core_dataset_dataset]: ../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset"
