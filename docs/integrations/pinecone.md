@@ -39,7 +39,6 @@ specifying a `brain_key` of your choice
 
 5. If desired, delete the index
 
-
 The example below demonstrates this workflow.
 
 Note
@@ -267,7 +266,6 @@ pod-based index
 
 - **pod\_type** ( _None_): an optional pod type to use when creating a new
 pod-based index
-
 
 For detailed information on these parameters, see the
 [Pinecone documentation](https://docs.pinecone.io/docs/indexes).
@@ -596,7 +594,6 @@ stage to any dataset or view. The query can be any of the following:
 
 - A text prompt (if [supported by the model](../fiftyone_concepts/brain.md#brain-similarity-text))
 
-
 ```python
 import numpy as np
 
@@ -701,4 +698,3 @@ pinecone_index.add_to_index(embeddings, sample_ids)
 print(pinecone_index.index)
 
 ```
-

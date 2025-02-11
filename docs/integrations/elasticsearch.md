@@ -42,7 +42,6 @@ object patches in a dataset by setting the parameter
 
 6. If desired, delete the index
 
-
 The example below demonstrates this workflow.
 
 Note
@@ -248,7 +247,6 @@ to use or create. If not specified, a new unique name is generated automatically
 - **metric** ( _“cosine”_): the distance/similarity metric to use when
 creating a new index. The supported values are
 `("cosine", "dotproduct", "euclidean", "innerproduct")`
-
 
 For detailed information on these parameters, see the
 [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/dense-vector.html#dense-vector-similarity).
@@ -566,7 +564,6 @@ stage to any dataset or view. The query can be any of the following:
 
 - A text prompt (if [supported by the model](../fiftyone_concepts/brain.md#brain-similarity-text))
 
-
 ```python
 import numpy as np
 
@@ -670,4 +667,3 @@ embeddings, sample_ids, _ = elasticsearch_index.compute_embeddings(view)
 elasticsearch_index.add_to_index(embeddings, sample_ids)
 
 ```
-

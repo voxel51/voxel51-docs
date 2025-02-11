@@ -195,4 +195,3 @@ Note
 
 Did you know? You can also perform text similarity queries directly
 [in the App](../fiftyone_concepts/app.md#app-text-similarity)!
-

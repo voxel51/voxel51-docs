@@ -18,14 +18,15 @@ folder_name
 ```
 
 ## Media Formats
-All statics images need to be in either JPEG or WEBP format. PNG can be used if there is a limitied color pallete for the 
+
+All statistics images need to be in either JPEG or WEBP format. PNG can be used if there is a limited color palette for the
 image and this will create a signfigicantly smaller size on disk.
 
 All animations must be in WEBP or MP4 format
-https://cloudinary.com/guides/image-formats/gif-vs-webp
-
+<https://cloudinary.com/guides/image-formats/gif-vs-webp>
 
 ## index.md
+
 The index section begins with a paragraph that describes what they are going to learn. It should only be a couple of sentences describing the highlights
 
 There should be the follow H2 sections
@@ -51,7 +52,7 @@ There should be the follow H2 sections
 
 ## Content
     a one sentence description for each sub-document that is linked
-        
+
 ```
 
 ## Summary.md
@@ -63,9 +64,9 @@ There should be the follow H2 sections after these paragraphs
 ```markdown
 
 ## Next Steps
-        This could include: 
+        This could include:
             other focused getting starteds
-            other datasets 
+            other datasets
             other models
             external readings
             join discord and any particular channels

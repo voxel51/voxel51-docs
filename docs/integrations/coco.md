@@ -154,7 +154,6 @@ labels types or classes. The actual number of samples loaded may be less
 than this maximum value if the dataset does not contain sufficient samples
 matching your requirements
 
-
 Note
 
 See
@@ -361,16 +360,11 @@ can be customized by passing the optional `iscrowd` attribute of
 [`COCOEvaluationConfig`](../api/fiftyone.utils.eval.coco.html#fiftyone.utils.eval.coco.COCOEvaluationConfig "fiftyone.utils.eval.coco.COCOEvaluationConfig") to
 [`evaluate_detections()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.evaluate_detections "fiftyone.core.collections.SampleCollection.evaluate_detections")
 
-
 When you specify an `eval_key` parameter, a number of helpful fields will be
 populated on each sample and its predicted/ground truth objects:
 
 - True positive (TP), false positive (FP), and false negative (FN) counts
 for the each sample are saved in top-level fields of each sample:
-
-
-
-
 
 ```python
 TP: sample.<eval_key>_tp
@@ -383,17 +377,12 @@ FN: sample.<eval_key>_fn
 these fields tabulate the TP/FP/FN status of the object, the ID of the
 matching object (if any), and the matching IoU:
 
-
-
-
-
 ```python
 TP/FP/FN: object.<eval_key>
         ID: object.<eval_key>_id
        IoU: object.<eval_key>_iou
 
 ```
-
 
 Note
 
@@ -580,7 +569,6 @@ class (and between classes if `classwise=False`) in each image
 of both boxes divided by the area of the prediction only. A prediction fully
 inside the crowd box has an IoU of 1
 
-
 **Matching**
 
 Once IoUs have been computed, predictions and ground truth objects are matched
@@ -602,7 +590,6 @@ matched with the next highest IoU ground truth object
 
 - (Only relevant if `classwise=False`) predictions can only match to crowds
 if they are of the same class
-
 
 **Computing mAP**
 
@@ -633,5 +620,3 @@ ground truth objects for the class
 average precision (AP) by averaging the precision values over all 10 IoU
 thresholds. Then compute mAP by averaging the per-class AP values over all
 classes
-
-

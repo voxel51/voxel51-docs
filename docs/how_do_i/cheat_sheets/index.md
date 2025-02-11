@@ -26,4 +26,3 @@ Use dataset views to retrieve the subsets of your data you're looking for.
 Perform pandas-style computer vision queries in FiftyOne.
 
 [Queue the queries](pandas_vs_fiftyone.md)
-

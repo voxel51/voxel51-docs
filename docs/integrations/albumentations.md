@@ -51,7 +51,6 @@ The FiftyOne Albumentations plugin currently supports all but the following tran
 
 - [Rotate](https://albumentations.ai/docs/api_reference/augmentations/geometric/rotate/#albumentations.augmentations.geometric.rotate.Rotate)
 
-
 ### Functionality [¶](\#functionality "Permalink to this headline")
 
 The FiftyOne Albumentations plugin provides the following functionality:
@@ -68,13 +67,12 @@ The FiftyOne Albumentations plugin provides the following functionality:
 
 - Save transformation pipelines to the dataset for reproducibility
 
-
 ## Setup [¶](\#setup "Permalink to this headline")
 
 To get started, first make sure you have FiftyOne and Albumentations installed:
 
 ```python
-$ pip install -U fiftyone albumentations
+pip install -U fiftyone albumentations
 
 ```
 
@@ -82,7 +80,7 @@ Next, install the
 [FiftyOne Albumentations plugin](https://github.com/jacobmarks/fiftyone-albumentations-plugin):
 
 ```python
-$ fiftyone plugins download https://github.com/jacobmarks/fiftyone-albumentations-plugin
+fiftyone plugins download https://github.com/jacobmarks/fiftyone-albumentations-plugin
 
 ```
 
@@ -183,9 +181,8 @@ executed immediately. If you set `delegated=True`, the operation will be
 [queued as a job](../plugins/using_plugins.md#delegated-operations), which you can then run in the
 background from your terminal with:
 
-
 ```python
-$ fiftyone delegated launch
+fiftyone delegated launch
 
 ```
 
@@ -304,4 +301,3 @@ transformation pipeline using the [get\_albumentations\_run\_info](https://githu
 Additionally, you will have access to this saved transformation pipeline under
 the “saved” tab for each transformation in the [augment\_with\_albumentations](https://github.com/jacobmarks/fiftyone-albumentations-plugin?tab=readme-ov-file#applying-augmentations)
 operator modal.
-

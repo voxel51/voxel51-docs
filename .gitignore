@@ -132,3 +132,5 @@ dist
 /voxel51-docs.ipr
 /voxel51-docs.iws
 /site/
+
+.venv/

@@ -9,7 +9,6 @@ storage.
 - [Local machine](#local-data): Data is stored on the same computer that
 will be used to launch the App
 
-
 - [Remote machine](#remote-data): Data is stored on disk on a separate
 machine (typically a remote server) from the one that will be used to launch
 the App
@@ -21,7 +20,6 @@ the App
 
 - [Cloud storage](#cloud-storage): Data is stored in a cloud bucket
 (e.g., [S3](#aws), [GCS](#google-cloud), or [Azure](#azure))
-
 
 ## Local data [¶](\#local-data "Permalink to this headline")
 
@@ -692,4 +690,3 @@ pip install --upgrade pip setuptools wheel build
 pip install ipython
 
 ```
-

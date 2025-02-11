@@ -697,7 +697,6 @@ events which you want to revisit or restore later.
 to the highest your deployment can comfortably support, to better enable
 user workflows without breaking the (MongoDB) bank.
 
-
 ### Configuration [¶](\#dataset-versioning-configuration "Permalink to this headline")
 
 Since Snapshots impact the storage needs of FiftyOne Teams, some guard rails
@@ -728,7 +727,6 @@ versions for these additional features!
 - Optimize diff computation for larger datasets (over 200k samples) and add
 support for modification summaries for these datasets
 
-
 **Longer term**
 
 - Further optimize existing versioning system
@@ -739,7 +737,6 @@ support for modification summaries for these datasets
 
 - Content-aware Snapshot change summaries
 
-
 **Exploratory**
 
 - Visualization of Snapshot diffs
@@ -748,5 +745,3 @@ support for modification summaries for these datasets
 
 - Deep integrations with versioning backend tools to version FiftyOne
 datasets alongside your models and media
-
-

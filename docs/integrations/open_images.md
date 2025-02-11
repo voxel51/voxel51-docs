@@ -171,7 +171,6 @@ least one of the specified labels types or classes. The actual number of
 samples loaded may be less than this maximum value if the dataset does not
 contain sufficient samples matching your requirements
 
-
 Note
 
 See
@@ -225,7 +224,6 @@ feature by setting the `expand_gt_hierarchy` parameter to `False`.
 Alternatively, you can expand predictions by setting the
 `expand_pred_hierarchy` parameter to `True`
 
-
 In addition, note that:
 
 - Like [VOC-style evaluation](http://host.robots.ox.ac.uk/pascal/VOC/voc2010/devkit_doc_08-May-2010.pdf),
@@ -236,16 +234,11 @@ this value via the `iou` parameter
 if a crowd is matched with multiple predictions, each counts as one true
 positive when computing mAP
 
-
 When you specify an `eval_key` parameter, a number of helpful fields will be
 populated on each sample and its predicted/ground truth objects:
 
 - True positive (TP), false positive (FP), and false negative (FN) counts
 for the each sample are saved in top-level fields of each sample:
-
-
-
-
 
 ```python
 TP: sample.<eval_key>_tp
@@ -258,17 +251,12 @@ FN: sample.<eval_key>_fn
 these fields tabulate the TP/FP/FN status of the object, the ID of the
 matching object (if any), and the matching IoU:
 
-
-
-
-
 ```python
 TP/FP/FN: object.<eval_key>
         ID: object.<eval_key>_id
        IoU: object.<eval_key>_iou
 
 ```
-
 
 Note
 
@@ -525,7 +513,6 @@ class (and between classes if `classwise=False`) in each image
 both boxes divided by the area of the prediction only. A prediction fully
 inside the crowd box has an IoU of 1
 
-
 **Matching**
 
 Once IoUs have been computed, predictions and ground truth objects are matched
@@ -549,7 +536,6 @@ prediction, the prediction is marked as a false positive
 
 - If `classwise=False`, predictions can only match to crowds if they are of
 the same class
-
 
 **Computing mAP**
 
@@ -580,5 +566,3 @@ true and false positives existing for that class
 - For every class that contains at least one ground truth object, compute the
 AP by averaging the precision values. Then compute mAP by averaging the AP
 values for each class
-
-

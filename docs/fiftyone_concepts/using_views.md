@@ -532,7 +532,6 @@ refresh their contents if the underlying sample has been modified elsewhere.
 However, extracting a [`SampleView`](../api/fiftyone.core.sample.html#fiftyone.core.sample.SampleView "fiftyone.core.sample.SampleView") from a [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") always returns the
 updated version of the sample’s contents.
 
-
 You can use the
 [`select_fields()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.select_fields "fiftyone.core.collections.SampleCollection.select_fields")
 and
@@ -1029,7 +1028,6 @@ patches view (typically one that contains additional view stages that
 filter or modify its contents) will sync any edits or deletions to the
 patch labels with the source dataset
 
-
 However, because object patches views only contain a subset of the contents of
 a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") from the source dataset, there are some differences compared to
 non-patch views:
@@ -1040,7 +1038,6 @@ the tags of the underlying [`Sample`](../api/fiftyone.core.sample.html#fiftyone.
 - Any edits that you make to sample-level fields of object patches views
 other than the field that defines the patches themselves will not be
 reflected on the source dataset
-
 
 Note
 
@@ -1150,7 +1147,6 @@ on an evaluation patches view (typically one that contains additional view
 stages that filter or modify its contents) will sync any predicted or
 ground truth [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") edits or deletions with the source dataset
 
-
 However, because evaluation patches views only contain a subset of the contents
 of a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") from the source dataset, there are some differences compared to
 non-patch views:
@@ -1161,7 +1157,6 @@ not affect the tags of the underlying [`Sample`](../api/fiftyone.core.sample.htm
 - Any edits that you make to sample-level fields of evaluation patches views
 other than the ground truth/predicted label fields will not be reflected
 on the source dataset
-
 
 ## Video views [¶](\#video-views "Permalink to this headline")
 
@@ -1450,25 +1445,28 @@ or
 [`set_label_values()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.set_label_values "fiftyone.core.collections.SampleCollection.set_label_values")
 will be reflected on the source dataset
 
-- Calling [`save()`](../api/fiftyone.core.clips.html#fiftyone.core.clips.ClipsView.save "fiftyone.core.clips.ClipsView.save"),
-[`keep()`](../api/fiftyone.core.clips.html#fiftyone.core.clips.ClipsView.keep "fiftyone.core.clips.ClipsView.keep"), or
-[`keep_fields()`](../api/fiftyone.core.clips.html#fiftyone.core.clips.ClipsView.keep_fields "fiftyone.core.clips.ClipsView.keep_fields") on a
-clips view (typically one that contains additional view stages that filter
-or modify its contents) will sync any frame-level edits or deletions with
-the source dataset
+- Calling
+  [`save()`](../api/fiftyone.core.clips.html#fiftyone.core.clips.ClipsView.save "fiftyone.core.clips.ClipsView.save"),
+  [`keep()`](../api/fiftyone.core.clips.html#fiftyone.core.clips.ClipsView.keep "fiftyone.core.clips.ClipsView.keep"), or
+  [`keep_fields()`](../api/fiftyone.core.clips.html#fiftyone.core.clips.ClipsView.keep_fields "fiftyone.core.clips.ClipsView.keep_fields")
+  on a clips view (typically one that contains additional view stages that filter
+  or modify its contents) will sync any frame-level edits or deletions with
+  the source dataset
 
-
-However, because clip views represent only a subset of a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") from the
-source dataset, there are some differences compared to non-clip views:
+However, because clip views represent only a subset of a
+[`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample")
+from the source dataset, there are some differences compared to non-clip views:
 
 - Tagging or untagging clips (as opposed to their labels) will not affect
-the tags of the underlying [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample")
+  the tags of the underlying
+  [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample")
 
 - Any edits that you make to sample-level fields of clip views will not be
-reflected on the source dataset (except for edits to the `support` and
-[`Classification`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Classification "fiftyone.core.labels.Classification") field populated when generating clip views based on
-[`TemporalDetection`](../api/fiftyone.core.labels.html#fiftyone.core.labels.TemporalDetection "fiftyone.core.labels.TemporalDetection") labels, as described above)
-
+  reflected on the source dataset (except for edits to the `support` and
+  [`Classification`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Classification "fiftyone.core.labels.Classification")
+  field populated when generating clip views based on
+  [`TemporalDetection`](../api/fiftyone.core.labels.html#fiftyone.core.labels.TemporalDetection "fiftyone.core.labels.TemporalDetection")
+  labels, as described above)
 
 ### Trajectory views [¶](\#trajectory-views "Permalink to this headline")
 
@@ -1476,7 +1474,10 @@ You can use
 [`to_trajectories()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.to_trajectories "fiftyone.core.collections.SampleCollection.to_trajectories")
 to create views into your video datasets that contain one sample per each
 unique object trajectory defined by their `(label, index)` in a frame-level
-[`Detections`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detections "fiftyone.core.labels.Detections") or [`Polylines`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Polylines "fiftyone.core.labels.Polylines") field.
+[`Detections`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detections "fiftyone.core.labels.Detections")
+or
+[`Polylines`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Polylines "fiftyone.core.labels.Polylines")
+field.
 
 Trajectory views are a special case of [clip views](#clip-views) where
 each clip has been filtered to contain only the identifying object, rather than
@@ -1634,8 +1635,8 @@ More generally,
 [`to_frames()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.to_frames "fiftyone.core.collections.SampleCollection.to_frames")
 exposes a variety of parameters that you can use to configure the behavior of
 the video-to-image conversion process. You can also combine
-[`to_frames()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.to_frames "fiftyone.core.collections.SampleCollection.to_frames") with
-view stages like
+[`to_frames()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.to_frames "fiftyone.core.collections.SampleCollection.to_frames")
+with view stages like
 [`match_frames()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.match_frames "fiftyone.core.collections.SampleCollection.match_frames")
 to achieve fine-grained control over the specific frames you want to study.
 
@@ -1696,7 +1697,6 @@ will be reflected on the source dataset
 frames view (typically one that contains additional view stages that filter
 or modify its contents) will sync any changes to the frames of the
 underlying video dataset
-
 
 The only way in which frames views differ from regular image collections is
 that changes to the `tags` or `metadata` fields of frame samples will not
@@ -1799,7 +1799,8 @@ print(view.count("frames"))  # 354
 ```
 
 You can also use
-[`select_frames()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.select_frames "fiftyone.core.collections.SampleCollection.select_frames") and
+[`select_frames()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.select_frames "fiftyone.core.collections.SampleCollection.select_frames")
+and
 [`exclude_frames()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.exclude_frames "fiftyone.core.collections.SampleCollection.exclude_frames")
 to restrict attention to or exclude frames from a view by their IDs:
 
@@ -1936,13 +1937,14 @@ similarity via point-and-click in the App!
 
 If your samples have [geolocation data](using_datasets.md#geolocation), then you can
 use the
-[`geo_near()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.geo_near "fiftyone.core.collections.SampleCollection.geo_near") and
+[`geo_near()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.geo_near "fiftyone.core.collections.SampleCollection.geo_near")
+and
 [`geo_within()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.geo_within "fiftyone.core.collections.SampleCollection.geo_within")
 stages to filter your data based on their location.
 
 For example, you can use
-[`geo_near()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.geo_near "fiftyone.core.collections.SampleCollection.geo_near") to
-sort your samples by proximity to a location:
+[`geo_near()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.geo_near "fiftyone.core.collections.SampleCollection.geo_near")
+to sort your samples by proximity to a location:
 
 ```python
 import fiftyone as fo
@@ -2011,9 +2013,11 @@ print(dataset.count_sample_tags())
 
 You can also use the
 [`tag_labels()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.tag_labels "fiftyone.core.collections.SampleCollection.tag_labels")
-and [`untag_labels()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.untag_labels "fiftyone.core.collections.SampleCollection.untag_labels")
-methods to add or remove [label tags](using_datasets.md#label-tags) from the labels in one
-or more fields of a view:
+and
+[`untag_labels()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.untag_labels "fiftyone.core.collections.SampleCollection.untag_labels")
+methods to add or remove
+[label tags](using_datasets.md#label-tags)
+from the labels in one or more fields of a view:
 
 ```python
 # Add a tag to all low confidence predictions
@@ -2123,8 +2127,9 @@ is often more efficient than performing the equivalent operation via an
 explicit iteration over the [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") because it avoids the need to
 read [`SampleView`](../api/fiftyone.core.sample.html#fiftyone.core.sample.SampleView "fiftyone.core.sample.SampleView") instances into memory and sequentially save them.
 
-Naturally, you can edit nested sample fields of a [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") by iterating
-over the view and editing the necessary data:
+Naturally, you can edit nested sample fields of a
+[`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView")
+by iterating over the view and editing the necessary data:
 
 ```python
 # Create a view that contains only low confidence predictions
@@ -2143,10 +2148,10 @@ print(dataset.count_label_tags())
 ```
 
 However, an equivalent and often more efficient approach is to use
-[`values()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.values "fiftyone.core.collections.SampleCollection.values") to
-extract the slice of data you wish to modify and then use
-[`set_values()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.set_values "fiftyone.core.collections.SampleCollection.set_values") to
-save the updated data in a single batch operation:
+[`values()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.values "fiftyone.core.collections.SampleCollection.values")
+to extract the slice of data you wish to modify and then use
+[`set_values()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.set_values "fiftyone.core.collections.SampleCollection.set_values")
+to save the updated data in a single batch operation:
 
 ```python
 # Remove the tags we added in the previous variation
@@ -2260,7 +2265,9 @@ print(dataset.bounds("num_predictions"))  # (1, 100)
 
 ```
 
-The [`ViewExpression`](../api/fiftyone.core.expressions.html#fiftyone.core.expressions.ViewExpression "fiftyone.core.expressions.ViewExpression") language is quite powerful, allowing you to define complex
+The
+[`ViewExpression`](../api/fiftyone.core.expressions.html#fiftyone.core.expressions.ViewExpression "fiftyone.core.expressions.ViewExpression")
+language is quite powerful, allowing you to define complex
 operations without needing to write an explicit Python loop to perform the
 desired manipulation.
 
@@ -2296,9 +2303,14 @@ top5_view.save("predictions")
 
 ## Saving and cloning [¶](\#saving-and-cloning "Permalink to this headline")
 
-Ordinarily, when you define a [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") that extracts a specific subset of
-a dataset and its fields, the underlying [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") is not modified. However,
-you can use [`save()`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView.save "fiftyone.core.view.DatasetView.save") to save the
+Ordinarily, when you define a
+[`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView")
+that extracts a specific subset of a dataset and its fields, the underlying
+[`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset")
+is not modified.
+However, you can use
+[`save()`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView.save "fiftyone.core.view.DatasetView.save")
+to save the
 contents of a view you’ve created to the underlying dataset:
 
 ```python
@@ -2326,12 +2338,17 @@ print(dataset.bounds("predictions.detections.confidence"))
 
 ```
 
-Note that calling [`save()`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView.save "fiftyone.core.view.DatasetView.save") on a
-[`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") will only save modifications to samples that are in the view; all
-other samples are left unchanged.
+Note that calling
+[`save()`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView.save "fiftyone.core.view.DatasetView.save")
+on a
+[`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView")
+will only save modifications to samples that are in the view;
+all other samples are left unchanged.
 
-You can use [`keep()`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView.keep "fiftyone.core.view.DatasetView.keep") to delete
-samples from the underlying dataset that do not appear in a view you created:
+You can use
+[`keep()`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView.keep "fiftyone.core.view.DatasetView.keep")
+to delete samples from the underlying dataset that do not
+appear in a view you created:
 
 ```python
 print(len(dataset))
@@ -2367,8 +2384,11 @@ print(dataset)
 ```
 
 Alternatively, you can use
-[`clone()`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView.clone "fiftyone.core.view.DatasetView.clone") to create a new
-[`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") that contains a copy of (only) the contents of a [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView"):
+[`clone()`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView.clone "fiftyone.core.view.DatasetView.clone")
+to create a new
+[`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset")
+that contains a copy of (only) the contents of a
+[`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView"):
 
 ```python
 # Reload full quickstart dataset
@@ -2426,7 +2446,9 @@ complex_view = (
 
 ### Filtering detections by area [¶](\#filtering-detections-by-area "Permalink to this headline")
 
-Need to filter your detections by bounding box area? Use this [`ViewExpression`](../api/fiftyone.core.expressions.html#fiftyone.core.expressions.ViewExpression "fiftyone.core.expressions.ViewExpression")!
+Need to filter your detections by bounding box area?
+Use this
+[`ViewExpression`](../api/fiftyone.core.expressions.html#fiftyone.core.expressions.ViewExpression "fiftyone.core.expressions.ViewExpression")!
 
 ```python
 from fiftyone import ViewField as F
@@ -2464,9 +2486,11 @@ medium_boxes_view = dataset.filter_labels(
 
 ### Removing a batch of samples from a dataset [¶](\#removing-a-batch-of-samples-from-a-dataset "Permalink to this headline")
 
-You can easily remove a batch of samples from a [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") by constructing a
-[`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") that contains the samples, and then deleting them from the
-dataset as follows:
+You can easily remove a batch of samples from a
+[`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset")
+by constructing a
+[`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView")
+that contains the samples, and then deleting them from the dataset as follows:
 
 ```python
 # Choose 10 samples at random
@@ -2478,10 +2502,12 @@ dataset.delete_samples(unlucky_samples)
 
 ### Efficiently iterating samples [¶](\#efficiently-iterating-samples "Permalink to this headline")
 
-If you have a dataset with larger fields, such as [`Classifications`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Classifications "fiftyone.core.labels.Classifications") or
-[`Detections`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detections "fiftyone.core.labels.Detections"), it can be expensive to load entire samples into memory. If, for a
-particular use case, you are only interested in a
-subset of fields, you can use
+If you have a dataset with larger fields, such as
+[`Classifications`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Classifications "fiftyone.core.labels.Classifications")
+or
+[`Detections`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detections "fiftyone.core.labels.Detections"),
+it can be expensive to load entire samples into memory. If, for a particular
+use case, you are only interested in a subset of fields, you can use
 [`Dataset.select_fields()`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.select_fields "fiftyone.core.dataset.Dataset.select_fields")
 to load only the fields of interest.
 
@@ -2535,4 +2561,3 @@ print(time.time() - start)
 # 0.20824909210205078
 
 ```
-

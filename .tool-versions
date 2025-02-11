@@ -1,0 +1,5 @@
+jq 1.7.1
+pre-commit 3.4.0
+python 3.10.14
+shellcheck 0.10.0
+yq 4.44.6

@@ -374,4 +374,3 @@ ds.default_skeleton = fo.KeypointSkeleton(
 
 Reference:
 [`match_frames()`](../../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.match_frames "fiftyone.core.collections.SampleCollection.match_frames").
-

@@ -419,7 +419,6 @@ Certain plugins support configuration. For those plugins, you can store:
 - Dataset-specific plugin settings for any subset of the above values on a
 [dataset’s App config](../fiftyone_concepts/using_datasets.md#dataset-app-config).
 
-
 See the [configuring plugins](../fiftyone_concepts/config.md#configuring-plugins) page for more
 information.
 
@@ -499,7 +498,6 @@ for the fields of your dataset
 
 - [Map panel](../fiftyone_concepts/app.md#app-map-panel): visualizes the geolocation data of
 datasets that have a [`GeoLocation`](../api/fiftyone.core.labels.html#fiftyone.core.labels.GeoLocation "fiftyone.core.labels.GeoLocation") field
-
 
 Any plugins that you’ve installed may expose additional panels too.
 
@@ -775,7 +773,6 @@ call that can be expressed in any of the following forms:
 - Call an instance method of a dataset or view:
 `dataset_or_view.fcn(*args, **kwargs)`
 
-
 Here’s some examples of delegating common tasks that can be expressed in the
 above forms:
 
@@ -971,4 +968,3 @@ fiftyone delegated cleanup --orphan
 fiftyone delegated cleanup --orphan --dry-run
 
 ```
-

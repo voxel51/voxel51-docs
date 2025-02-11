@@ -100,4 +100,3 @@ Note
 Look interesting?
 [Schedule a demo](https://voxel51.com/schedule-teams-workshop) to get
 started with Teams
-

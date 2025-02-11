@@ -39,7 +39,6 @@ specifying a `brain_key` of your choice
 
 5. If desired, delete the index
 
-
 The example below demonstrates this workflow.
 
 Note
@@ -292,7 +291,6 @@ creating a new index. The supported values are
 
 - **consistency\_level** ( _“Session”_): the consistency level to use.
 Supported values are `("Strong", "Session", "Bounded", "Eventually")`
-
 
 For detailed information on these parameters, see the
 [Milvus authentication documentation](https://milvus.io/docs/authenticate.md)
@@ -622,7 +620,6 @@ stage to any dataset or view. The query can be any of the following:
 
 - A text prompt (if [supported by the model](../fiftyone_concepts/brain.md#brain-similarity-text))
 
-
 ```python
 import numpy as np
 
@@ -736,4 +733,3 @@ import pymilvus
 print(pymilvus.utility.list_collections())
 
 ```
-

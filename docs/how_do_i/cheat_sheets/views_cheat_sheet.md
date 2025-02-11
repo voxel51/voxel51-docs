@@ -153,7 +153,6 @@ two categories:
 
 - the operation can easily achieved on the primitive via another base method
 
-
 In the following sections, we’ll fill in the gaps in the table.
 
 ### Samples [¶](\#samples "Permalink to this headline")
@@ -183,7 +182,6 @@ you’ll need to make two changes when creating your filter expression:
 - use `"_id"` rather than `"id"` when referencing ID fields
 
 - cast ID strings to `ObjectId()`
-
 
 The following example demonstrates how to correctly filter by label IDs:
 
@@ -581,4 +579,3 @@ Note
 All group slice(s) you select must have the same media type, since the
 `media_type` of the returned collection is the media type of the slices
 you select.
-

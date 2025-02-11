@@ -58,4 +58,3 @@ dataset.apply_model(model, label_field="yolo_nas")
 session = fo.launch_app(dataset)
 
 ```
-

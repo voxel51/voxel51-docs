@@ -45,4 +45,3 @@ This cheat sheet introduces the key terminology in the world of FiftyOne.
 | Sample modal | The [expanded modal](../../fiftyone_concepts/app.md#app-sample-view) that provides detailed<br>information and visualization about an individual sample in a dataset. |
 | Sidebar | Vertical component on [left side of App](../../fiftyone_concepts/app.md#app-fields-sidebar)<br>that provides convenient options for filtering the dataset and<br>toggling the visibility of fields in the sample grid. |
 | View bar | [Horizontal bar at the top of the App](../../fiftyone_concepts/app.md#app-create-view) where<br>you can create and compose view stages via point and click operations<br>to filter your dataset and show only the content of interest. |
-

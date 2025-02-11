@@ -28,7 +28,6 @@ specifying a `brain_key` of your choice
 
 5. If desired, delete the table
 
-
 The example below demonstrates this workflow.
 
 Note
@@ -144,7 +143,6 @@ provided, a new table will be created
 a new table. The supported values are `("cosine", "euclidean")`
 
 - **uri** ( _“/tmp/lancedb”_): the database URI to use
-
 
 You can specify these parameters via any of the strategies described in the
 previous section. Here’s an example of a [brain config](../fiftyone_concepts/brain.md#brain-config)
@@ -465,7 +463,6 @@ stage to any dataset or view. The query can be any of the following:
 
 - A text prompt (if [supported by the model](../fiftyone_concepts/brain.md#brain-similarity-text))
 
-
 ```python
 import numpy as np
 
@@ -526,4 +523,3 @@ df = table.to_pandas()  # get the table as a pandas dataframe
 pa = table.to_arrow()   # get the table as an arrow table
 
 ```
-

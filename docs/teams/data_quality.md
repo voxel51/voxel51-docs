@@ -29,7 +29,6 @@ current analysis/review status:
 - **Exact Duplicates**: uses filehashes to scan your dataset for duplicate
 data with either the same or different filenames
 
-
 Click on the right arrow of an issue type’s card to open its expanded view.
 
 ![data-quality-home](../_images/data_quality_home.webp)
@@ -96,7 +95,6 @@ in a `nearest_neighbor` field of the sample
 
 - **Exact Duplicates**: the filehash of each image is stored in a `filehash`
 field of the sample
-
 
 Each issue type comes with a default threshold range that highlights potential
 issues in your dataset. If issues are identified, the number of potential
@@ -174,4 +172,3 @@ Note
 Did you know? You can delete sample fields from the App using the
 `delete_sample_field` operator available via the
 [Operator browser](../plugins/using_plugins.md#using-operators).
-

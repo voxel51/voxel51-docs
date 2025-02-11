@@ -43,7 +43,6 @@ specifying a `brain_key` of your choice
 
 6. If desired, delete the index
 
-
 The example below demonstrates this workflow.
 
 Note
@@ -183,7 +182,6 @@ or create. If not specified, a new unique name is generated automatically
 - **metric** ( _“cosine”_): the distance/similarity metric to use when
 creating a new index. The supported values are
 `("cosine", "dotproduct", "euclidean")`
-
 
 For detailed information on these parameters, see the
 [MongoDB documentation](https://www.mongodb.com/docs/atlas/atlas-search/field-types/knn-vector).
@@ -524,7 +522,6 @@ stage to any dataset or view. The query can be any of the following:
 
 - A text prompt (if [supported by the model](../fiftyone_concepts/brain.md#brain-similarity-text))
 
-
 ```python
 import numpy as np
 
@@ -644,4 +641,3 @@ print(mongodb_index.config.index_name)  # custom-quickstart-index
 print(mongodb_index.config.metric)  # dotproduct
 
 ```
-

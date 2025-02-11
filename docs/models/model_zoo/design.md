@@ -49,12 +49,10 @@ where the model should, at minimum, support `arg` values that are:
 
 - _Video models:_ `eta.core.video.VideoReader` instances
 
-
 and the output `labels` can be any of the following:
 
 - A [`Label`](../../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instance, in which case the labels are directly saved in the
 specified `label_field` of the sample
-
 
 ```python
 # Single sample-level label
@@ -64,7 +62,6 @@ sample[label_field] = labels
 
 - A dict mapping keys to [`Label`](../../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instances. In this case, the labels are
 added as follows:
-
 
 ```python
 # Multiple sample-level labels
@@ -76,7 +73,6 @@ for key, value in labels.items():
 - A dict mapping frame numbers to [`Label`](../../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instances. In this case, the
 provided labels are interpreted as frame-level labels that should be added
 as follows:
-
 
 ```python
 # Single set of per-frame labels
@@ -92,7 +88,6 @@ sample.frames.merge(
 - A dict mapping frame numbers to dicts mapping keys to [`Label`](../../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instances. In
 this case, the provided labels are interpreted as frame-level labels that
 should be added as follows:
-
 
 ```python
 # Multiple per-frame labels
@@ -267,7 +262,6 @@ The following built-in output processors are available for use:
 
 - `SemanticSegmenterOutputProcessor`
 
-
 or you can write your own
 `OutputProcessor` subclass.
 
@@ -287,4 +281,3 @@ model = foz.load_zoo_model("your-custom-model")
 dataset.apply_model(model, label_field="predictions")
 
 ```
-

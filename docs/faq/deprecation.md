@@ -26,4 +26,3 @@ _Support ended November 1, 2024_
 transitioned to `end-of-life` effective July of 2024. FiftyOne Teams
 releases after October 31, 2024 might no longer be compatible with
 Kubernetes 1.27 and older.
-

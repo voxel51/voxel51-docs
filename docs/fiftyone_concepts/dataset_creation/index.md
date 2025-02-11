@@ -117,4 +117,3 @@ dataset = foz.load_zoo_dataset("cifar10", split="train")
 Note
 
 Check out the [available zoo datasets](../../data/dataset_zoo/datasets.md#dataset-zoo-datasets)!
-

@@ -467,10 +467,10 @@ properties that you can use to store the lists of possible classes for your
 annotations/models.
 
 The [`classes`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.classes "fiftyone.core.dataset.Dataset.classes") property is a
-dictionary mapping field names to class lists for a single [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") field of the
+dictionary mapping field names to class lists for a single [`Label`][fiftyone_core_labels_label] field of the
 dataset.
 
-If all [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") fields in your dataset have the same semantics, you can store a
+If all [`Label`][fiftyone_core_labels_label] fields in your dataset have the same semantics, you can store a
 single class list in the store a single target dictionary in the
 [`default_classes`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.default_classes "fiftyone.core.dataset.Dataset.default_classes")
 property of your dataset.
@@ -1794,18 +1794,18 @@ field of a FiftyOne dataset! Instead, use `datetime.datetime.utcnow()`.
 
 ## Labels [¶](\#labels "Permalink to this headline")
 
-The [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") class hierarchy is used to store semantic information about ground
+The [`Label`][fiftyone_core_labels_label] class hierarchy is used to store semantic information about ground
 truth or predicted labels in a sample.
 
 Although such information can be stored in custom sample fields
 (e.g, in a [`DictField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.DictField "fiftyone.core.fields.DictField")), it is recommended that you store label information in
-[`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instances so that the [FiftyOne App](app.md#fiftyone-app) and the
+[`Label`][fiftyone_core_labels_label] instances so that the [FiftyOne App](app.md#fiftyone-app) and the
 [FiftyOne Brain](brain.md#fiftyone-brain) can visualize and compute on your
 labels.
 
 Note
 
-All [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instances are dynamic! You can add custom fields to your
+All [`Label`][fiftyone_core_labels_label] instances are dynamic! You can add custom fields to your
 labels to store custom information:
 
 ```python
@@ -1825,7 +1825,7 @@ You can also [declare dynamic attributes](#dynamic-attributes) on your
 dataset’s schema, which allows you to enforce type constraints, filter by
 these custom attributes [in the App](app.md#app-filtering), and more.
 
-FiftyOne provides a dedicated [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") subclass for many common tasks. The
+FiftyOne provides a dedicated [`Label`][fiftyone_core_labels_label] subclass for many common tasks. The
 subsections below describe them.
 
 ### Regression [¶](\#regression "Permalink to this headline")
@@ -2138,7 +2138,7 @@ Note
 Did you know? You can [store class lists](#storing-classes) for your
 models on your datasets.
 
-Like all [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") types, you can also add custom attributes to your detections
+Like all [`Label`][fiftyone_core_labels_label] types, you can also add custom attributes to your detections
 by dynamically adding new fields to each [`Detection`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detection "fiftyone.core.labels.Detection") instance:
 
 ```python
@@ -2258,7 +2258,7 @@ print(sample)
 
 ```
 
-Like all [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") types, you can also add custom attributes to your instance
+Like all [`Label`][fiftyone_core_labels_label] types, you can also add custom attributes to your instance
 segmentations by dynamically adding new fields to each [`Detection`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detection "fiftyone.core.labels.Detection") instance:
 
 ```python
@@ -2390,7 +2390,7 @@ print(sample)
 
 ```
 
-Like all [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") types, you can also add custom attributes to your polylines by
+Like all [`Label`][fiftyone_core_labels_label] types, you can also add custom attributes to your polylines by
 dynamically adding new fields to each [`Polyline`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Polyline "fiftyone.core.labels.Polyline") instance:
 
 ```python
@@ -2492,7 +2492,7 @@ session = fo.launch_app(dataset)
 
 ![cuboids](../_images/cuboids.webp)
 
-Like all [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") types, you can also add custom attributes to your cuboids by
+Like all [`Label`][fiftyone_core_labels_label] types, you can also add custom attributes to your cuboids by
 dynamically adding new fields to each [`Polyline`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Polyline "fiftyone.core.labels.Polyline") instance:
 
 ```python
@@ -2556,7 +2556,7 @@ session = fo.launch_app(dataset)
 
 ![rotated-bounding-boxes](../_images/rotated-bounding-boxes.webp)
 
-Like all [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") types, you can also add custom attributes to your rotated
+Like all [`Label`][fiftyone_core_labels_label] types, you can also add custom attributes to your rotated
 bounding boxes by dynamically adding new fields to each [`Polyline`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Polyline "fiftyone.core.labels.Polyline") instance:
 
 ```python
@@ -2642,7 +2642,7 @@ print(sample)
 
 ```
 
-Like all [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") types, you can also add custom attributes to your keypoints by
+Like all [`Label`][fiftyone_core_labels_label] types, you can also add custom attributes to your keypoints by
 dynamically adding new fields to each [`Keypoint`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Keypoint "fiftyone.core.labels.Keypoint") instance. As a special case,
 if you add a custom list attribute to a [`Keypoint`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Keypoint "fiftyone.core.labels.Keypoint") instance whose length
 matches the number of points, these values will be interpreted as per-point
@@ -2729,7 +2729,6 @@ Segmentation masks can be stored in either of these formats:
 - 2D 8-bit or 16-bit images or numpy arrays
 
 - 3D 8-bit RGB images or numpy arrays
-
 
 Segmentation masks can have any size; they are stretched as necessary to fit
 the image’s extent when visualizing in the App.
@@ -2902,10 +2901,6 @@ colormap defined by the `colorscale` of your
 
 - A manually-defined colorscale like the following:
 
-
-
-
-
 ```python
 [\
       [0.000, "rgb(165,0,38)"],\
@@ -2921,7 +2916,6 @@ colormap defined by the `colorscale` of your
 ]
 
 ```
-
 
 The example code below demonstrates the possibilities that heatmaps provide by
 overlaying random gaussian kernels with positive or negative sign on an image
@@ -3223,10 +3217,6 @@ properties:
 - [`line`](../api/fiftyone.core.labels.html#fiftyone.core.labels.GeoLocation.line "fiftyone.core.labels.GeoLocation.line"): a line of longitude
 and latitude coordinates stored in the following format:
 
-
-
-
-
 ```python
 [[lon1, lat1], [lon2, lat2], ...]
 
@@ -3237,10 +3227,6 @@ longitude and latitude coordinates stored in the format below, where the
 first element describes the boundary of the polygon and any remaining
 entries describe holes:
 
-
-
-
-
 ```python
 [\
       [[lon1, lat1], [lon2, lat2], ...],\
@@ -3249,7 +3235,6 @@ entries describe holes:
 ]
 
 ```
-
 
 Note
 
@@ -3343,7 +3328,7 @@ print(values)
 
 ### Label tags [¶](\#label-tags "Permalink to this headline")
 
-All [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instances have a `tags` field, which is a string list. By default,
+All [`Label`][fiftyone_core_labels_label] instances have a `tags` field, which is a string list. By default,
 this list is empty, but you can use it to store application-specific
 information like whether the label is incorrect:
 
@@ -3415,7 +3400,7 @@ The [`attributes`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detecti
 will be removed in an upcoming release.
 
 Instead, [add custom attributes directly](#using-labels) to your
-[`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") objects:
+[`Label`][fiftyone_core_labels_label] objects:
 
 ```python
 detection = fo.Detection(label="cat", bounding_box=[0.1, 0.1, 0.8, 0.8])
@@ -4228,7 +4213,7 @@ print(sample)
 All video samples have a reserved `frames` attribute in which you can store
 frame-level labels and other custom annotations for the video. The `frames`
 attribute is a dictionary whose keys are frame numbers and whose values are
-[`Frame`](../api/fiftyone.core.frame.html#fiftyone.core.frame.Frame "fiftyone.core.frame.Frame") instances that hold all of the [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instances and other
+[`Frame`](../api/fiftyone.core.frame.html#fiftyone.core.frame.Frame "fiftyone.core.frame.Frame") instances that hold all of the [`Label`][fiftyone_core_labels_label] instances and other
 primitive-type fields for the frame.
 
 Note
@@ -4487,7 +4472,7 @@ print(dataset.media_type)  # 3d
 
 ```
 
-To modify an exising scene, load it via
+To modify an existing scene, load it via
 [`Scene.from_fo3d()`](../api/fiftyone.core.threed.html#fiftyone.core.threed.Scene.from_fo3d "fiftyone.core.threed.Scene.from_fo3d"), perform any
 necessary updates, and then re-write it to disk:
 
@@ -4626,7 +4611,6 @@ a 3D scene. The following 3D shape geometries are supported:
 - Cylinder: [`CylinderGeometry`](../api/fiftyone.core.threed.html#fiftyone.core.threed.CylinderGeometry "fiftyone.core.threed.CylinderGeometry")
 
 - Plane: [`PlaneGeometry`](../api/fiftyone.core.threed.html#fiftyone.core.threed.PlaneGeometry "fiftyone.core.threed.PlaneGeometry")
-
 
 Similar to meshes and point clouds, shapes can be manipulated by setting their
 position, rotation, and scale. Their appearance can be customized either by
@@ -4929,7 +4913,6 @@ whole rather than merging their elements
 - Whether to merge only specific fields, or all but certain fields
 
 - Mapping input fields to different field names of this dataset
-
 
 For example, the following snippet demonstrates merging a new field into an
 existing dataset:
@@ -5270,10 +5253,10 @@ print(dataset.count_label_tags())
 
 ### Setting label values [¶](\#setting-label-values "Permalink to this headline")
 
-Often when working with [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") fields, the edits you want to make may be
+Often when working with [`Label`][fiftyone_core_labels_label] fields, the edits you want to make may be
 naturally represented as a mapping between label IDs and corresponding
-attribute values to set on each [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instance. In such cases, you can use
-[`set_label_values()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.set_label_values "fiftyone.core.collections.SampleCollection.set_label_values")
+attribute values to set on each [`Label`][fiftyone_core_labels_label] instance. In such cases, you can use
+[`set_label_values()`][fiftyone_core_collections_samplecollection_set_label_values]
 to conveniently perform the updates:
 
 ```python
@@ -5290,3 +5273,6 @@ print(dataset.count_values("predictions.detections.random"))
 
 ```
 
+<!-- Reference Links -->
+[fiftyone_core_labels_label]: ../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label"
+[fiftyone_core_collections_samplecollection_set_label_values]: ../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.set_label_values "fiftyone.core.collections.SampleCollection.set_label_values"

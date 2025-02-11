@@ -89,7 +89,6 @@ types of images in your dataset. This is especially helpful to find easy
 examples to train on in your data and for visualizing common modes of the
 data.
 
-
 Note
 
 Check out the [tutorials page](tutorials/index.md#tutorials) for detailed examples
@@ -129,7 +128,6 @@ embed your data
 - Provide the name of a [`VectorField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.VectorField "fiftyone.core.fields.VectorField") or [`ArrayField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.ArrayField "fiftyone.core.fields.ArrayField") of your dataset in
 which precomputed embeddings are stored
 
-
 ### Dimensionality reduction methods [¶](\#dimensionality-reduction-methods "Permalink to this headline")
 
 The `method` parameter of
@@ -147,7 +145,6 @@ methods are:
 ( [PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html))
 
 - **manual**: provide a manually computed low-dimensional representation
-
 
 ```python
 import fiftyone.brain as fob
@@ -192,7 +189,6 @@ Here are a few of the many possible applications:
 training data
 
 - Unsupervised pre-annotation of training data
-
 
 The best part about embedding visualizations is that you will likely discover
 more applications specific to your use case when you try it out on your data!
@@ -266,7 +262,6 @@ with water droplets on the windshield
 - Hiding the primary cluster of `daytime` points and selecting the
 remaining `night` points reveals that the `night` points have incorrect
 labels
-
 
 ### Object embeddings example [¶](\#object-embeddings-example "Permalink to this headline")
 
@@ -373,7 +368,6 @@ The relevant classes for the builtin dimensionality reduction methods are:
 
 - **manual**: `fiftyone.brain.visualization.ManualVisualizationConfig`
 
-
 You can configure a dimensionality reduction method’s parameters for a specific
 run by simply passing supported config parameters as keyword arguments each
 time you call
@@ -430,7 +424,6 @@ index your data
 - Provide the name of a [`VectorField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.VectorField "fiftyone.core.fields.VectorField") or [`ArrayField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.ArrayField "fiftyone.core.fields.ArrayField") of your dataset in
 which precomputed embeddings are stored
 
-
 ### Similarity backends [¶](\#similarity-backends "Permalink to this headline")
 
 By default, all similarity indexes are served using a builtin
@@ -454,7 +447,6 @@ another supported backend:
 - **milvus**: a [Milvus backend](../integrations/milvus.md#milvus-integration)
 
 - **lancedb**: a [LanceDB backend](../integrations/lancedb.md#lancedb-integration)
-
 
 ```python
 import fiftyone.brain as fob
@@ -485,7 +477,6 @@ by visual similarity
 - Using the SDK’s
 [`sort_by_similarity()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.sort_by_similarity "fiftyone.core.collections.SampleCollection.sort_by_similarity")
 view stage to programmatically query the index
-
 
 To index a dataset by image similarity, pass the [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") or [`DatasetView`](../api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") of
 interest to `compute_similarity()`
@@ -571,7 +562,6 @@ query by visual similarity
 - Using the SDK’s
 [`sort_by_similarity()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.sort_by_similarity "fiftyone.core.collections.SampleCollection.sort_by_similarity")
 view stage to programmatically query the index
-
 
 You can index any objects stored on datasets in [`Detection`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detection "fiftyone.core.labels.Detection"), [`Detections`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detections "fiftyone.core.labels.Detections"),
 [`Polyline`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Polyline "fiftyone.core.labels.Polyline"), or [`Polylines`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Polylines "fiftyone.core.labels.Polylines") format. See [this section](using_datasets.md#using-labels) for
@@ -741,7 +731,6 @@ The relevant classes for the builtin similarity backends are:
 
 - **lancedb**: `fiftyone.brain.internal.core.lancedb.LanceDBSimilarityConfig`
 
-
 You can configure a similarity backend’s parameters for a specific index by
 simply passing supported config parameters as keyword arguments each time you
 call `compute_similarity()`:
@@ -874,7 +863,6 @@ training dataset
 
 - Recommending samples from your data lake for classes that need additional
 training data
-
 
 ## Leaky splits [¶](\#leaky-splits "Permalink to this headline")
 
@@ -1432,7 +1420,6 @@ methods on your dataset:
 
 - [`delete_brain_run()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.delete_brain_run "fiftyone.core.collections.SampleCollection.delete_brain_run")
 
-
 The example below demonstrates the basic interface:
 
 ```python
@@ -1507,7 +1494,6 @@ config settings as runtime:
 3. Settings in your JSON config ( `~/.fiftyone/brain_config.json`)
 
 4. The default config values
-
 
 #### Editing your JSON config [¶](\#editing-your-json-config "Permalink to this headline")
 
@@ -1637,4 +1623,3 @@ fob.brain_config.default_similarity_backend = "qdrant"
 fob.brain_config.default_visualization_method = "tsne"
 
 ```
-

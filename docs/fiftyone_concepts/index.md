@@ -81,4 +81,3 @@ Render labels on the samples in your FiftyOne dataset with a single line of code
 Customize the default behavior of the FiftyOne library to suit your needs.
 
 [Learn how to configure FiftyOne](config.md)
-

@@ -93,7 +93,6 @@ encounter an error message like
 install it via `xcode-select --install`, or see
 [this page](https://stackoverflow.com/q/9329243) for other options.
 
-
 **Linux users:**
 
 - The `psutil` package may require Python headers to be installed on your
@@ -104,14 +103,12 @@ system. On Debian-based distributions, these are available in the
 not find mongod`, you may need to install additional packages. See the
 [alternative Linux builds](troubleshooting.md#troubleshooting-mongodb) for details.
 
-
 **Windows users:**
 
 - If you encounter a `psutil.NoSuchProcessExists` when importing `fiftyone`,
 you will need to install the 64-bit Visual Studio 2015 C++ redistributable
 library. See [here](troubleshooting.md#troubleshooting-mongodb-windows) for
 instructions.
-
 
 ## Installing extras [¶](\#installing-extras "Permalink to this headline")
 
@@ -141,7 +138,6 @@ instructions.
 - [FFmpeg](https://ffmpeg.org), in order to work with video datasets in
 FiftyOne. See [this page](troubleshooting.md#troubleshooting-video) for installation
 instructions.
-
 
 Note
 
@@ -223,4 +219,3 @@ FiftyOne and all of its subpackages can be uninstalled with:
 pip uninstall fiftyone fiftyone-brain fiftyone-db
 
 ```
-

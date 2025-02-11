@@ -137,4 +137,3 @@ through both backends, it will use the backend specified by the
 
 You can customize this backend by modifying the `default_ml_backend` setting
 of your [FiftyOne config](../../fiftyone_concepts/config.md#configuring-fiftyone).
-

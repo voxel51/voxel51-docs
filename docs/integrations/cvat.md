@@ -43,7 +43,6 @@ datasets:
 
 - [Semantic segmentation](../fiftyone_concepts/using_datasets.md#semantic-segmentation)
 
-
 ![cvat-example](../_images/cvat_example.webp)
 
 Note
@@ -76,7 +75,6 @@ method to merge the annotations back into your FiftyOne dataset
 
 6. If desired, delete the CVAT tasks and the record of the annotation run from
 your FiftyOne dataset
-
 
 The example below demonstrates this workflow.
 
@@ -282,7 +280,6 @@ you can configure the URL of your server in any of the following ways:
 
 - Set the `FIFTYONE_CVAT_URL` environment variable:
 
-
 ```python
 export FIFTYONE_CVAT_URL=http://localhost:8080
 
@@ -291,7 +288,6 @@ export FIFTYONE_CVAT_URL=http://localhost:8080
 - Store the `url` of your server in your
 [annotation config](../fiftyone_concepts/annotation.md#annotation-config) at
 `~/.fiftyone/annotation_config.json`:
-
 
 ```python
 {
@@ -308,7 +304,6 @@ export FIFTYONE_CVAT_URL=http://localhost:8080
 - Pass the `url` parameter manually each time you call
 [`annotate()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.annotate "fiftyone.core.collections.SampleCollection.annotate"):
 
-
 ```python
 view.annotate(anno_key, ..., url="http://localhost:8080")
 
@@ -320,7 +315,6 @@ requests, you can provide them in either of the following ways:
 - Store your custom headers in a `headers` key of your
 [annotation config](../fiftyone_concepts/annotation.md#annotation-config) at
 `~/.fiftyone/annotation_config.json`:
-
 
 ```python
 {
@@ -341,7 +335,6 @@ requests, you can provide them in either of the following ways:
 [`annotate()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.annotate "fiftyone.core.collections.SampleCollection.annotate")
 and
 [`load_annotations()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.load_annotations "fiftyone.core.collections.SampleCollection.load_annotations"):
-
 
 ```python
 view.annotate(anno_key, ... headers=...)
@@ -404,7 +397,6 @@ source media to upload
 - **launch\_editor** ( _False_): whether to launch the annotation backend’s
 editor after uploading the samples
 
-
 The following parameters allow you to configure the labeling schema to use for
 your annotation tasks. See [this section](#cvat-label-schema) for more
 details:
@@ -418,7 +410,6 @@ to annotate
 
 - **label\_type** ( _None_): a string indicating the type of labels to
 annotate. The possible label types are:
-
 
   - `"classification"`: a single classification stored in
     [`Classification`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Classification "fiftyone.core.labels.Classification") fields
@@ -448,7 +439,6 @@ annotate. The possible label types are:
   - `"scalar"`: scalar labels stored in [`IntField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.IntField "fiftyone.core.fields.IntField"), [`FloatField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.FloatField "fiftyone.core.fields.FloatField"),
     [`StringField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.StringField "fiftyone.core.fields.StringField"), or [`BooleanField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.BooleanField "fiftyone.core.fields.BooleanField") fields
 
-
 All new label fields must have their type specified via this argument or in
 `label_schema`
 
@@ -463,7 +453,6 @@ are used
 to include (other than their `label`, which is always included) in the
 annotation export. Can be any of the following:
 
-
   - `True`: export all label attributes
 
   - `False`: don’t export any custom label attributes
@@ -472,7 +461,6 @@ annotation export. Can be any of the following:
 
   - a dict mapping attribute names to dicts specifying the `type`,
     `values`, and `default` for each attribute
-
 
 If a `label_schema` is also provided, this parameter determines which
 attributes are included for all fields that do not explicitly define their
@@ -498,7 +486,6 @@ existing frame fields with `index` attributes
 - **allow\_spatial\_edits** ( _True_): whether to allow edits to the spatial
 properties (bounding boxes, vertices, keypoints, masks, etc) of labels.
 Only applicable when editing existing spatial label fields
-
 
 In addition, the following CVAT-specific parameters from
 [`CVATBackendConfig`](../api/fiftyone.utils.cvat.html#fiftyone.utils.cvat.CVATBackendConfig "fiftyone.utils.cvat.CVATBackendConfig") can also be
@@ -580,7 +567,6 @@ videos to upload when creating video tasks. Supported values are:
 - **frame\_step** ( _None_): positive integer(s) defining which frames to
 sample when creating video tasks. Supported values are:
 
-
   - `integer`: the frame step to apply to each video task
 
   - `list`: a list of frame step integers corresponding to videos in the
@@ -588,7 +574,6 @@ sample when creating video tasks. Supported values are:
 
   - `dict`: a dictionary mapping sample filepaths to frame step integers to
     use for the corresponding videos
-
 
 Note that this argument cannot be provided when uploading existing tracks
 
@@ -728,7 +713,6 @@ infer the appropriate value for this parameter
 - **classes**: if omitted for a non-semantic segmentation field, the observed
 labels on your dataset will be used to construct a classes list
 
-
 ### Label attributes [¶](\#label-attributes "Permalink to this headline")
 
 The `attributes` parameter allows you to configure whether
@@ -790,7 +774,6 @@ be specified for at most one attribute, which must be a boolean
 - `group_id`: CVAT’s grouping capabilities. This attribute type can only
 be specified for at most one attribute, which must be an integer
 
-
 When you are annotating existing label fields, the `attributes` parameter can
 take additional values:
 
@@ -803,7 +786,6 @@ and possible values, if applicable
 - a list of custom attributes to include in the export
 
 - a full dictionary syntax described above
-
 
 Note that only scalar-valued label attributes are supported. Other attribute
 types like lists, dictionaries, and arrays will be omitted.
@@ -827,7 +809,6 @@ video tracks to be modified
 
 - **allow\_spatial\_edits** ( _True_): whether to allow edits to the spatial
 properties (bounding boxes, vertices, keypoints, etc) of labels
-
 
 If you are using the `label_schema` parameter to provide a full annotation
 schema to
@@ -968,7 +949,6 @@ for every frame in which the object track appears
 - `False`: the attribute is static and is the same for every frame in which
 the object track appears
 
-
 In addition, note that when you
 [download annotation runs](#cvat-loading-annotations) that include track
 annotations, the downloaded label corresponding to each keyframe of an object
@@ -1014,7 +994,6 @@ modified and doesn’t match an existing label ID _but does have_ a
 recognized CVAT ID is encountered, this shape will be merged into the
 existing [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label")
 
-
 Unfortunately,
 [CVAT does not guarantee](https://github.com/opencv/cvat/issues/893#issuecomment-578020576)
 that its internal IDs are immutable. Thus, if both the `label_id` attribute and
@@ -1038,7 +1017,6 @@ proceed with the import, provenance has still been lost and thus existing
 [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instances whose IDs no longer exist must be deleted and replaced
 with newly created [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") instances.
 
-
 The primary issues that can arise due to modified/deleted `label_id` attributes
 are:
 
@@ -1054,7 +1032,6 @@ creating a new one.
 CVAT shape’s class label causes its attributes to be cleared, then this
 change will be rejected by FiftyOne because it would require both deleting
 an existing label and creating a new one.
-
 
 Note
 
@@ -1126,7 +1103,6 @@ unexpected labels
 matches the the label type
 
 - `"return"`: return a dict containing all unexpected labels, if any
-
 
 See [this section](#cvat-unexpected-annotations) for more details.
 
@@ -1556,7 +1532,6 @@ matches the the label type
 
 - `"return"`: return a dict containing all unexpected labels, if any
 
-
 For example, suppose you upload a [`Detections`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detections "fiftyone.core.labels.Detections") field to CVAT for editing, but
 then polyline annotations are added instead. When
 [`load_annotations()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.load_annotations "fiftyone.core.collections.SampleCollection.load_annotations")
@@ -1735,7 +1710,6 @@ video is uploaded to a separate task
 
 - `job_reviewers`: a list of usernames to assign job reviews. Only available
 in CVAT v1 servers
-
 
 If the number of jobs exceeds the number of assignees or reviewers, the jobs
 will be assigned using a round-robin strategy.
@@ -2597,4 +2571,3 @@ print(results.task_ids)
 api.delete_task(372)
 
 ```
-

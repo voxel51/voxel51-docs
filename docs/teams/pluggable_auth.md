@@ -298,13 +298,11 @@ process involves querying and modifying the organization’s group directory,
 illustrating the hook’s capability to perform complex operations like
 dynamic group management based on external data.
 
-
 ### Error Handling [¶](\#error-handling "Permalink to this headline")
 
 - The try-catch block around the external API call and group manipulation
 logic ensures that errors do not prevent the user from signing in but are
 properly logged
-
 
 ### Summary [¶](\#summary "Permalink to this headline")
 
@@ -421,10 +419,9 @@ async function Hook(context) {
 | `services.userContext` | Object containing information about the user performing the current action. |
 | `services.directory` |  |
 | `services.directory.users` | The `UserService` \- providing methods for interacting with the directory of users. |
-| `services.directory.groups` | The `GroupsService `\- providing methods for interacting with the directory of groups. |
-| `services.config` | The `ConfigService `\- providing methods for reading and writing the `AuthenticationConfig`. |
+| `services.directory.groups` | The `GroupsService`\- providing methods for interacting with the directory of groups. |
+| `services.config` | The `ConfigService`\- providing methods for reading and writing the `AuthenticationConfig`. |
 | `services.util` |  |
-| `services.directory.orgs` | The `OrgsService `\- providing methods for interacting with the directory of organizations. |
+| `services.directory.orgs` | The `OrgsService`\- providing methods for interacting with the directory of organizations. |
 | `services.webhookService` | Experimental |
 | `process.env['MY_ENV_VAR']` | Syntax for reading environment variables in a JS Hook. |
-

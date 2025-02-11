@@ -931,7 +931,6 @@ function, which takes two positional arguments:
 organization name to construct the `repo_id` where the sample collection
 will be uploaded.
 
-
 As you will see, this simple function allows you to push datasets and filtered
 views containing images, videos, point clouds, and other multimodal data to the
 Hugging Face Hub, providing you with incredible flexibility in the process.
@@ -976,7 +975,6 @@ can be loaded with
 [Dataset Card](https://huggingface.co/docs/hub/en/datasets-cards)
 for the dataset is auto-generated, providing tags, metadata, license info,
 and a code snippet illustrating how to load the dataset from the hub.
-
 
 Your dataset will be available on the Hub at the following URL:
 
@@ -1078,7 +1076,6 @@ will be public and accessible to anyone with the link. Defaults to `False`.
 `repo_name`. If `True`, the existing dataset will be overwritten. If `False`,
 an error will be raised if a dataset with the same `repo_name` already
 exists. Defaults to `False`.
-
 
 For example, to push a dataset to the Hub as private, you can do the following:
 
@@ -1357,7 +1354,6 @@ dataset, you can pass `splits="train"`. If you want to load multiple splits,
 you can pass them as a list, e.g., `splits=["train", "test"]`. Note that this
 is not a required field, and by default all splits are loaded.
 
-
 **Media field specification**:
 
 While not all Parquet datasets contain media fields, all FiftyOne [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") objects
@@ -1392,7 +1388,6 @@ these non-default media fields in the `additional_media_fields` dictionary,
 where the keys are the column names in the Hugging Face dataset and the values
 are the names of the fields in the FiftyOne [`Dataset`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") that will store the
 paths. Note that this is _not_ the same as [grouped datasets](../fiftyone_concepts/groups.md#groups).
-
 
 **Label field specification**:
 
@@ -1429,7 +1424,6 @@ column name or names here. For example, if the dataset contains a `masks` field
 that contains mask labels, you can specify `mask_fields="masks"`. This is not
 a required field, and if the dataset does not contain mask labels, you can
 omit it.
-
 
 #### Configuring the download process [¶](\#configuring-the-download-process "Permalink to this headline")
 
@@ -1478,7 +1472,6 @@ Defaults to `False`.
 - **revision** _(str)_: The revision (specified by a commit hash to the Hugging
 Face repo) of the dataset to load. If not specified, the latest revision will
 be loaded.
-
 
 #### Basic examples [¶](\#basic-examples "Permalink to this headline")
 
@@ -1540,7 +1533,6 @@ classification datasets from the Hub using the same syntax, just by changing the
 - [Cats vs. Dogs](https://huggingface.co/datasets/microsoft/cats_vs_dogs) (use `"microsoft/cats_vs_dogs"`)
 
 - [ObjectNet-1.0](https://huggingface.co/datasets/timm/objectnet) (use `"timm/objectnet"`)
-
 
 A very similar syntax can be used to load classification datasets that contain
 _multiple_ classification fields, such as
@@ -1632,7 +1624,6 @@ including:
 
 - [Aerial Sheep Object Detection](https://huggingface.co/datasets/keremberke/aerial-sheep-object-detection)
 (use `"keremberke/aerial-sheep-object-detection"`)
-
 
 Some detection datasets have their detections stored under a column with a
 different name. For example, the `full_numbers` subset of the
@@ -1780,7 +1771,6 @@ same syntax:
 - [ScienceQA](https://huggingface.co/datasets/derek-thomas/ScienceQA): (use `"derek-thomas/ScienceQA"`)
 
 - [PathVQA](https://huggingface.co/datasets/flaviagiammarino/path-vqa): (use `"flaviagiammarino/path-vqa"`)
-
 
 Many other popular datasets on the Hub can be loaded in the same way, with slight
 modifications to `filepath` or other arguments as needed. Here are a few examples:
@@ -1946,4 +1936,3 @@ dataset = load_from_hub(
 session = fo.launch_app(dataset)
 
 ```
-

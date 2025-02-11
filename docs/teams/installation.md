@@ -60,7 +60,6 @@ to configure two things:
 - The [cloud credentials](#teams-cloud-credentials) to access your
 cloud-backed media
 
-
 That’s it! Any operations you perform will be stored in a centralized location
 and will be available to all users with access to the same datasets in the
 Teams App or their Python workflows.
@@ -279,7 +278,6 @@ in a manner supported by Google Cloud, such as:
 - [Using the gcloud CLI](https://cloud.google.com/docs/authentication/application-default-credentials#personal)
 
 - [Attaching a service account to your Google Cloud resource](https://cloud.google.com/docs/authentication/application-default-credentials#attached-sa)
-
 
 2\. Provide GCS credentials on a per-session basis by setting the following
 environment variables to point to your GCS credentials on disk:
@@ -588,7 +586,6 @@ within the specified bucket(s)
 that will be used whenever trying to read/write any media for the provider
 that does not belong to a bucket with bucket-specific credentials
 
-
 Note
 
 Bucket-specific credentials are useful in situations where you cannot or
@@ -619,4 +616,3 @@ Note
 Users cannot access stored credentials directly, either via the Teams UI or
 by using the Teams SDK locally. The credentials are only decrypted and
 used internally by the Teams servers.
-

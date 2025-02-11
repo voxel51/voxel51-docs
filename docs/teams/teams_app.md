@@ -81,7 +81,6 @@ information. To add a tag, type it in the text bar. If you have previously
 used a tag, it will automatically appear in a dropdown and you can select
 it. To add a new tag, type tab or comma.
 
-
 Note
 
 A dataset’s name, description, and tags can be edited later from the
@@ -165,4 +164,3 @@ the modal to confirm this action.
 Warning
 
 Deleting a dataset is permanent!
-

@@ -82,7 +82,6 @@ from the
 
 - The test set does not have annotations
 
-
 **Details**
 
 - Dataset name: `activitynet-100`
@@ -98,7 +97,6 @@ from the
 - ZooDataset class:
 [`ActivityNet100Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.ActivityNet100Dataset "fiftyone.zoo.datasets.base.ActivityNet100Dataset")
 
-
 **Full split stats**
 
 - Train split: 4,819 videos (7,151 instances)
@@ -106,7 +104,6 @@ from the
 - Test split: 2,480 videos (labels withheld)
 
 - Validation split: 2,383 videos (3,582 instances)
-
 
 **Partial downloads**
 
@@ -151,7 +148,6 @@ samples are chosen for partial downloads
 `classes` are also specified, only up to the number of samples that
 contain at least one specified class will be loaded. By default, all
 matching samples are loaded
-
 
 Note
 
@@ -213,7 +209,6 @@ from the
 
 - The test set does not have annotations
 
-
 **Details**
 
 - Dataset name: `activitynet-200`
@@ -229,7 +224,6 @@ from the
 - ZooDataset class:
 [`ActivityNet200Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.ActivityNet200Dataset "fiftyone.zoo.datasets.base.ActivityNet200Dataset")
 
-
 **Full split stats**
 
 - Train split: 10,024 videos (15,410 instances)
@@ -237,7 +231,6 @@ from the
 - Test split: 5,044 videos (labels withheld)
 
 - Validation split: 4,926 videos (7,654 instances)
-
 
 **Partial downloads**
 
@@ -282,7 +275,6 @@ samples are chosen for partial downloads
 `classes` are also specified, only up to the number of samples that
 contain at least one specified class will be loaded. By default, all
 matching samples are loaded
-
 
 Note
 
@@ -371,7 +363,6 @@ to download the data.
 - ZooDataset class:
 [`BDD100KDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.BDD100KDataset "fiftyone.zoo.datasets.base.BDD100KDataset")
 
-
 **Example usage**
 
 ![bdd100k-validation](../../_images/bdd100k-validation.webp)
@@ -403,7 +394,6 @@ pixels. This version contains image-level labels only.
 - ZooDataset class:
 [`Caltech101Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.Caltech101Dataset "fiftyone.zoo.datasets.base.Caltech101Dataset")
 
-
 **Example usage**
 
 ![caltech101](../../_images/caltech101.webp)
@@ -433,7 +423,6 @@ Images are of variable sizes, with typical edge lengths of 80-800 pixels.
 
 - ZooDataset class:
 [`Caltech256Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.Caltech256Dataset "fiftyone.zoo.datasets.base.Caltech256Dataset")
-
 
 **Example usage**
 
@@ -526,7 +515,6 @@ panoptic semantic labeling
 - Supporting research that aims to exploit large volumes of (weakly)
 annotated data, e.g. for training deep neural networks
 
-
 Note
 
 In order to load the Cityscapes dataset, you must download the source data
@@ -559,7 +547,6 @@ to get links to download the data.
 - ZooDataset class:
 [`CityscapesDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.CityscapesDataset "fiftyone.zoo.datasets.base.CityscapesDataset")
 
-
 **Example usage**
 
 ![cityscapes-validation](../../_images/cityscapes-validation.webp)
@@ -591,7 +578,6 @@ work with COCO.
 
 - COCO 2014 and 2017 use the same images, but the splits are different
 
-
 **Details**
 
 - Dataset name: `coco-2014`
@@ -607,7 +593,6 @@ work with COCO.
 - ZooDataset class:
 [`COCO2014Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.COCO2014Dataset "fiftyone.zoo.datasets.base.COCO2014Dataset")
 
-
 **Full split stats**
 
 - Train split: 82,783 images
@@ -615,7 +600,6 @@ work with COCO.
 - Test split: 40,775 images
 
 - Validation split: 40,504 images
-
 
 **Partial downloads**
 
@@ -680,7 +664,6 @@ labels types or classes. The actual number of samples loaded may be less
 than this maximum value if the dataset does not contain sufficient samples
 matching your requirements
 
-
 Note
 
 See
@@ -720,7 +703,6 @@ work with COCO.
 
 - COCO 2014 and 2017 use the same images, but the splits are different
 
-
 **Details**
 
 - Dataset name: `coco-2017`
@@ -736,7 +718,6 @@ work with COCO.
 - ZooDataset class:
 [`COCO2017Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.COCO2017Dataset "fiftyone.zoo.datasets.base.COCO2017Dataset")
 
-
 **Full split stats**
 
 - Train split: 118,287 images
@@ -744,7 +725,6 @@ work with COCO.
 - Test split: 40,670 images
 
 - Validation split: 5,000 images
-
 
 **Partial downloads**
 
@@ -808,7 +788,6 @@ classes, followed by samples that contain at least one of the specified
 labels types or classes. The actual number of samples loaded may be less
 than this maximum value if the dataset does not contain sufficient samples
 matching your requirements
-
 
 Note
 
@@ -968,7 +947,6 @@ Analysis and Machine Intelligence (PAMI), 2021.
 - ZooDataset class:
 [`FIWDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.FIWDataset "fiftyone.zoo.datasets.base.FIWDataset")
 
-
 Note
 
 For your convenience, FiftyOne provides
@@ -1000,7 +978,6 @@ clips distributed across 51 action classes.
 
 - ZooDataset class:
 [`HMDB51Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.HMDB51Dataset "fiftyone.zoo.datasets.base.HMDB51Dataset")
-
 
 **Example usage**
 
@@ -1133,7 +1110,6 @@ to the following terms and conditions:
 - ZooDataset class:
 [`ImageNetSampleDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.ImageNetSampleDataset "fiftyone.zoo.datasets.base.ImageNetSampleDataset")
 
-
 **Example usage**
 
 ![imagenet-sample](../../_images/imagenet-sample.webp)
@@ -1166,7 +1142,6 @@ version of the dataset.
 - ZooDataset class:
 [`Kinetics400Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.Kinetics400Dataset "fiftyone.zoo.datasets.base.Kinetics400Dataset")
 
-
 Original split stats:
 
 - Train split: 219,782 videos
@@ -1174,7 +1149,6 @@ Original split stats:
 - Test split: 35,357 videos
 
 - Validation split: 18,035 videos
-
 
 CVDF split stats:
 
@@ -1184,7 +1158,6 @@ CVDF split stats:
 
 - Validation split: 19,906 videos
 
-
 Dataset size:
 
 - Train split: 370 GB
@@ -1192,7 +1165,6 @@ Dataset size:
 - Test split: 56 GB
 
 - Validation split: 30 GB
-
 
 **Partial downloads**
 
@@ -1236,7 +1208,6 @@ samples are chosen for partial downloads
 `classes` are also specified, only up to the number of samples that
 contain at least one specified class will be loaded. By default, all
 matching samples are loaded
-
 
 Note
 
@@ -1281,7 +1252,6 @@ version of the dataset.
 - ZooDataset class:
 [`Kinetics600Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.Kinetics600Dataset "fiftyone.zoo.datasets.base.Kinetics600Dataset")
 
-
 Original split stats:
 
 - Train split: 370,582 videos
@@ -1289,7 +1259,6 @@ Original split stats:
 - Test split: 56,618 videos
 
 - Validation split: 28,313 videos
-
 
 CVDF split stats:
 
@@ -1299,7 +1268,6 @@ CVDF split stats:
 
 - Validation split: 29,793 videos
 
-
 Dataset size:
 
 - Train split: 648 GB
@@ -1307,7 +1275,6 @@ Dataset size:
 - Test split: 88 GB
 
 - Validation split: 43 GB
-
 
 **Partial downloads**
 
@@ -1351,7 +1318,6 @@ samples are chosen for partial downloads
 `classes` are also specified, only up to the number of samples that
 contain at least one specified class will be loaded. By default, all
 matching samples are loaded
-
 
 **Example usage**
 
@@ -1390,7 +1356,6 @@ version of the dataset.
 - ZooDataset class:
 [`Kinetics700Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.Kinetics700Dataset "fiftyone.zoo.datasets.base.Kinetics700Dataset")
 
-
 Split stats:
 
 - Train split: 529,046 videos
@@ -1399,7 +1364,6 @@ Split stats:
 
 - Validation split: 33,925 videos
 
-
 Dataset size
 
 - Train split: 603 GB
@@ -1407,7 +1371,6 @@ Dataset size
 - Test split: 59 GB
 
 - Validation split: 48 GB
-
 
 **Partial downloads**
 
@@ -1451,7 +1414,6 @@ samples are chosen for partial downloads
 `classes` are also specified, only up to the number of samples that
 contain at least one specified class will be loaded. By default, all
 matching samples are loaded
-
 
 **Example usage**
 
@@ -1491,7 +1453,6 @@ is a superset of Kinetics 700.
 - ZooDataset class:
 [`Kinetics7002020Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.Kinetics7002020Dataset "fiftyone.zoo.datasets.base.Kinetics7002020Dataset")
 
-
 Original split stats:
 
 - Train split: 542,352 videos
@@ -1499,7 +1460,6 @@ Original split stats:
 - Test split: 67,433 videos
 
 - Validation split: 34,125 videos
-
 
 CVDF split stats:
 
@@ -1509,7 +1469,6 @@ CVDF split stats:
 
 - Validation split: 33,914 videos
 
-
 Dataset size
 
 - Train split: 603 GB
@@ -1517,7 +1476,6 @@ Dataset size
 - Test split: 59 GB
 
 - Validation split: 48 GB
-
 
 **Partial downloads**
 
@@ -1562,7 +1520,6 @@ samples are chosen for partial downloads
 contain at least one specified class will be loaded. By default, all
 matching samples are loaded
 
-
 **Example usage**
 
 Note
@@ -1601,7 +1558,6 @@ object development kit on the KITTI homepage.
 - ZooDataset class:
 [`KITTIDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.KITTIDataset "fiftyone.zoo.datasets.base.KITTIDataset")
 
-
 **Example usage**
 
 ![kitti-train](../../_images/kitti-train.webp)
@@ -1618,7 +1574,6 @@ This dataset contains the following multiview data for each scene:
 - Right camera images annotated with 2D object detections
 
 - Velodyne LIDAR point clouds annotated with 3D object detections
-
 
 The training split contains 7,481 annotated scenes, and the test split contains
 7,518 unlabeled scenes.
@@ -1640,7 +1595,6 @@ object development kit on the KITTI homepage.
 
 - ZooDataset class:
 [`KITTIMultiviewDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.KITTIMultiviewDataset "fiftyone.zoo.datasets.base.KITTIMultiviewDataset")
-
 
 **Example usage**
 
@@ -1671,7 +1625,6 @@ Viola-Jones face detector.
 
 - ZooDataset class:
 [`LabeledFacesInTheWildDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.LabeledFacesInTheWildDataset "fiftyone.zoo.datasets.base.LabeledFacesInTheWildDataset")
-
 
 **Example usage**
 
@@ -1745,14 +1698,12 @@ FiftyOne to work with Open Images.
 - ZooDataset class:
 [`OpenImagesV6Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.OpenImagesV6Dataset "fiftyone.zoo.datasets.base.OpenImagesV6Dataset")
 
-
 **Notes**
 
 - Not all images contain all types of labels
 
 - All images have been rescaled so that their largest side is at most
 1024 pixels
-
 
 **Full split stats**
 
@@ -1761,7 +1712,6 @@ FiftyOne to work with Open Images.
 - Test split: 125,436 images (36 GB)
 
 - Validation split: 41,620 images (12 GB)
-
 
 **Partial downloads**
 
@@ -1829,7 +1779,6 @@ least one of the specified labels types or classes. The actual number of
 samples loaded may be less than this maximum value if the dataset does not
 contain sufficient samples matching your requirements
 
-
 Note
 
 See
@@ -1875,14 +1824,12 @@ FiftyOne to work with Open Images.
 - ZooDataset class:
 [`OpenImagesV7Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.OpenImagesV7Dataset "fiftyone.zoo.datasets.base.OpenImagesV7Dataset")
 
-
 **Notes**
 
 - Not all images contain all types of labels
 
 - All images have been rescaled so that their largest side is at most
 1024 pixels
-
 
 **Full split stats**
 
@@ -1891,7 +1838,6 @@ FiftyOne to work with Open Images.
 - Test split: 125,436 images (36 GB)
 
 - Validation split: 41,620 images (12 GB)
-
 
 **Partial downloads**
 
@@ -1959,7 +1905,6 @@ least one of the specified labels types or classes. The actual number of
 samples loaded may be less than this maximum value if the dataset does not
 contain sufficient samples matching your requirements
 
-
 Note
 
 See
@@ -1995,7 +1940,6 @@ and diverse list of the types of environments encountered in the world.
 - ZooDataset classes:
 [`PlacesDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.PlacesDataset "fiftyone.zoo.datasets.base.PlacesDataset")
 
-
 **Full split stats**
 
 - Train split: 1,803,460 images, with between 3,068 and 5,000 per category
@@ -2003,7 +1947,6 @@ and diverse list of the types of environments encountered in the world.
 - Test split: 328,500 images, with 900 images per category
 
 - Validation split: 36,500 images, with 100 images per category
-
 
 **Example usage**
 
@@ -2031,7 +1974,6 @@ from
 - ZooDataset class:
 [`QuickstartDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.QuickstartDataset "fiftyone.zoo.datasets.base.QuickstartDataset")
 
-
 **Example usage**
 
 ![quickstart](../../_images/quickstart.webp)
@@ -2056,7 +1998,6 @@ dataset in the New York City area with object detections and GPS timestamps.
 - ZooDataset class:
 [`QuickstartGeoDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.QuickstartGeoDataset "fiftyone.zoo.datasets.base.QuickstartGeoDataset")
 
-
 **Example usage**
 
 ![quickstart-geo](../../_images/quickstart-geo.webp)
@@ -2080,7 +2021,6 @@ generated by human annotators.
 
 - ZooDataset class:
 [`QuickstartVideoDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.QuickstartVideoDataset "fiftyone.zoo.datasets.base.QuickstartVideoDataset")
-
 
 **Example usage**
 
@@ -2112,7 +2052,6 @@ annotation data.
 - ZooDataset class:
 [`QuickstartGroupsDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.QuickstartGroupsDataset "fiftyone.zoo.datasets.base.QuickstartGroupsDataset")
 
-
 **Example usage**
 
 ![quickstart-groups](../../_images/quickstart-groups.webp)
@@ -2141,7 +2080,6 @@ Objects have been rescaled and recentered from the original dataset.
 - ZooDataset class:
 [`Quickstart3DDataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.Quickstart3DDataset "fiftyone.zoo.datasets.base.Quickstart3DDataset")
 
-
 **Example usage**
 
 ![quickstart-3d](../../_images/quickstart-3d.webp)
@@ -2166,7 +2104,6 @@ by Sama.
 
 - Sama-COCO has identical splits to COCO-2017
 
-
 **Details**
 
 - Dataset name: `sama-coco`
@@ -2182,7 +2119,6 @@ by Sama.
 - ZooDataset class:
 [`SamaCOCODataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.SamaCOCODataset "fiftyone.zoo.datasets.base.SamaCOCODataset")
 
-
 **Full split stats**
 
 - Train split: 118,287 images
@@ -2190,7 +2126,6 @@ by Sama.
 - Test split: 40,670 images
 
 - Validation split: 5,000 images
-
 
 **Partial downloads**
 
@@ -2255,7 +2190,6 @@ labels types or classes. The actual number of samples loaded may be less
 than this maximum value if the dataset does not contain sufficient samples
 matching your requirements
 
-
 Note
 
 See
@@ -2302,7 +2236,6 @@ viewpoint, etc.
 
 - ZooDataset class:
 [`UCF101Dataset`](../../api/fiftyone.zoo.datasets.base.html#fiftyone.zoo.datasets.base.UCF101Dataset "fiftyone.zoo.datasets.base.UCF101Dataset")
-
 
 **Example usage**
 
@@ -2410,4 +2343,3 @@ load this dataset.
 **Example usage**
 
 ![voc-2012-validation](../../_images/voc-2012-validation.webp)
-

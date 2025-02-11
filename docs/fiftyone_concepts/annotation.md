@@ -42,7 +42,6 @@ method to merge the annotations back into your FiftyOne dataset
 6. If desired, delete the annotation tasks and the record of the annotation run
 from your FiftyOne dataset
 
-
 The example below demonstrates this workflow using the default
 [CVAT backend](../integrations/cvat.md#cvat-integration).
 
@@ -201,7 +200,6 @@ The relevant classes for the builtin annotation backends are:
 
 - `"labelbox"`: [`fiftyone.utils.labelbox.LabelboxBackendConfig`](../api/fiftyone.utils.labelbox.html#fiftyone.utils.labelbox.LabelboxBackendConfig "fiftyone.utils.labelbox.LabelboxBackendConfig")
 
-
 You can configure an annotation backend’s parameters for a specific run by
 simply passing supported config parameters as keyword arguments each time you call
 [`annotate()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.annotate "fiftyone.core.collections.SampleCollection.annotate"):
@@ -254,7 +252,6 @@ config settings as runtime:
 3. Settings in your JSON config ( `~/.fiftyone/annotation_config.json`)
 
 4. The default config values
-
 
 #### Editing your JSON config [¶](\#editing-your-json-config "Permalink to this headline")
 
@@ -404,7 +401,6 @@ source media to upload
 - **launch\_editor** ( _False_): whether to launch the annotation backend’s
 editor after uploading the samples
 
-
 The following parameters allow you to configure the labeling schema to use for
 your annotation tasks. See [this section](#annotation-label-schema) for
 more details:
@@ -417,7 +413,6 @@ to annotate
 
 - **label\_type** ( _None_): a string indicating the type of labels to
 annotate. The possible label types are:
-
 
   - `"classification"`: a single classification stored in
     [`Classification`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Classification "fiftyone.core.labels.Classification") fields
@@ -447,7 +442,6 @@ annotate. The possible label types are:
   - `"scalar"`: scalar labels stored in [`IntField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.IntField "fiftyone.core.fields.IntField"), [`FloatField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.FloatField "fiftyone.core.fields.FloatField"),
     [`StringField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.StringField "fiftyone.core.fields.StringField"), or [`BooleanField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.BooleanField "fiftyone.core.fields.BooleanField") fields
 
-
 All new label fields must have their type specified via this argument or in
 `label_schema`
 
@@ -462,7 +456,6 @@ are used
 to include (other than their `label`, which is always included) in the
 annotation export. Can be any of the following:
 
-
   - `True`: export all label attributes
 
   - `False`: don’t export any custom label attributes
@@ -471,7 +464,6 @@ annotation export. Can be any of the following:
 
   - a dict mapping attribute names to dicts specifying the `type`,
     `values`, and `default` for each attribute
-
 
 If a `label_schema` is also provided, this parameter determines which
 attributes are included for all fields that do not explicitly define their
@@ -497,7 +489,6 @@ existing frame fields with `index` attributes
 - **allow\_spatial\_edits** ( _True_): whether to allow edits to the spatial
 properties (bounding boxes, vertices, keypoints, masks, etc) of labels.
 Only applicable when editing existing spatial label fields
-
 
 In addition, each annotation backend can typically be configured in a variety
 of backend-specific ways. See [this section](#configuring-your-backend)
@@ -643,7 +634,6 @@ infer the appropriate value for this parameter
 - **classes**: if omitted for a non-semantic segmentation field, the observed
 labels on your dataset will be used to construct a classes list
 
-
 ### Label attributes [¶](\#label-attributes "Permalink to this headline")
 
 The `attributes` parameter allows you to configure whether
@@ -702,7 +692,6 @@ following choices for `type`:
 - `checkbox`: a boolean checkbox UI. In this case, `default` is optional and
 `values` is unused
 
-
 When you are annotating existing label fields, the `attributes` parameter can
 take additional values:
 
@@ -715,7 +704,6 @@ and possible values, if applicable
 - a list of custom attributes to include in the export
 
 - a full dictionary syntax described above
-
 
 Note that only scalar-valued label attributes are supported. Other attribute
 types like lists, dictionaries, and arrays will be omitted.
@@ -739,7 +727,6 @@ video tracks to be modified
 
 - **allow\_spatial\_edits** ( _True_): whether to allow edits to the spatial
 properties (bounding boxes, vertices, keypoints, etc) of labels
-
 
 If you are using the `label_schema` parameter to provide a full annotation
 schema to
@@ -866,7 +853,6 @@ for every frame in which the object track appears
 - `False`: the attribute is static and is the same for every frame in which
 the object track appears
 
-
 In addition, if you are using an annotation backend
 [like CVAT](../integrations/cvat.md#cvat-annotating-videos) that supports keyframes, then when
 you [download annotation runs](#loading-annotations) that include track
@@ -930,7 +916,6 @@ matches the the label type
 - `"ignore"`: automatically ignore any unexpected labels
 
 - `"return"`: return a dict containing all unexpected labels, if any
-
 
 ## Managing annotation runs [¶](\#managing-annotation-runs "Permalink to this headline")
 
@@ -1033,7 +1018,6 @@ this class stores any intermediate information necessary to track the
 progress of an annotation run that has been created and is now waiting for
 its results to be merged back into the FiftyOne dataset
 
-
 Note
 
 Refer to the
@@ -1076,4 +1060,3 @@ basis by passing the `backend` parameter:
 view.annotate(..., backend="<backend>", ...)
 
 ```
-

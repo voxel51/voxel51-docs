@@ -1280,7 +1280,6 @@ formats:
 
 - a GitHub ref string like `<user>/<repo>[/<ref>]`
 
-
 Note
 
 To download from a private GitHub repository that you have access to,
@@ -2441,7 +2440,6 @@ following formats:
 
 - a publicly accessible URL of an archive (eg zip or tar) file
 
-
 Note
 
 To download from a private GitHub repository that you have access to,
@@ -2515,7 +2513,6 @@ following formats:
 - a GitHub ref string like `<user>/<repo>[/<ref>]`
 
 - a publicly accessible URL of an archive (eg zip or tar) file
-
 
 Note
 
@@ -2831,7 +2828,6 @@ following:
 
 - a GitHub ref string like `<user>/<repo>[/<ref>]`
 
-
 Note
 
 To download from a private GitHub repository that you have access to,
@@ -2889,7 +2885,6 @@ formats:
 - a GitHub ref string like `<user>/<repo>[/<ref>]`
 
 - a publicly accessible URL of an archive (eg zip or tar) file
-
 
 Note
 
@@ -2971,7 +2966,6 @@ formats:
 - a GitHub ref string like `<user>/<repo>[/<ref>]`
 
 - a publicly accessible URL of an archive (eg zip or tar) file
-
 
 Note
 
@@ -3084,7 +3078,6 @@ You can provide any of the following formats:
 
 - a publicly accessible URL of an archive (eg zip or tar) file
 
-
 Note
 
 To download from a private GitHub repository that you have access to,
@@ -3132,7 +3125,6 @@ You can provide any of the following formats:
 
 - a publicly accessible URL of an archive (eg zip or tar) file
 
-
 ```python
 fiftyone zoo models delete-source [-h] URL_OR_GH_REPO
 
@@ -3157,4 +3149,3 @@ fiftyone zoo models delete-source https://github.com/<user>/<repo>
 fiftyone zoo models delete-source <url>
 
 ```
-

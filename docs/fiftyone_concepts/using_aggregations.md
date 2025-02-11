@@ -731,4 +731,3 @@ print(counts)
 # {'person': 1108, 'vehicle': 7511, 'road sign': 2726}
 
 ```
-

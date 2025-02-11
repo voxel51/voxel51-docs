@@ -226,7 +226,7 @@ run on a connected compute cluster.
 The FiftyOne Dataset Zoo provides a powerful interface for downloading datasets
 and loading them into FiftyOne.
 
-It provides native access to dozens of popular benchmark datasets, and it als
+It provides native access to dozens of popular benchmark datasets, and it also
 supports downloading arbitrary public or private datasets whose
 download/preparation methods are provided via GitHub repositories or URLs.
 
@@ -296,10 +296,8 @@ want to master quickly
 - Consult the [user guide](fiftyone_concepts/index.md) for detailed instructions on
 how to accomplish various tasks with FiftyOne
 
-
 ## Need Support? [¶](\#need-support "Permalink to this headline")
 
 If you run into any issues with FiftyOne or have any burning questions, feel
 free to [connect with us on Discord](https://community.voxel51.com) or reach out to
 us at [support@voxel51.com](mailto:support%40voxel51.com).
-
