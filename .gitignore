@@ -134,3 +134,7 @@ dist
 /site/
 
 .venv/
+
+# Symlinks
+docs/ts_api
+docs/api
