@@ -128,3 +128,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+/voxel51-docs.iml
+/voxel51-docs.ipr
+/voxel51-docs.iws
+/site/
