@@ -31,4 +31,3 @@ MongoDB connection) in order to use Management SDK methods.
 ### User management [¶](\#user-management "Permalink to this headline")
 
 ### Group management [¶](\#group-management "Permalink to this headline")
-

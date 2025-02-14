@@ -525,4 +525,3 @@ The View tab on the Run page lets you see the dataset view on which the run was
 scheduled:
 
 ![../_images/view.webp](../_images/view.webp)
-

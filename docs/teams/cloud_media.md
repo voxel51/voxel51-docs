@@ -861,4 +861,3 @@ credentials via runtime environment variables as you normally would, eg:
 export FIFTYONE_DATABASE_URI=mongodb://...
 
 ```
-

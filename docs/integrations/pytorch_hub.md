@@ -216,7 +216,6 @@ your local model zoo and then load it to compute embeddings.
 
 1. Create a custom manifest file and add DINOv2 to it:
 
-
 ```python
 {
     "models": [\
@@ -244,7 +243,6 @@ your local model zoo and then load it to compute embeddings.
 
 2. Expose your manifest to FiftyOne by setting this environment variable:
 
-
 ```python
 export FIFTYONE_MODEL_ZOO_MANIFEST_PATHS=/path/to/custom-manifest.json
 
@@ -252,7 +250,6 @@ export FIFTYONE_MODEL_ZOO_MANIFEST_PATHS=/path/to/custom-manifest.json
 
 3. Now you can load and use the model using
 [`load_zoo_model()`](../api/fiftyone.zoo.models.html#fiftyone.zoo.models.load_zoo_model "fiftyone.zoo.models.load_zoo_model"):
-
 
 ```python
 import numpy as np
@@ -276,4 +273,3 @@ embeddings = dataset.limit(10).compute_embeddings(model)
 print(embeddings.shape)  # (10, 384)
 
 ```
-

@@ -38,7 +38,6 @@ search criteria to find samples of interest, then import your samples
 into a FiftyOne dataset for further analysis. See
 [Exploring samples](#data-lens-querying-data) to learn more.
 
-
 ### Connecting a data source [¶](\#connecting-a-data-source "Permalink to this headline")
 
 A data source represents anywhere that you store your data outside of FiftyOne.
@@ -300,7 +299,6 @@ return in a single batch.
 - `request.max_results`: a number indicating the maximum number of
 samples to return across all batches.
 
-
 Note
 
 The Data Lens framework will automatically truncate responses to adhere
@@ -339,7 +337,6 @@ returned in this response.
 - `response.query_result`: a list of dicts containing serialized
 [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") data, e.g. obtained via
 [`to_dict()`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample.to_dict "fiftyone.core.sample.Sample.to_dict").
-
 
 Note
 
@@ -517,7 +514,6 @@ fit in a single batch. (This is even true here, where there is no upper
 bound on our input length). As such, our operator should respect the
 `request.batch_size` parameter and yield batches of samples as they are
 available.
-
 
 Note
 
@@ -1138,4 +1134,3 @@ additional search options that are specific to traffic lights, such as being
 able to select samples with only red, yellow, or green lights. In this way,
 dynamic operators provide a simple mechanism for developing intuitive and
 context-sensitive search experiences for Data Lens users.
-

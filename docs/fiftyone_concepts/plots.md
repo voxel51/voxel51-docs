@@ -996,7 +996,6 @@ frame
 
 - `"frames"`: show only the selected frames in a frames view
 
-
 When a plot is linked to labels, the available
 [`selection_mode`](../api/fiftyone.core.plots.base.html#fiftyone.core.plots.base.InteractivePlot.selection_mode "fiftyone.core.plots.base.InteractivePlot.selection_mode")
 options are:
@@ -1006,7 +1005,6 @@ options are:
 - `"select"`: show only the selected labels
 
 - `"match"`: show unfiltered samples containing at least one selected label
-
 
 For example, by default, clicking on cells in a confusion matrix for a
 [detection evaluation](evaluation.md#evaluating-detections-coco) will show the
@@ -1175,4 +1173,3 @@ display, but they will not be interactive.
 
 Follow the instructions for your environment below to enable interactive
 matplotlib plots:
-

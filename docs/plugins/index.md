@@ -100,4 +100,3 @@ Note
 
 Look interesting? Learn how to [develop your own](developing_plugins.md#developing-plugins)
 plugins!
-

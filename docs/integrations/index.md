@@ -164,4 +164,3 @@ Did you know? You can load any model from the PyTorch Hub and run inference on y
 Model-Training,Model-Evaluation,Models
 
 ![](../_static/images/integrations/pytorch.webp)
-

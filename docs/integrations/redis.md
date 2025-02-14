@@ -42,7 +42,6 @@ specifying a `brain_key` of your choice
 
 6. If desired, delete the index
 
-
 The example below demonstrates this workflow.
 
 Note
@@ -261,7 +260,6 @@ creating a new index. The supported values are
 
 - **algorithm** ( _“FLAT”_): the search algorithm to use. The supported values
 are `("FLAT", "HNSW")`
-
 
 For detailed information on these parameters, see the
 [Redis documentation](https://redis.io/docs/get-started/vector-database).
@@ -591,7 +589,6 @@ stage to any dataset or view. The query can be any of the following:
 
 - A text prompt (if [supported by the model](../fiftyone_concepts/brain.md#brain-similarity-text))
 
-
 ```python
 import numpy as np
 
@@ -706,4 +703,3 @@ index_name = redis_index.config.index_name
 print(redis_client.ft(index_name).info())
 
 ```
-

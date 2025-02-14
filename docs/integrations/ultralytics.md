@@ -488,4 +488,3 @@ metrics = model.val()
 path = model.export(format="onnx")
 
 ```
-

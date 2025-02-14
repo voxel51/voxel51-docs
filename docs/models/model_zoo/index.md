@@ -53,7 +53,7 @@ defined input and output data formats.
 ## API reference [¶](\#api-reference "Permalink to this headline")
 
 The Model Zoo can be accessed via the Python library and the CLI. Consult the
-API reference belwo to see how to download, apply, and manage zoo models.
+API reference below to see how to download, apply, and manage zoo models.
 
 [Check out the API reference](api.md)
 
@@ -214,4 +214,3 @@ samples = dataset.take(10)
 samples.apply_model(model, store_logits=True)
 
 ```
-

@@ -181,4 +181,3 @@ dataset = fo.load_dataset(...)
 dataset.apply_model(model, label_field="predictions")
 
 ```
-

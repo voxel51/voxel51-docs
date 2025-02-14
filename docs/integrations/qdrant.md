@@ -41,7 +41,6 @@ specifying a `brain_key` of your choice
 
 6. If desired, delete the index
 
-
 The example below demonstrates this workflow.
 
 Note
@@ -255,7 +254,6 @@ categories:
 3. Write-ahead-log (WAL) parameters
 
 4. Performance/optimizers parameters
-
 
 For detailed information on these parameters, see the
 [Qdrant documentation](https://qdrant.tech/documentation/configuration).
@@ -608,7 +606,6 @@ stage to any dataset or view. The query can be any of the following:
 
 - A text prompt (if [supported by the model](../fiftyone_concepts/brain.md#brain-similarity-text))
 
-
 ```python
 import numpy as np
 
@@ -724,4 +721,3 @@ qdrant_client = qdrant_index.client
 print(qdrant_client.get_collections())
 
 ```
-

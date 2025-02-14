@@ -196,7 +196,6 @@ and video datasets:
 
 - [Geolocation data](../fiftyone_concepts/using_datasets.md#geolocation)
 
-
 Check out [this guide](../fiftyone_concepts/dataset_creation/index.md#loading-custom-datasets) for simple recipes to
 load labels in these formats.
 
@@ -498,4 +497,3 @@ Note
 
 You can disable tracking by setting the `do_not_track` flag of your
 [FiftyOne config](../fiftyone_concepts/config.md#configuring-fiftyone).
-

@@ -167,4 +167,3 @@ foua.draw_labeled_image(sample, outpath, config=config)
 ```
 
 ![image-annotated.webp](../_images/example2.webp)
-

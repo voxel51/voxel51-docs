@@ -42,7 +42,6 @@ SDK version
 
 - Upgrade your database’s version, as described below
 
-
 Note
 
 Contact your Voxel51 CS Engineer for all relevant upgrade information,
@@ -211,4 +210,3 @@ When you’re finished, delete the local export of the dataset:
 shutil.rmtree("/tmp/dataset")
 
 ```
-

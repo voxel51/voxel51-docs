@@ -26,7 +26,6 @@ When specifying remote sources, you can provide any of the following:
 
 - A publicly accessible URL of an archive (eg zip or tar) file
 
-
 Here’s the basic recipe for working with remotely-sourced zoo models:
 
 ## Creating remotely-sourced models [¶](\#creating-remotely-sourced-models "Permalink to this headline")
@@ -168,7 +167,7 @@ def load_model(model_name, model_path, **kwargs):
         model_name: the name of the model to load, as declared by the
             ``base_name`` and optional ``version`` fields of the manifest
         model_path: the absolute filename or directory to which the model was
-            donwloaded, as declared by the ``base_filename`` field of the
+            downloaded, as declared by the ``base_filename`` field of the
             manifest
         **kwargs: optional keyword arguments that configure how the model
             is loaded
@@ -180,7 +179,7 @@ def load_model(model_name, model_path, **kwargs):
     # The directory containing this file
     model_dir = os.path.dirname(model_path)
 
-    # Consturct the specified `Model` instance, generally by importing
+    # Construct the specified `Model` instance, generally by importing
     # other modules in `model_dir`
     model = ...
 
@@ -207,4 +206,3 @@ Note
 
 Check out [voxel51/openai-clip](https://github.com/voxel51/openai-clip)
 for an example of a remote model source.
-

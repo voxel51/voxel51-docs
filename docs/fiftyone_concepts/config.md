@@ -73,7 +73,6 @@ config settings at runtime:
 
 4. The default config values
 
-
 ### Editing your JSON config [¶](\#editing-your-json-config "Permalink to this headline")
 
 You can permanently customize your FiftyOne config by creating a
@@ -258,7 +257,6 @@ updated to match your client version
 per-dataset basis whenever you load the dataset for the first time using a
 newer version of the FiftyOne package
 
-
 Database downgrades must be manually performed. See
 [this page](../getting_started/basic/install.md#downgrading-fiftyone) for instructions.
 
@@ -302,7 +300,6 @@ allowed to connect to the database and use FiftyOne
 - If your client is not compatible with the current database version, you
 will see an informative error message when you import the library
 
-
 You can restrict migrations by adding the following entry to your
 `~/.fiftyone/config.json` file:
 
@@ -338,7 +335,6 @@ deployment:
 1. Ensure that all clients are running without database admin privileges,
 e.g., by adding this to their `~/.fiftyone/config.json`:
 
-
 ```python
 {
     "database_admin": false
@@ -348,7 +344,6 @@ e.g., by adding this to their `~/.fiftyone/config.json`:
 
 2. Perform a test upgrade of one client and ensure that it is compatible with
 your current database version:
-
 
 ```python
 # In a test environment
@@ -369,7 +364,6 @@ dataset = fo.load_dataset(...)
 
 3. Now upgrade the client version used by all services:
 
-
 ```python
 # In all client environments
 pip install --upgrade fiftyone
@@ -378,7 +372,6 @@ pip install --upgrade fiftyone
 
 4. Once all services are running the new client version, upgrade the database
 with admin privileges:
-
 
 ```python
 export FIFTYONE_DATABASE_ADMIN=true
@@ -539,7 +532,6 @@ settings at runtime:
 
 5. The default App config values
 
-
 ### Launching the App with a custom config [¶](\#launching-the-app-with-a-custom-config "Permalink to this headline")
 
 You can launch the FiftyOne App with a customized App config on a one-off basis
@@ -644,7 +636,6 @@ Builtin plugins that you can configure include:
 
 - Any [custom plugins](../plugins/index.md#fiftyone-plugins) that you’ve registered
 
-
 For example, you may add the following to your JSON App config
 ( `~/.fiftyone/app_config.json`) to register a Mapbox token globally on your
 system:
@@ -684,4 +675,3 @@ fo.app_config.proxy_url = "https://<myinstance>.notebook.<region>.sagemaker.aws/
 session = fo.launch_app(port=<port>)
 
 ```
-

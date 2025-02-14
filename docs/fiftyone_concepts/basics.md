@@ -148,7 +148,6 @@ Custom fields can contain any Python primitive data type:
 
 - [`DictField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.DictField "fiftyone.core.fields.DictField"): contains Python `dict` instances
 
-
 The elements of list and dict fields may be homogeneous or heterogeneous, and
 may even contain nested lists and dicts. Fields can also contain more complex
 data types like [labels](using_datasets.md#using-labels).
@@ -316,7 +315,6 @@ scene
 - [GeoLocation](using_datasets.md#geolocation): geolocation point(s), line(s), or
 polygon(s)
 
-
 Using FiftyOne’s [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") types enables you to visualize your labels in the
 [the App](app.md#fiftyone-app).
 
@@ -429,4 +427,3 @@ print(
 # (0.05223553627729416, 0.9965479969978333)
 
 ```
-

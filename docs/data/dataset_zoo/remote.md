@@ -26,7 +26,6 @@ When specifying remote sources, you can provide any of the following:
 
 - A publicly accessible URL of an archive (eg zip or tar) file
 
-
 Here’s the basic recipe for working with remotely-sourced zoo datasets:
 
 ## Creating remotely-sourced datasets [¶](\#creating-remotely-sourced-datasets "Permalink to this headline")
@@ -140,7 +139,6 @@ to load data on disk into FiftyOne. Remotely-sourced datasets can take
 advantage of this by simply returning the appropriate `dataset_type` from
 `download_and_prepare()`, which is then used to load the data as follows:
 
-
 ```python
 # If the dataset has splits, `dataset_dir` will be the split directory
 dataset_importer_cls = dataset_type.get_dataset_importer_cls()
@@ -153,7 +151,6 @@ dataset.add_importer(dataset_importer, **kwargs)
 - **Custom loader**: if `dataset_type=None` is returned, then
 `__init__.py` must also contain a `load_dataset()` method as described
 below that handles loading the data into FiftyOne as follows:
-
 
 ```python
 load_dataset(dataset, dataset_dir, **kwargs)
@@ -202,7 +199,6 @@ interested in a subset of them
 - The dataset may be very large and the user only wants to download a small
 subset of the samples to get familiar with the dataset
 
-
 Datasets that support partial downloads should declare this in their
 [fiftyone.yml](#zoo-dataset-remote-fiftyone-yml):
 
@@ -237,4 +233,3 @@ Note
 
 Check out [voxel51/coco-2017](https://github.com/voxel51/coco-2017) for
 an example of a remotely-sourced dataset that supports partial downloads.
-

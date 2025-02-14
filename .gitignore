@@ -132,3 +132,9 @@ dist
 /voxel51-docs.ipr
 /voxel51-docs.iws
 /site/
+
+.venv/
+
+# Symlinks
+docs/ts_api
+docs/api

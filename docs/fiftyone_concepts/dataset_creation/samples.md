@@ -117,7 +117,6 @@ format via `np.asarray()` or the path to an image on disk
 
 - `target` is either a class ID or a label string
 
-
 The snippet below adds an iterable of image classification data in the above
 format to a dataset:
 
@@ -223,7 +222,6 @@ tuples, where:
 
 - `video_labels_or_path` is an `eta.core.video.VideoLabels`
 instance, a serialized dict representation of one, or the path to one on disk
-
 
 The snippet below adds an iterable of labeled video samples in the above format
 to a dataset:
@@ -340,7 +338,6 @@ format via `np.asarray()` or the path to an image on disk
 
 - `target` is either a class ID or a label string
 
-
 The snippet below ingests an iterable of image classification data in the above
 format intoa a FiftyOne dataset:
 
@@ -422,7 +419,6 @@ tuples, where:
 - `video_labels_or_path` is an `eta.core.video.VideoLabels` instance, a
 serialized dict representation of one, or the path to one on disk
 
-
 The snippet below ingests an iterable of labeled videos in the above format
 into a FiftyOne dataset:
 
@@ -492,4 +488,3 @@ For example, [`LabeledImageSampleParser`](../../api/fiftyone.utils.data.parsers.
 information from a labeled image sample, such as the path to the image on
 disk, the image itself, metadata about the image, and the label (e.g.,
 classification or object detections) associated with the image.
-

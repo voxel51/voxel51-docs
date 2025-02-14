@@ -34,7 +34,6 @@ the following label types are supported, for both image and video datasets:
 
 - [Semantic segmentation](../fiftyone_concepts/using_datasets.md#semantic-segmentation)
 
-
 ![labelbox-video](../_images/labelbox_video.webp)
 
 ## Basic recipe [¶](\#basic-recipe "Permalink to this headline")
@@ -61,7 +60,6 @@ method to merge the annotations back into your FiftyOne dataset
 
 6. If desired, delete the Labelbox tasks and the record of the annotation run
 from your FiftyOne dataset
-
 
 The example below demonstrates this workflow.
 
@@ -316,7 +314,6 @@ you can configure the URL of your server in any of the following ways:
 
 - Set the `FIFTYONE_LABELBOX_URL` environment variable:
 
-
 ```python
 export FIFTYONE_LABELBOX_URL=http://localhost:8080
 
@@ -325,7 +322,6 @@ export FIFTYONE_LABELBOX_URL=http://localhost:8080
 - Store the `url` of your server in your
 [annotation config](../fiftyone_concepts/annotation.md#annotation-config) at
 `~/.fiftyone/annotation_config.json`:
-
 
 ```python
 {
@@ -340,7 +336,6 @@ export FIFTYONE_LABELBOX_URL=http://localhost:8080
 
 - Pass the `url` parameter manually each time you call
 [`annotate()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.annotate "fiftyone.core.collections.SampleCollection.annotate"):
-
 
 ```python
 view.annotate(
@@ -401,7 +396,6 @@ source media to upload
 - **launch\_editor** ( _False_): whether to launch the annotation backend’s
 editor after uploading the samples
 
-
 The following parameters allow you to configure the labeling schema to use for
 your annotation tasks. See [this section](#labelbox-label-schema) for more
 details:
@@ -415,7 +409,6 @@ to annotate
 
 - **label\_type** ( _None_): a string indicating the type of labels to
 annotate. The possible label types are:
-
 
   - `"classification"`: a single classification stored in
     [`Classification`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Classification "fiftyone.core.labels.Classification") fields
@@ -445,7 +438,6 @@ annotate. The possible label types are:
   - `"scalar"`: scalar labels stored in [`IntField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.IntField "fiftyone.core.fields.IntField"), [`FloatField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.FloatField "fiftyone.core.fields.FloatField"),
     [`StringField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.StringField "fiftyone.core.fields.StringField"), or [`BooleanField`](../api/fiftyone.core.fields.html#fiftyone.core.fields.BooleanField "fiftyone.core.fields.BooleanField") fields
 
-
 All new label fields must have their type specified via this argument or in
 `label_schema`
 
@@ -460,7 +452,6 @@ are used
 to include (other than their `label`, which is always included) in the
 annotation export. Can be any of the following:
 
-
   - `True`: export all label attributes
 
   - `False`: don’t export any custom label attributes
@@ -469,7 +460,6 @@ annotation export. Can be any of the following:
 
   - a dict mapping attribute names to dicts specifying the `type`,
     `values`, and `default` for each attribute
-
 
 If a `label_schema` is also provided, this parameter determines which
 attributes are included for all fields that do not explicitly define their
@@ -496,7 +486,6 @@ existing frame fields with `index` attributes
 properties (bounding boxes, vertices, keypoints, masks, etc) of labels.
 Only applicable when editing existing spatial label fields
 
-
 In addition, the following Labelbox-specific parameters from
 [`LabelboxBackendConfig`](../api/fiftyone.utils.labelbox.html#fiftyone.utils.labelbox.LabelboxBackendConfig "fiftyone.utils.labelbox.LabelboxBackendConfig")
 can also be provided:
@@ -517,7 +506,6 @@ top level and annotate the class as a required attribute of each object
 
 - **export\_version** ( _“v2”_): the Labelbox export format and API version to
 use. Supported values are `("v1", "v2")`
-
 
 Note
 
@@ -655,7 +643,6 @@ infer the appropriate value for this parameter
 - **classes**: if omitted for a non-semantic segmentation field, the observed
 labels on your dataset will be used to construct a classes list
 
-
 Note
 
 See [this section](#labelbox-editing-labels-paid) for details about
@@ -710,7 +697,6 @@ For Labelbox, the following `type` values are supported:
 
 - `checkbox`: a list of checkboxes. In this case, `values` is required
 
-
 When you are annotating existing label fields, the `attributes` parameter can
 take additional values:
 
@@ -723,7 +709,6 @@ and possible values, if applicable
 - a list of custom attributes to include in the export
 
 - a full dictionary syntax described above
-
 
 Note that only scalar-valued label attributes are supported. Other attribute
 types like lists, dictionaries, and arrays will be omitted.
@@ -774,7 +759,6 @@ for every frame in which the object track appears
 
 - `False`: the attribute is static and is the same for every frame in which
 the object track appears ( **Not yet supported**)
-
 
 ## Loading annotations [¶](\#loading-annotations "Permalink to this headline")
 
@@ -993,7 +977,6 @@ tagged labels to make sure you’re happy with the edits
 to merge edits into the original label field and then delete the tagged
 labels that you edited
 
-
 The example snippet below demonstrates this workflow:
 
 ```python
@@ -1132,7 +1115,6 @@ project. The supported roles are:
 - `"TEAM_MANAGER"`
 
 - `"ADMIN"`
-
 
 If any email addresses do not correspond to users already in your organization,
 an email invitation will be sent to them.
@@ -1503,4 +1485,3 @@ Note
 Note that passing `delete_batches=True` when deleting projects will not
 delete the corresponding data rows from Labelbox when using the V2 export
 API (the default).
-

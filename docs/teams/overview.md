@@ -123,4 +123,3 @@ requests the ability to (a) access the system logs for usage tracking and
 auditing purposes, and (b) access the system at the customer’s request to
 provide technical support. We are flexible in the mechanisms used to accomplish
 these goals.
-

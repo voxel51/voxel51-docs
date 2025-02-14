@@ -37,7 +37,6 @@ All of the following label types are supported for image datasets:
 
 - [Semantic segmentation](../fiftyone_concepts/using_datasets.md#semantic-segmentation)
 
-
 ## Basic recipe [¶](\#basic-recipe "Permalink to this headline")
 
 The basic workflow to use Label Studio to add or edit labels on your FiftyOne
@@ -63,7 +62,6 @@ method to merge the annotations back into your FiftyOne dataset
 
 6. If desired, delete the Label Studio tasks and the record of the annotation
 run from your FiftyOne dataset
-
 
 The example below demonstrates this workflow.
 
@@ -301,7 +299,6 @@ following ways:
 
 - Set the `FIFTYONE_LABELSTUDIO_URL` environment variable:
 
-
 ```python
 export FIFTYONE_LABELSTUDIO_URL=http://localhost:8080
 
@@ -310,7 +307,6 @@ export FIFTYONE_LABELSTUDIO_URL=http://localhost:8080
 - Store the `url` of your server in your
 [annotation config](../fiftyone_concepts/annotation.md#annotation-config) at
 `~/.fiftyone/annotation_config.json`:
-
 
 ```python
 {
@@ -325,7 +321,6 @@ export FIFTYONE_LABELSTUDIO_URL=http://localhost:8080
 
 - Pass the `url` parameter manually each time you call
 [`annotate()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.annotate "fiftyone.core.collections.SampleCollection.annotate"):
-
 
 ```python
 view.annotate(
@@ -403,7 +398,6 @@ source media to upload
 - **launch\_editor** ( _False_): whether to launch the annotation backend’s
 editor after uploading the samples
 
-
 The following parameters allow you to configure the labeling schema to use for
 your annotation tasks. See [this section](#label-studio-label-schema) for
 more details:
@@ -417,7 +411,6 @@ to annotate
 
 - **label\_type** ( _None_): a string indicating the type of labels to
 annotate. The possible label types are:
-
 
   - `"classification"`: a single classification stored in
     [`Classification`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Classification "fiftyone.core.labels.Classification") fields
@@ -444,7 +437,6 @@ annotate. The possible label types are:
   - `"segmentation"`: semantic segmentations stored in [`Segmentation`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Segmentation "fiftyone.core.labels.Segmentation")
     fields
 
-
 All new label fields must have their type specified via this argument or in
 `label_schema`
 
@@ -459,14 +451,12 @@ by this argument nor `label_schema`, they are parsed from
 - **mask\_targets** ( _None_): a dict mapping pixel values to semantic label
 strings. Only applicable when annotating semantic segmentations
 
-
 In addition, the following Label Studio-specific parameters from
 [`LabelStudioBackendConfig`](../api/fiftyone.utils.labelstudio.html#fiftyone.utils.labelstudio.LabelStudioBackendConfig "fiftyone.utils.labelstudio.LabelStudioBackendConfig")
 can also be provided:
 
 - **project\_name** ( _None_): a name for the Label Studio project that will be
 created. The default is `"FiftyOne_<dataset_name>"`
-
 
 ### Label schema [¶](\#label-schema "Permalink to this headline")
 
@@ -542,7 +532,6 @@ targets from the
 [`mask_targets`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.mask_targets "fiftyone.core.dataset.Dataset.mask_targets") or
 [`default_mask_targets`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.default_mask_targets "fiftyone.core.dataset.Dataset.default_mask_targets")
 properties of your dataset will be used, if available
-
 
 ### Label attributes [¶](\#label-attributes "Permalink to this headline")
 
@@ -669,4 +658,3 @@ Note
 Special thanks to [Rustem Galiullin](https://github.com/Rusteam),
 [Ganesh Tata](https://github.com/tataganesh), and
 [Emil Zakirov](https://github.com/bonlime) for building this integration!
-

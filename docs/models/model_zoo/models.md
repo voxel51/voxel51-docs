@@ -1081,7 +1081,6 @@ AlexNet model architecture from [One weird trick for parallelizing convolutional
 
 - Tags: `classification, embeddings, logits, imagenet, torch, alexnet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -1127,7 +1126,6 @@ Hugging Face Transformers model for image classification.
 - Exposes embeddings? yes
 
 - Tags: `classification, logits, embeddings, torch, transformers`
-
 
 **Requirements**
 
@@ -1177,7 +1175,6 @@ CLIP text/image encoder from [Learning Transferable Visual Models From Natural L
 - Exposes embeddings? yes
 
 - Tags: `classification, logits, embeddings, torch, clip, zero-shot`
-
 
 **Requirements**
 
@@ -1241,7 +1238,6 @@ DeepLabV3 model from [Rethinking Atrous Convolution for Semantic Image Segmentat
 
 - Tags: `segmentation, coco, torch, resnet, deeplabv3`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -1290,7 +1286,6 @@ DeepLabV3 model from [Rethinking Atrous Convolution for Semantic Image Segmentat
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, resnet, deeplabv3`
-
 
 **Requirements**
 
@@ -1341,7 +1336,6 @@ Densenet-121 model from [Densely Connected Convolutional Networks](https://arxiv
 
 - Tags: `classification, embeddings, logits, imagenet, torch, densenet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -1389,7 +1383,6 @@ Densenet-161 model from [Densely Connected Convolutional Networks](https://arxiv
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, torch, densenet`
-
 
 **Requirements**
 
@@ -1439,7 +1432,6 @@ Densenet-169 model from [Densely Connected Convolutional Networks](https://arxiv
 
 - Tags: `classification, embeddings, logits, imagenet, torch, densenet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -1488,7 +1480,6 @@ Densenet-201 model from [Densely Connected Convolutional Networks](https://arxiv
 
 - Tags: `classification, embeddings, logits, imagenet, torch, densenet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -1534,7 +1525,6 @@ Hugging Face Transformers model for monocular depth estimation.
 - Exposes embeddings? no
 
 - Tags: `depth, torch, transformers`
-
 
 **Requirements**
 
@@ -1582,7 +1572,6 @@ Hugging Face Transformers model for object detection.
 - Exposes embeddings? yes
 
 - Tags: `detection, logits, embeddings, torch, transformers`
-
 
 **Requirements**
 
@@ -1633,7 +1622,6 @@ DINOv2: Learning Robust Visual Features without Supervision. Model: ViT-B/14 dis
 
 - Tags: `embeddings, torch, dinov2`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -1680,7 +1668,6 @@ DINOv2: Learning Robust Visual Features without Supervision. Model: ViT-B/14 dis
 - Exposes embeddings? yes
 
 - Tags: `embeddings, torch, dinov2`
-
 
 **Requirements**
 
@@ -1729,7 +1716,6 @@ DINOv2: Learning Robust Visual Features without Supervision. Model: ViT-g/14.
 
 - Tags: `embeddings, torch, dinov2`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -1776,7 +1762,6 @@ DINOv2: Learning Robust Visual Features without Supervision. Model: ViT-g/14.
 - Exposes embeddings? yes
 
 - Tags: `embeddings, torch, dinov2`
-
 
 **Requirements**
 
@@ -1825,7 +1810,6 @@ DINOv2: Learning Robust Visual Features without Supervision. Model: ViT-L/14 dis
 
 - Tags: `embeddings, torch, dinov2`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -1872,7 +1856,6 @@ DINOv2: Learning Robust Visual Features without Supervision. Model: ViT-L/14 dis
 - Exposes embeddings? yes
 
 - Tags: `embeddings, torch, dinov2`
-
 
 **Requirements**
 
@@ -1921,7 +1904,6 @@ DINOv2: Learning Robust Visual Features without Supervision. Model: ViT-S/14 dis
 
 - Tags: `embeddings, torch, dinov2`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -1969,7 +1951,6 @@ DINOv2: Learning Robust Visual Features without Supervision. Model: ViT-S/14 dis
 
 - Tags: `embeddings, torch, dinov2`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -2016,7 +1997,6 @@ Faster R-CNN model from [Faster R-CNN: Towards Real-Time Object Detection with R
 - Exposes embeddings? no
 
 - Tags: `detection, coco, torch, faster-rcnn, resnet`
-
 
 **Requirements**
 
@@ -2067,7 +2047,6 @@ FCN model from [Fully Convolutional Networks for Semantic Segmentation](https://
 
 - Tags: `segmentation, coco, torch, fcn, resnet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -2116,7 +2095,6 @@ FCN model from [Fully Convolutional Networks for Semantic Segmentation](https://
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, fcn, resnet`
-
 
 **Requirements**
 
@@ -2167,7 +2145,6 @@ GoogLeNet (Inception v1) model from [Going Deeper with Convolutions](https://arx
 
 - Tags: `classification, embeddings, logits, imagenet, torch, googlenet`
 
-
 **Requirements**
 
 - Packages: `scipy, torch, torchvision`
@@ -2216,7 +2193,6 @@ Inception v3 model from [Rethinking the Inception Architecture for Computer Visi
 
 - Tags: `classification, embeddings, logits, imagenet, torch, inception`
 
-
 **Requirements**
 
 - Packages: `scipy, torch, torchvision`
@@ -2264,7 +2240,6 @@ Keypoint R-CNN model from [Mask R-CNN](https://arxiv.org/abs/1703.06870) with Re
 - Exposes embeddings? no
 
 - Tags: `keypoints, coco, torch, keypoint-rcnn, resnet`
-
 
 **Requirements**
 
@@ -2315,7 +2290,6 @@ Mask R-CNN model from [Mask R-CNN](https://arxiv.org/abs/1703.06870) with ResNet
 
 - Tags: `instances, coco, torch, mask-rcnn, resnet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -2364,7 +2338,6 @@ Fine-tuned SAM2-hiera-tiny model from [Medical SAM 2 - Segment Medical Images as
 - Exposes embeddings? no
 
 - Tags: `segment-anything, torch, zero-shot, video, med-SAM`
-
 
 **Requirements**
 
@@ -2425,7 +2398,6 @@ MNASNet model from from [MnasNet: Platform-Aware Neural Architecture Search for 
 
 - Tags: `classification, embeddings, logits, imagenet, torch, mnasnet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -2473,7 +2445,6 @@ MNASNet model from [MnasNet: Platform-Aware Neural Architecture Search for Mobil
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, torch, mnasnet`
-
 
 **Requirements**
 
@@ -2523,7 +2494,6 @@ MobileNetV2 model from [MobileNetV2: Inverted Residuals and Linear Bottlenecks](
 
 - Tags: `classification, embeddings, logits, imagenet, torch, mobilenet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -2569,7 +2539,6 @@ OPEN CLIP text/image encoder from [Learning Transferable Visual Models From Natu
 - Exposes embeddings? yes
 
 - Tags: `classification, logits, embeddings, torch, clip, zero-shot`
-
 
 **Requirements**
 
@@ -2633,7 +2602,6 @@ ResNet-101 model from [Deep Residual Learning for Image Recognition](https://arx
 
 - Tags: `classification, embeddings, logits, imagenet, torch, resnet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -2681,7 +2649,6 @@ ResNet-152 model from [Deep Residual Learning for Image Recognition](https://arx
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, torch, resnet`
-
 
 **Requirements**
 
@@ -2731,7 +2698,6 @@ ResNet-18 model from [Deep Residual Learning for Image Recognition](https://arxi
 
 - Tags: `classification, embeddings, logits, imagenet, torch, resnet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -2779,7 +2745,6 @@ ResNet-34 model from [Deep Residual Learning for Image Recognition](https://arxi
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, torch, resnet`
-
 
 **Requirements**
 
@@ -2829,7 +2794,6 @@ ResNet-50 model from [Deep Residual Learning for Image Recognition](https://arxi
 
 - Tags: `classification, embeddings, logits, imagenet, torch, resnet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -2877,7 +2841,6 @@ ResNeXt-101 32x8d model from [Aggregated Residual Transformations for Deep Neura
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, torch, resnext`
-
 
 **Requirements**
 
@@ -2927,7 +2890,6 @@ ResNeXt-50 32x4d model from [Aggregated Residual Transformations for Deep Neural
 
 - Tags: `classification, embeddings, logits, imagenet, torch, resnext`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -2975,7 +2937,6 @@ RetinaNet model from [Focal Loss for Dense Object Detection](https://arxiv.org/a
 - Exposes embeddings? no
 
 - Tags: `detection, coco, torch, retinanet, resnet`
-
 
 **Requirements**
 
@@ -3026,7 +2987,6 @@ RT-DETR-l model trained on COCO.
 
 - Tags: `detection, coco, torch, transformer, rtdetr`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.2.0`
@@ -3076,7 +3036,6 @@ RT-DETR-x model trained on COCO.
 
 - Tags: `detection, coco, torch, transformer, rtdetr`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.2.0`
@@ -3125,7 +3084,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 - Exposes embeddings? no
 
 - Tags: `segment-anything, torch, zero-shot`
-
 
 **Requirements**
 
@@ -3184,7 +3142,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 
 - Tags: `segment-anything, torch, zero-shot, video`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -3241,7 +3198,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 - Exposes embeddings? no
 
 - Tags: `segment-anything, torch, zero-shot`
-
 
 **Requirements**
 
@@ -3300,7 +3256,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 
 - Tags: `segment-anything, torch, zero-shot, video`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -3357,7 +3312,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 - Exposes embeddings? no
 
 - Tags: `segment-anything, torch, zero-shot`
-
 
 **Requirements**
 
@@ -3416,7 +3370,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 
 - Tags: `segment-anything, torch, zero-shot, video`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -3473,7 +3426,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 - Exposes embeddings? no
 
 - Tags: `segment-anything, torch, zero-shot`
-
 
 **Requirements**
 
@@ -3532,7 +3484,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 
 - Tags: `segment-anything, torch, zero-shot, video`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -3589,7 +3540,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 - Exposes embeddings? no
 
 - Tags: `segment-anything, torch, zero-shot`
-
 
 **Requirements**
 
@@ -3648,7 +3598,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 
 - Tags: `segment-anything, torch, zero-shot, video`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -3705,7 +3654,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 - Exposes embeddings? no
 
 - Tags: `segment-anything, torch, zero-shot`
-
 
 **Requirements**
 
@@ -3764,7 +3712,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 
 - Tags: `segment-anything, torch, zero-shot, video`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -3821,7 +3768,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 - Exposes embeddings? no
 
 - Tags: `segment-anything, torch, zero-shot`
-
 
 **Requirements**
 
@@ -3880,7 +3826,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 
 - Tags: `segment-anything, torch, zero-shot, video`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -3937,7 +3882,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 - Exposes embeddings? no
 
 - Tags: `segment-anything, torch, zero-shot`
-
 
 **Requirements**
 
@@ -3996,7 +3940,6 @@ Segment Anything Model 2 (SAM2) from [SAM2: Segment Anything in Images and Video
 
 - Tags: `segment-anything, torch, zero-shot, video`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -4053,7 +3996,6 @@ Segment Anything Model (SAM) from [Segment Anything](https://arxiv.org/abs/2304.
 - Exposes embeddings? no
 
 - Tags: `segment-anything, sa-1b, torch, zero-shot`
-
 
 **Requirements**
 
@@ -4112,7 +4054,6 @@ Segment Anything Model (SAM) from [Segment Anything](https://arxiv.org/abs/2304.
 
 - Tags: `segment-anything, sa-1b, torch, zero-shot`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision, segment-anything`
@@ -4170,7 +4111,6 @@ Segment Anything Model (SAM) from [Segment Anything](https://arxiv.org/abs/2304.
 
 - Tags: `segment-anything, sa-1b, torch, zero-shot`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision, segment-anything`
@@ -4226,7 +4166,6 @@ Hugging Face Transformers model for semantic segmentation.
 
 - Tags: `segmentation, torch, transformers`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision, transformers`
@@ -4276,7 +4215,6 @@ ShuffleNetV2 model from [ShuffleNet V2: Practical Guidelines for Efficient CNN A
 
 - Tags: `classification, embeddings, logits, imagenet, torch, shufflenet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -4324,7 +4262,6 @@ ShuffleNetV2 model from [ShuffleNet V2: Practical Guidelines for Efficient CNN A
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, torch, shufflenet`
-
 
 **Requirements**
 
@@ -4374,7 +4311,6 @@ SqueezeNet 1.1 model from [the official SqueezeNet repo](https://github.com/forr
 
 - Tags: `classification, imagenet, torch, squeezenet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -4422,7 +4358,6 @@ SqueezeNet model from [SqueezeNet: AlexNet-level accuracy with 50x fewer paramet
 - Exposes embeddings? no
 
 - Tags: `classification, imagenet, torch, squeezenet`
-
 
 **Requirements**
 
@@ -4472,7 +4407,6 @@ VGG-11 model from [Very Deep Convolutional Networks for Large-Scale Image Recogn
 
 - Tags: `classification, embeddings, logits, imagenet, torch, vgg`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -4520,7 +4454,6 @@ VGG-11 model from [Very Deep Convolutional Networks for Large-Scale Image Recogn
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, torch, vgg`
-
 
 **Requirements**
 
@@ -4570,7 +4503,6 @@ VGG-13 model from [Very Deep Convolutional Networks for Large-Scale Image Recogn
 
 - Tags: `classification, embeddings, logits, imagenet, torch, vgg`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -4618,7 +4550,6 @@ VGG-13 model from [Very Deep Convolutional Networks for Large-Scale Image Recogn
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, torch, vgg`
-
 
 **Requirements**
 
@@ -4668,7 +4599,6 @@ VGG-16 model from [Very Deep Convolutional Networks for Large-Scale Image Recogn
 
 - Tags: `classification, embeddings, logits, imagenet, torch, vgg`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -4716,7 +4646,6 @@ VGG-16 model from [Very Deep Convolutional Networks for Large-Scale Image Recogn
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, torch, vgg`
-
 
 **Requirements**
 
@@ -4766,7 +4695,6 @@ VGG-19 model from [Very Deep Convolutional Networks for Large-Scale Image Recogn
 
 - Tags: `classification, embeddings, logits, imagenet, torch, vgg`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -4814,7 +4742,6 @@ VGG-19 model from [Very Deep Convolutional Networks for Large-Scale Image Recogn
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, torch, vgg`
-
 
 **Requirements**
 
@@ -4864,7 +4791,6 @@ Wide ResNet-101-2 model from [Wide Residual Networks](https://arxiv.org/abs/1605
 
 - Tags: `classification, embeddings, logits, imagenet, torch, wide-resnet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -4913,7 +4839,6 @@ Wide ResNet-50-2 model from [Wide Residual Networks](https://arxiv.org/abs/1605.
 
 - Tags: `classification, embeddings, logits, imagenet, torch, wide-resnet`
 
-
 **Requirements**
 
 - Packages: `torch, torchvision`
@@ -4959,7 +4884,6 @@ YOLO-NAS is an open-source training library for advanced computer vision models.
 - Exposes embeddings? no
 
 - Tags: `detection, torch, yolo`
-
 
 **Requirements**
 
@@ -5010,7 +4934,6 @@ YOLO11-L model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.3.0`
@@ -5059,7 +4982,6 @@ YOLO11-L Segmentation model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -5110,7 +5032,6 @@ YOLO11-M model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.3.0`
@@ -5159,7 +5080,6 @@ YOLO11-M Segmentation model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -5210,7 +5130,6 @@ YOLO11-N model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.3.0`
@@ -5259,7 +5178,6 @@ YOLO11-N Segmentation model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -5310,7 +5228,6 @@ YOLO11-S model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.3.0`
@@ -5359,7 +5276,6 @@ YOLO11-S Segmentation model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -5410,7 +5326,6 @@ YOLO11-X model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.3.0`
@@ -5459,7 +5374,6 @@ YOLO11-X Segmentation model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -5510,7 +5424,6 @@ YOLOv10-L model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.2.0`
@@ -5559,7 +5472,6 @@ YOLOv10-M model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `detection, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -5610,7 +5522,6 @@ YOLOv10-N model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.2.0`
@@ -5659,7 +5570,6 @@ YOLOv10-S model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `detection, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -5710,7 +5620,6 @@ YOLOv10-X model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.2.0`
@@ -5759,7 +5668,6 @@ Ultralytics YOLOv5l model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `detection, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -5810,7 +5718,6 @@ Ultralytics YOLOv5m model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1`
@@ -5859,7 +5766,6 @@ Ultralytics YOLOv5n model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `detection, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -5910,7 +5816,6 @@ Ultralytics YOLOv5s model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1`
@@ -5959,7 +5864,6 @@ Ultralytics YOLOv5x model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `detection, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -6010,7 +5914,6 @@ Ultralytics YOLOv8l model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics`
@@ -6059,7 +5962,6 @@ YOLOv8l Oriented Bounding Box model.
 - Exposes embeddings? no
 
 - Tags: `detection, torch, yolo, polylines, obb`
-
 
 **Requirements**
 
@@ -6110,7 +6012,6 @@ Ultralytics YOLOv8l model trained Open Images v7.
 
 - Tags: `detection, oiv7, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics`
@@ -6159,7 +6060,6 @@ Ultralytics YOLOv8l Segmentation model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -6210,7 +6110,6 @@ YOLOv8l-World model.
 
 - Tags: `detection, torch, yolo, zero-shot`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.1.0`
@@ -6259,7 +6158,6 @@ Ultralytics YOLOv8m model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `detection, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -6310,7 +6208,6 @@ YOLOv8m Oriented Bounding Box model.
 
 - Tags: `detection, torch, yolo, polylines, obb`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.1.0`
@@ -6359,7 +6256,6 @@ Ultralytics YOLOv8m model trained Open Images v7.
 - Exposes embeddings? no
 
 - Tags: `detection, oiv7, torch, yolo`
-
 
 **Requirements**
 
@@ -6410,7 +6306,6 @@ Ultralytics YOLOv8m Segmentation model trained on COCO.
 
 - Tags: `segmentation, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics`
@@ -6459,7 +6354,6 @@ YOLOv8m-World model.
 - Exposes embeddings? no
 
 - Tags: `detection, torch, yolo, zero-shot`
-
 
 **Requirements**
 
@@ -6510,7 +6404,6 @@ Ultralytics YOLOv8n model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics`
@@ -6559,7 +6452,6 @@ YOLOv8n Oriented Bounding Box model.
 - Exposes embeddings? no
 
 - Tags: `detection, torch, yolo, polylines, obb`
-
 
 **Requirements**
 
@@ -6610,7 +6502,6 @@ Ultralytics YOLOv8n model trained on Open Images v7.
 
 - Tags: `detection, oiv7, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics`
@@ -6659,7 +6550,6 @@ Ultralytics YOLOv8n Segmentation model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -6710,7 +6600,6 @@ Ultralytics YOLOv8s model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics`
@@ -6759,7 +6648,6 @@ YOLOv8s Oriented Bounding Box model.
 - Exposes embeddings? no
 
 - Tags: `detection, torch, yolo, polylines, obb`
-
 
 **Requirements**
 
@@ -6810,7 +6698,6 @@ Ultralytics YOLOv8s model trained on Open Images v7.
 
 - Tags: `detection, oiv7, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics`
@@ -6859,7 +6746,6 @@ Ultralytics YOLOv8s Segmentation model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -6910,7 +6796,6 @@ YOLOv8s-World model.
 
 - Tags: `detection, torch, yolo, zero-shot`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.1.0`
@@ -6959,7 +6844,6 @@ Ultralytics YOLOv8x model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `detection, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -7010,7 +6894,6 @@ YOLOv8x Oriented Bounding Box model.
 
 - Tags: `detection, torch, yolo, polylines, obb`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.1.0`
@@ -7059,7 +6942,6 @@ Ultralytics YOLOv8x model trained Open Images v7.
 - Exposes embeddings? no
 
 - Tags: `detection, oiv7, torch, yolo`
-
 
 **Requirements**
 
@@ -7110,7 +6992,6 @@ Ultralytics YOLOv8x Segmentation model trained on COCO.
 
 - Tags: `segmentation, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics`
@@ -7159,7 +7040,6 @@ YOLOv8x-World model.
 - Exposes embeddings? no
 
 - Tags: `detection, torch, yolo, zero-shot`
-
 
 **Requirements**
 
@@ -7210,7 +7090,6 @@ YOLOv9-C model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.1.0`
@@ -7259,7 +7138,6 @@ YOLOv9-C Segmentation model trained on COCO.
 - Exposes embeddings? no
 
 - Tags: `segmentation, coco, torch, yolo`
-
 
 **Requirements**
 
@@ -7310,7 +7188,6 @@ YOLOv9-E model trained on COCO.
 
 - Tags: `detection, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.1.0`
@@ -7360,7 +7237,6 @@ YOLOv9-E Segmentation model trained on COCO.
 
 - Tags: `segmentation, coco, torch, yolo`
 
-
 **Requirements**
 
 - Packages: `torch>=1.7.0, torchvision>=0.8.1, ultralytics>=8.1.42`
@@ -7407,7 +7283,6 @@ Hugging Face Transformers model for zero-shot image classification.
 - Exposes embeddings? yes
 
 - Tags: `classification, logits, embeddings, torch, transformers, zero-shot`
-
 
 **Requirements**
 
@@ -7458,7 +7333,6 @@ Hugging Face Transformers model for zero-shot object detection.
 - Exposes embeddings? yes
 
 - Tags: `detection, logits, embeddings, torch, transformers, zero-shot`
-
 
 **Requirements**
 
@@ -7514,7 +7388,6 @@ CenterNet model from [Objects as Points](https://arxiv.org/abs/1904.07850) with 
 
 - Tags: `detection, coco, tf2, centernet`
 
-
 **Requirements**
 
 - CPU support
@@ -7565,7 +7438,6 @@ CenterNet model from [Objects as Points](https://arxiv.org/abs/1904.07850) with 
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf2, centernet`
-
 
 **Requirements**
 
@@ -7618,7 +7490,6 @@ CenterNet model from [Objects as Points](https://arxiv.org/abs/1904.07850) with 
 
 - Tags: `detection, coco, tf2, centernet, mobilenet`
 
-
 **Requirements**
 
 - CPU support
@@ -7669,7 +7540,6 @@ CenterNet model from [Objects as Points](https://arxiv.org/abs/1904.07850) with 
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf2, centernet, resnet`
-
 
 **Requirements**
 
@@ -7722,7 +7592,6 @@ CenterNet model from [Objects as Points](https://arxiv.org/abs/1904.07850) with 
 
 - Tags: `detection, coco, tf2, centernet, resnet`
 
-
 **Requirements**
 
 - CPU support
@@ -7773,7 +7642,6 @@ CenterNet model from [Objects as Points](https://arxiv.org/abs/1904.07850) with 
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf2, centernet, resnet`
-
 
 **Requirements**
 
@@ -7826,7 +7694,6 @@ DeepLabv3+ semantic segmentation model from [Encoder-Decoder with Atrous Separab
 
 - Tags: `segmentation, cityscapes, tf, deeplabv3`
 
-
 **Requirements**
 
 - CPU support
@@ -7877,7 +7744,6 @@ DeepLabv3+ semantic segmentation model from [Encoder-Decoder with Atrous Separab
 - Exposes embeddings? no
 
 - Tags: `segmentation, cityscapes, tf, deeplabv3`
-
 
 **Requirements**
 
@@ -7930,7 +7796,6 @@ EfficientDet-D0 model from [EfficientDet: Scalable and Efficient Object Detectio
 
 - Tags: `detection, coco, tf2, efficientdet`
 
-
 **Requirements**
 
 - CPU support
@@ -7981,7 +7846,6 @@ EfficientDet-D0 model from [EfficientDet: Scalable and Efficient Object Detectio
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf1, efficientdet`
-
 
 **Requirements**
 
@@ -8034,7 +7898,6 @@ EfficientDet-D1 model from [EfficientDet: Scalable and Efficient Object Detectio
 
 - Tags: `detection, coco, tf2, efficientdet`
 
-
 **Requirements**
 
 - CPU support
@@ -8085,7 +7948,6 @@ EfficientDet-D1 model from [EfficientDet: Scalable and Efficient Object Detectio
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf1, efficientdet`
-
 
 **Requirements**
 
@@ -8138,7 +8000,6 @@ EfficientDet-D2 model from [EfficientDet: Scalable and Efficient Object Detectio
 
 - Tags: `detection, coco, tf2, efficientdet`
 
-
 **Requirements**
 
 - CPU support
@@ -8189,7 +8050,6 @@ EfficientDet-D2 model from [EfficientDet: Scalable and Efficient Object Detectio
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf1, efficientdet`
-
 
 **Requirements**
 
@@ -8242,7 +8102,6 @@ EfficientDet-D3 model from [EfficientDet: Scalable and Efficient Object Detectio
 
 - Tags: `detection, coco, tf2, efficientdet`
 
-
 **Requirements**
 
 - CPU support
@@ -8293,7 +8152,6 @@ EfficientDet-D3 model from [EfficientDet: Scalable and Efficient Object Detectio
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf1, efficientdet`
-
 
 **Requirements**
 
@@ -8346,7 +8204,6 @@ EfficientDet-D4 model from [EfficientDet: Scalable and Efficient Object Detectio
 
 - Tags: `detection, coco, tf2, efficientdet`
 
-
 **Requirements**
 
 - CPU support
@@ -8397,7 +8254,6 @@ EfficientDet-D4 model from [EfficientDet: Scalable and Efficient Object Detectio
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf1, efficientdet`
-
 
 **Requirements**
 
@@ -8450,7 +8306,6 @@ EfficientDet-D5 model from [EfficientDet: Scalable and Efficient Object Detectio
 
 - Tags: `detection, coco, tf2, efficientdet`
 
-
 **Requirements**
 
 - CPU support
@@ -8501,7 +8356,6 @@ EfficientDet-D5 model from [EfficientDet: Scalable and Efficient Object Detectio
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf1, efficientdet`
-
 
 **Requirements**
 
@@ -8554,7 +8408,6 @@ EfficientDet-D6 model from [EfficientDet: Scalable and Efficient Object Detectio
 
 - Tags: `detection, coco, tf2, efficientdet`
 
-
 **Requirements**
 
 - CPU support
@@ -8605,7 +8458,6 @@ EfficientDet-D6 model from [EfficientDet: Scalable and Efficient Object Detectio
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf1, efficientdet`
-
 
 **Requirements**
 
@@ -8658,7 +8510,6 @@ EfficientDet-D7 model from [EfficientDet: Scalable and Efficient Object Detectio
 
 - Tags: `detection, coco, tf2, efficientdet`
 
-
 **Requirements**
 
 - CPU support
@@ -8709,7 +8560,6 @@ Faster R-CNN model from [Faster R-CNN: Towards Real-Time Object Detection with R
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf, faster-rcnn, inception, resnet`
-
 
 **Requirements**
 
@@ -8762,7 +8612,6 @@ Faster R-CNN model from [Faster R-CNN: Towards Real-Time Object Detection with R
 
 - Tags: `detection, coco, tf, faster-rcnn, inception, resnet`
 
-
 **Requirements**
 
 - CPU support
@@ -8813,7 +8662,6 @@ Faster R-CNN model from [Faster R-CNN: Towards Real-Time Object Detection with R
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf, faster-rcnn, inception`
-
 
 **Requirements**
 
@@ -8866,7 +8714,6 @@ Faster R-CNN model from [Faster R-CNN: Towards Real-Time Object Detection with R
 
 - Tags: `detection, coco, tf, faster-rcnn`
 
-
 **Requirements**
 
 - CPU support
@@ -8917,7 +8764,6 @@ Faster R-CNN model from [Faster R-CNN: Towards Real-Time Object Detection with R
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf, faster-rcnn`
-
 
 **Requirements**
 
@@ -8970,7 +8816,6 @@ Faster R-CNN model from [Faster R-CNN: Towards Real-Time Object Detection with R
 
 - Tags: `detection, coco, tf, faster-rcnn, resnet`
 
-
 **Requirements**
 
 - CPU support
@@ -9021,7 +8866,6 @@ Faster R-CNN model from [Faster R-CNN: Towards Real-Time Object Detection with R
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf, faster-rcnn, resnet`
-
 
 **Requirements**
 
@@ -9074,7 +8918,6 @@ Faster R-CNN model from [Faster R-CNN: Towards Real-Time Object Detection with R
 
 - Tags: `detection, coco, tf, faster-rcnn, resnet`
 
-
 **Requirements**
 
 - CPU support
@@ -9125,7 +8968,6 @@ Faster R-CNN model from [Faster R-CNN: Towards Real-Time Object Detection with R
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf, faster-rcnn, resnet`
-
 
 **Requirements**
 
@@ -9178,7 +9020,6 @@ Inception v2 model from [Rethinking the Inception Architecture for Computer Visi
 
 - Tags: `classification, embeddings, logits, imagenet, tf1, inception, resnet`
 
-
 **Requirements**
 
 - CPU support
@@ -9229,7 +9070,6 @@ Inception v4 model from [Inception-v4, Inception-ResNet and the Impact of Residu
 
 - Tags: `classification, embeddings, logits, imagenet, tf1, inception`
 
-
 **Requirements**
 
 - CPU support
@@ -9279,7 +9119,6 @@ Mask R-CNN model from [Mask R-CNN](https://arxiv.org/abs/1703.06870) atrous vers
 - Exposes embeddings? no
 
 - Tags: `instances, coco, tf, mask-rcnn, inception, resnet`
-
 
 **Requirements**
 
@@ -9332,7 +9171,6 @@ Mask R-CNN model from [Mask R-CNN](https://arxiv.org/abs/1703.06870) with Incept
 
 - Tags: `instances, coco, tf, mask-rcnn, inception`
 
-
 **Requirements**
 
 - CPU support
@@ -9383,7 +9221,6 @@ Mask R-CNN model from [Mask R-CNN](https://arxiv.org/abs/1703.06870) atrous vers
 - Exposes embeddings? no
 
 - Tags: `instances, coco, tf, mask-rcnn, resnet`
-
 
 **Requirements**
 
@@ -9436,7 +9273,6 @@ Mask R-CNN model from [Mask R-CNN](https://arxiv.org/abs/1703.06870) atrous vers
 
 - Tags: `instances, coco, tf, mask-rcnn, resnet`
 
-
 **Requirements**
 
 - CPU support
@@ -9488,7 +9324,6 @@ MobileNetV2 model from [MobileNetV2: Inverted Residuals and Linear Bottlenecks](
 
 - Tags: `classification, embeddings, logits, imagenet, tf1, mobilenet`
 
-
 **Requirements**
 
 - CPU support
@@ -9538,7 +9373,6 @@ ResNet-50 v1 model from [Deep Residual Learning for Image Recognition](https://a
 - Exposes embeddings? yes
 
 - Tags: `classification, embeddings, logits, imagenet, tf1, resnet`
-
 
 **Requirements**
 
@@ -9590,7 +9424,6 @@ ResNet-50 v2 model from [Deep Residual Learning for Image Recognition](https://a
 
 - Tags: `classification, embeddings, logits, imagenet, tf1, resnet`
 
-
 **Requirements**
 
 - CPU support
@@ -9640,7 +9473,6 @@ R-FCN object detection model from [R-FCN: Object Detection via Region-based Full
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf, rfcn, resnet`
-
 
 **Requirements**
 
@@ -9693,7 +9525,6 @@ Inception Single Shot Detector model from [SSD: Single Shot MultiBox Detector](h
 
 - Tags: `detection, coco, tf, ssd, inception`
 
-
 **Requirements**
 
 - CPU support
@@ -9744,7 +9575,6 @@ Single Shot Detector model from [SSD: Single Shot MultiBox Detector](https://arx
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf, ssd, mobilenet`
-
 
 **Requirements**
 
@@ -9797,7 +9627,6 @@ MobileNetV1 model from [MobileNetV2: Inverted Residuals and Linear Bottlenecks](
 
 - Tags: `detection, coco, tf2, ssd, mobilenet`
 
-
 **Requirements**
 
 - CPU support
@@ -9848,7 +9677,6 @@ FPN Single Shot Detector model from [SSD: Single Shot MultiBox Detector](https:/
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf, ssd, mobilenet`
-
 
 **Requirements**
 
@@ -9901,7 +9729,6 @@ MobileNetV2 model from [MobileNetV2: Inverted Residuals and Linear Bottlenecks](
 
 - Tags: `detection, coco, tf2, ssd, mobilenet`
 
-
 **Requirements**
 
 - CPU support
@@ -9952,7 +9779,6 @@ FPN Single Shot Detector model from [SSD: Single Shot MultiBox Detector](https:/
 - Exposes embeddings? no
 
 - Tags: `detection, coco, tf, ssd, resnet`
-
 
 **Requirements**
 
@@ -10005,7 +9831,6 @@ VGG-16 model from [Very Deep Convolutional Networks for Large-Scale Image Recogn
 
 - Tags: `classification, embeddings, logits, imagenet, tf1, vgg`
 
-
 **Requirements**
 
 - CPU support
@@ -10056,7 +9881,6 @@ YOLOv2 model from [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/161
 
 - Tags: `detection, coco, tf1, yolo`
 
-
 **Requirements**
 
 - CPU support
@@ -10091,4 +9915,3 @@ dataset.apply_model(model, label_field="predictions")
 session = fo.launch_app(dataset)
 
 ```
-

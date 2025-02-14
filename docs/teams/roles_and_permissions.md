@@ -121,7 +121,6 @@ dataset
 - Users may be members of one or more groups, each of which may have
 [specific access](#teams-specific-access) to the dataset
 
-
 Note
 
 User role determines the highest level of access that a user can be granted
@@ -168,7 +167,6 @@ or **Can manage** permissions
 or **Can edit** permissions
 
 - Guests may be granted **Can view** permissions
-
 
 Note
 
@@ -219,7 +217,6 @@ A user with **Can edit** permissions on a dataset has all permissions from
 
 - Adding and deleting annotation runs, brain runs, etc.
 
-
 Note
 
 Deleting a dataset requires the **Can manage** permission.
@@ -244,4 +241,3 @@ Admins can review the actions and permissions available to each user role by
 navigating to the “Settings > Security > Roles” page:
 
 ![admin-roles-page](../_images/admin_roles_page.webp)
-

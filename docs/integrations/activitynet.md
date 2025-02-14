@@ -126,7 +126,6 @@ samples are chosen for partial downloads
 contain at least one specified class will be loaded. By default, all
 matching samples are loaded
 
-
 ### Full Split Downloads [¶](\#full-split-downloads "Permalink to this headline")
 
 Many videos have been removed from YouTube since the creation of ActivityNet.
@@ -240,16 +239,11 @@ matching can be disabled by passing `classwise=False`
 - mAP is computed by averaging over the same range of IoU values
 [used by COCO](coco.md#coco-map)
 
-
 When you specify an `eval_key` parameter, a number of helpful fields will be
 populated on each sample and its predicted/ground truth segments:
 
 - True positive (TP), false positive (FP), and false negative (FN) counts
 for the each sample are saved in top-level fields of each sample:
-
-
-
-
 
 ```python
 TP: sample.<eval_key>_tp
@@ -262,17 +256,12 @@ FN: sample.<eval_key>_fn
 segment; these fields tabulate the TP/FP/FN status of the segment, the ID
 of the matching segment (if any), and the matching IoU:
 
-
-
-
-
 ```python
 TP/FP/FN: segment.<eval_key>
         ID: segment.<eval_key>_id
        IoU: segment.<eval_key>_iou
 
 ```
-
 
 Note
 
@@ -561,7 +550,6 @@ matched first
 - Compute IoU between every ground truth and predicted segment within the
 same class (and between classes if `classwise=False`) in each video
 
-
 **Matching**
 
 Once IoUs have been computed, predictions and ground truth segments are matched
@@ -574,7 +562,6 @@ prediction only matches if the IoU is above the specified `iou` threshold
 - If a prediction maximally overlaps with a ground truth segment that has
 already been matched (by a higher confidence prediction), the prediction is
 matched with the next highest IoU ground truth segment
-
 
 **Computing mAP**
 
@@ -605,5 +592,3 @@ into mAP calculation
 the average precision (AP) by averaging the precision values over all 10
 IoU thresholds. Then compute mAP by averaging the per-class AP values over
 all classes
-
-

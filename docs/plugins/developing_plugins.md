@@ -54,7 +54,6 @@ for the fields of your dataset
 - [Map panel](../fiftyone_concepts/app.md#app-map-panel): visualizes the geolocation data of
 datasets that have a [`GeoLocation`](../api/fiftyone.core.labels.html#fiftyone.core.labels.GeoLocation "fiftyone.core.labels.GeoLocation") field
 
-
 ![../_images/app-map-panel.webp](../_images/app-map-panel.webp)
 
 Note
@@ -177,7 +176,7 @@ The following fields are available:
 | `description` |  | A brief description of the plugin |
 | `fiftyone.version` |  | A semver version specifier (or `*`) describing the required<br>FiftyOne version for the plugin to work properly |
 | `operators` |  | A list of operator names registered by the plugin, if any |
-| `panels` |  | A list of panel names registred by the plugin, if any |
+| `panels` |  | A list of panel names registered by the plugin, if any |
 | `secrets` |  | A list of secret keys that may be used by the plugin, if any |
 
 For example, the
@@ -228,7 +227,6 @@ and panels that the plugin defines
 - `requirements.txt`: specifies the Python package requirements to run the
 plugin
 
-
 ### JS plugins [¶](\#js-plugins "Permalink to this headline")
 
 JS plugins should define the following files:
@@ -237,7 +235,6 @@ JS plugins should define the following files:
 plugin, including the JS bundle file path
 
 - `dist/index.umd.js`: a JS bundle file for the plugin
-
 
 ## Publishing plugins [¶](\#publishing-plugins "Permalink to this headline")
 
@@ -802,7 +799,6 @@ it has been called
 
 - `ctx.hooks` **(JS only)** \- the return value of the operator’s `useHooks()`
 method
-
 
 ### Operator inputs [¶](\#operator-inputs "Permalink to this headline")
 
@@ -1464,7 +1460,7 @@ class ExamplePanel(foo.Panel):
             surfaces="grid",  # default = "grid"
 
             # Markdown-formatted text that describes the panel. This is
-            # rendererd in a tooltip when the help icon in the panel
+            # rendered in a tooltip when the help icon in the panel
             # title is hovered over
             help_markdown="A description of the panel",
         )
@@ -1798,7 +1794,7 @@ def config(self):
         surfaces="grid",  # default = "grid"
 
         # Markdown-formatted text that describes the panel. This is
-        # rendererd in a tooltip when the help icon in the panel
+        # rendered in a tooltip when the help icon in the panel
         # title is hovered over
         help_markdown="A description of the panel",
     )
@@ -1814,7 +1810,6 @@ experiences that work with entire datasets or views
 - Modal panels can be accessed from the `+` button in the App’s
 [modal view](../fiftyone_concepts/app.md#app-sample-view), which allows you to build interactions
 that focus on individual samples and scenarios
-
 
 Note
 
@@ -1931,7 +1926,6 @@ callback and is analogous to [operator parameters](#operator-inputs):
 available via corresponding state properties of the same name
 
 - The current panel state is readable during a panel’s execution
-
 
 ```python
 def render(self, ctx):
@@ -2665,7 +2659,6 @@ clicking the `+` next to any existing panel’s tab
 - **Component**: JS plugins can register generic components that can be used
 to render operator input and output
 
-
 ### Panels and Components [¶](\#panels-and-components "Permalink to this headline")
 
 Here’s some examples of using panels and components to add your
@@ -2935,7 +2928,6 @@ Plugins may support two styles of configuration settings:
 - Dataset-specific plugin settings for any subset of the above values on a
 [dataset’s App config](../fiftyone_concepts/using_datasets.md#dataset-app-config).
 
-
 Plugin settings are used, for example, to allow the user to configure the
 default camera position of FiftyOne’s builtin
 [3D visualizer](../fiftyone_concepts/app.md#app-3d-visualizer-config).
@@ -3098,7 +3090,6 @@ serialized and stored in the database
 
 2. The [connected orchestrator](using_plugins.md#delegated-orchestrator) picks up the
 task and executes it when resources are available
-
 
 ## Advanced usage [¶](\#advanced-usage "Permalink to this headline")
 
@@ -3282,4 +3273,3 @@ to delete the record of a custom run from a dataset:
 dataset.delete_run(run_key)
 
 ```
-

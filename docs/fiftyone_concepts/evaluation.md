@@ -206,7 +206,6 @@ on using the following methods on your dataset:
 
 - [`delete_evaluation()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.delete_evaluation "fiftyone.core.collections.SampleCollection.delete_evaluation")
 
-
 The example below demonstrates the basic interface:
 
 ```python
@@ -694,7 +693,6 @@ method supports all of the following task types:
 
 - [3D detections](using_datasets.md#d-detections)
 
-
 The only difference between each task type is in how the IoU between objects is
 calculated:
 
@@ -711,7 +709,6 @@ assuming uniform falloff (κκ)
 
 - For temporal detections, IoU is computed between the 1D support of two
 temporal segments
-
 
 For object detection tasks, the ground truth and predicted objects should be
 stored in [`Detections`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Detections "fiftyone.core.labels.Detections") format.
@@ -864,7 +861,6 @@ on an evaluation patches view (typically one that contains additional view
 stages that filter or modify its contents) will sync any [`Label`](../api/fiftyone.core.labels.html#fiftyone.core.labels.Label "fiftyone.core.labels.Label") edits or
 deletions with the source dataset
 
-
 However, because evaluation patches views only contain a subset of the contents
 of a [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample") from the source dataset, there are some differences in behavior
 compared to non-patch views:
@@ -874,7 +870,6 @@ not affect the tags of the underlying [`Sample`](../api/fiftyone.core.sample.htm
 
 - Any new fields that you add to an evaluation patches view will not be added
 to the source dataset
-
 
 ### COCO-style evaluation (default spatial) [¶](\#coco-style-evaluation-default-spatial "Permalink to this headline")
 
@@ -912,16 +907,11 @@ can be customized by passing the optional `iscrowd` attribute of
 [`COCOEvaluationConfig`](../api/fiftyone.utils.eval.coco.html#fiftyone.utils.eval.coco.COCOEvaluationConfig "fiftyone.utils.eval.coco.COCOEvaluationConfig") to
 [`evaluate_detections()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.evaluate_detections "fiftyone.core.collections.SampleCollection.evaluate_detections")
 
-
 When you specify an `eval_key` parameter, a number of helpful fields will be
 populated on each sample and its predicted/ground truth objects:
 
 - True positive (TP), false positive (FP), and false negative (FN) counts
 for the each sample are saved in top-level fields of each sample:
-
-
-
-
 
 ```python
 TP: sample.<eval_key>_tp
@@ -934,17 +924,12 @@ FN: sample.<eval_key>_fn
 these fields tabulate the TP/FP/FN status of the object, the ID of the
 matching object (if any), and the matching IoU:
 
-
-
-
-
 ```python
 TP/FP/FN: object.<eval_key>
         ID: object.<eval_key>_id
        IoU: object.<eval_key>_iou
 
 ```
-
 
 Note
 
@@ -1138,7 +1123,6 @@ feature by setting the `expand_gt_hierarchy` parameter to `False`.
 Alternatively, you can expand predictions by setting the
 `expand_pred_hierarchy` parameter to `True`
 
-
 In addition, note that:
 
 - Like [VOC-style evaluation](http://host.robots.ox.ac.uk/pascal/VOC/voc2010/devkit_doc_08-May-2010.pdf),
@@ -1149,16 +1133,11 @@ this value via the `iou` parameter
 if a crowd is matched with multiple predictions, each counts as one true
 positive when computing mAP
 
-
 When you specify an `eval_key` parameter, a number of helpful fields will be
 populated on each sample and its predicted/ground truth objects:
 
 - True positive (TP), false positive (FP), and false negative (FN) counts
 for the each sample are saved in top-level fields of each sample:
-
-
-
-
 
 ```python
 TP: sample.<eval_key>_tp
@@ -1171,17 +1150,12 @@ FN: sample.<eval_key>_fn
 instance; these fields tabulate the TP/FP/FN status of the object, the ID
 of the matching object (if any), and the matching IoU:
 
-
-
-
-
 ```python
 TP/FP/FN: object.<eval_key>
         ID: object.<eval_key>_id
        IoU: object.<eval_key>_iou
 
 ```
-
 
 Note
 
@@ -1364,16 +1338,11 @@ Classwise matching can be disabled by passing `classwise=False`
 - mAP is computed by averaging over the same range of IoU values
 [used by COCO](../integrations/coco.md#coco-map)
 
-
 When you specify an `eval_key` parameter, a number of helpful fields will be
 populated on each sample and its predicted/ground truth segments:
 
 - True positive (TP), false positive (FP), and false negative (FN) counts
 for the each sample are saved in top-level fields of each sample:
-
-
-
-
 
 ```python
 TP: sample.<eval_key>_tp
@@ -1386,17 +1355,12 @@ FN: sample.<eval_key>_fn
 segment; these fields tabulate the TP/FP/FN status of the segment, the ID
 of the matching segment (if any), and the matching IoU:
 
-
-
-
-
 ```python
 TP/FP/FN: segment.<eval_key>
         ID: segment.<eval_key>_id
        IoU: segment.<eval_key>_iou
 
 ```
-
 
 Note
 
@@ -1647,7 +1611,6 @@ resized to match the ground truth.
 - You can specify the optional `bandwidth` parameter to evaluate only along
 the contours of the ground truth masks. By default, the entire masks are
 evaluated.
-
 
 You can explicitly request that this strategy be used by setting the `method`
 parameter to `"simple"`.
@@ -2011,7 +1974,6 @@ config settings as runtime:
 
 4. The default config values
 
-
 #### Editing your JSON config [¶](\#editing-your-json-config "Permalink to this headline")
 
 You can permanently customize your evaluation config by creating a
@@ -2103,4 +2065,3 @@ import fiftyone as fo
 fo.evaluation_config.default_detection_backend = "custom"
 
 ```
-

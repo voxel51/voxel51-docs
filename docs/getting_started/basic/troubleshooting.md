@@ -76,7 +76,6 @@ instead of `pip`.
 - You may not have a compatible Python version installed. See the
 [installation guide](install.md#install-prereqs) for details.
 
-
 ### “No module named skbuild” [¶](\#no-module-named-skbuild "Permalink to this headline")
 
 On Linux, this error can occur when attempting to install OpenCV with an old
@@ -214,4 +213,3 @@ Downloading and installing the Microsoft Visual C++ Redistributable from this
 [page](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0)
 should resolve the issue. Specifically, you will want to download the
 `vc_redist.x64.exe` redistributable.
-

@@ -84,5 +84,3 @@ variables
 - A locally launched App via the Teams SDK
 
 - Open source FiftyOne
-
-

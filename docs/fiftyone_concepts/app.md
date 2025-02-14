@@ -321,7 +321,6 @@ drop an existing index
 - [`get_index_information()`](../api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.get_index_information "fiftyone.core.collections.SampleCollection.get_index_information") -
 get information about the existing indexes
 
-
 Note
 
 Did you know? With [FiftyOne Teams](../teams/index.md#fiftyone-teams) you can manage
@@ -646,7 +645,6 @@ attributes in color by `value` mode
 
 - Save the customized color scheme as the default for the dataset
 
-
 ![color-schemes](../_images/app-color-schemes.webp)
 
 Note
@@ -802,7 +800,6 @@ dataset, such as:
 
 - Samples that contain content of interest, eg object types or image
 characteristics
-
 
 Note
 
@@ -960,7 +957,6 @@ controls:
 
 - Click the `E` to reset the camera to ego-view
 
-
 For point clouds, when coloring by intensity, the color of each point is
 computed by mapping the `r` channel of the `rgb` field of the
 [PCD file](https://pointclouds.org/documentation/tutorials/pcd_file_format.html)
@@ -1071,7 +1067,6 @@ datasets that have a [`GeoLocation`](../api/fiftyone.core.labels.html#fiftyone.c
 - [Histograms panel](#app-histograms-panel): a dashboard of histograms
 for the fields of your dataset
 
-
 Note
 
 You can also configure custom Panels [via plugins](../plugins/index.md#fiftyone-plugins)!
@@ -1156,7 +1151,6 @@ parent Space
 
 - A list of `Panel` instances describing the Panels that should be available
 as tabs within the Space
-
 
 Set a Panel’s `pinned` property to
 `True` if you do not want a Panel’s tab to have a close icon `x` in the App.
@@ -1403,7 +1397,6 @@ to display
 - **Color by**: an optional sample field (or label attribute, for patches
 embeddings) to color the points by
 
-
 From there you can lasso points in the plot to show only the corresponding
 samples/patches in the Samples panel:
 
@@ -1428,7 +1421,6 @@ current view’s embeddings
 - Press the `x` icon (or double click anywhere in the plot) to clear the
 current selection
 
-
 When coloring points by categorical fields (strings and integers) with fewer
 than 100 unique classes, you can also use the legend to toggle the visibility
 of each class of points:
@@ -1436,7 +1428,6 @@ of each class of points:
 - Single click on a legend trace to show/hide that class in the plot
 
 - Double click on a legend trace to show/hide all other classes in the plot
-
 
 ![app-embeddings-panel-controls](../_images/app-embeddings-panel-controls.webp)
 
@@ -1459,7 +1450,6 @@ to display
 
 - **colorByField**: an optional sample field (or label attribute, for patches
 embeddings) to color the points by
-
 
 ## Model Evaluation panel **NEW** [¶](\#model-evaluation-panel-sub-new "Permalink to this headline")
 
@@ -1613,7 +1603,6 @@ current view’s location data
 
 - Press the `x` icon to clear the current selection
 
-
 ![app-map-panel-controls](../_images/app-map-panel-controls.webp)
 
 When configuring spaces [in Python](#app-spaces-python), you can define a
@@ -1713,7 +1702,6 @@ dataset. For example, if you computed
 [uniqueness](brain.md#brain-image-uniqueness) on your dataset, a histogram of
 uniqueness values will be available under this mode.
 
-
 Note
 
 The statistics in the plots automatically update to reflect the current
@@ -1733,7 +1721,6 @@ The Histograms panel supports the following `state` parameters:
 
 - **plot**: the histograms to plot. Supported values are `"Sample tags"`,
 `"Label tags"`, `"Labels"`, and `"Other fields"`
-
 
 ## Selecting samples [¶](\#selecting-samples "Permalink to this headline")
 
@@ -1856,7 +1843,6 @@ filters sidebar
 
 - Select `Labels`, type in the tag, and then click `Apply`
 
-
 You can also use the tag menu to remove existing tags.
 
 Note
@@ -1936,7 +1922,6 @@ sidebar or the view bar
 - Any modifications to patch label tags that you make via the
 [tagging menu](#app-tagging) will be reflected on the source dataset
 
-
 One notable exception is that tagging or untagging patches themselves (as
 opposed to their labels) will not affect the sample tags of the underlying
 [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample").
@@ -1984,7 +1969,6 @@ sidebar or the view bar
 - Any modifications to the tags of the ground truth or predicted labels that
 you make via the [tagging menu](#app-tagging) will be reflected on the
 source dataset
-
 
 One notable exception is that tagging or untagging patches themselves (as
 opposed to their labels) will not affect the sample tags of the underlying
@@ -2051,7 +2035,6 @@ view bar
 
 - Any modifications to label tags that you make via the
 [tagging menu](#app-tagging) will be reflected on the source dataset
-
 
 One notable exception is that tagging or untagging clips themselves (as opposed
 to their labels) will not affect the sample tags of the underlying [`Sample`](../api/fiftyone.core.sample.html#fiftyone.core.sample.Sample "fiftyone.core.sample.Sample").
@@ -2153,7 +2136,6 @@ with each sample in your dataset, such as:
 
 - Anonymized (e.g., blurred) versions of the images
 
-
 You can work with multiple media sources in FiftyOne by simply adding extra
 field(s) to your dataset containing the paths to each media source and then
 configuring your dataset to expose these multiple media fields in the App.
@@ -2246,7 +2228,6 @@ session
 
 3. Settings from your [global App config](config.md#configuring-fiftyone-app)
 
-
 Any settings or changes made at higher levels of precedence will override any
 lower priority settings the next time you load/refresh the App.
 
@@ -2334,4 +2315,3 @@ Any settings stored in a dataset’s
 [`app_config`](../api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.app_config "fiftyone.core.dataset.Dataset.app_config") will override
 the corresponding settings from your
 [global App config](config.md#configuring-fiftyone-app).
-
