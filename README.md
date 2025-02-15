@@ -1,4 +1,4 @@
-# Beta version of the  Voxel51 Technical Documentation
+# Beta Version of the Voxel51 Technical Documentation
 This is the source repository for the Voxel51 documentation site - https://beta-docs.voxel51.com
 
 We love pull requests - everything from typos to full Jupyter Notebooks.
@@ -9,10 +9,20 @@ A step above would be setting up local development.
 To install and edit the doc:
 
 1. Make and activate a virtual environment
+
+```python
+# Create a virtual environment named '.venv'
+python3 -m venv .venv
+
+# Activate the virtual environment
+source .venv/bin/activate
+````
+
 2. Be in the root directory of the repo
 3. `pip install -r requirements.txt`
-4. Run `mkdocs serve`
-5.  PARTY!
+4. Run `mkdocs serve` 
+
+If you find errors while executing `mkdocs serve` related to the `docs/api` and `docs/ts_api` folders delete their symlinks and rerun the command. 
 
 To build the API docs along with the general docs you should use build.sh
 

@@ -10,7 +10,7 @@ may conflict with versions already installed on your machine.
 
 ## Creating a virtual environment using `venv` [¶](\#creating-a-virtual-environment-using-venv "Permalink to this headline")
 
-First, identify a suitable Python executable. On many systems, this will be
+First, identify a suitable Python executable. On many systems (like MacOS), this will be
 `python3` , but it may be `python` on other systems instead. To confirm your
 Python version, pass `--version` to Python. Here is example output from running
 these commands:
@@ -27,20 +27,25 @@ In this case, `python3` should be used in the next step.
 
 Navigate to a folder where you would like to create the virtual environment.
 Using the suitable Python version you have identified, run the following to
-create a virtual environment called `env` (you can choose any name):
+create a virtual environment called `.venv` (you can choose any name, but .venv is the recommended standard in the Python [documentation](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments)):
 
-```python
-python3 -m venv env
-
+```bash
+# Create a virtual environment
+python3 -m venv .venv
 ```
 
 Replace `python3` at the beginning of a command if your Python executable has a
-different name. This will create a new virtual environment in the `env` folder,
+different name. This will create a new virtual environment in the `.venv` folder,
 with standalone copies of Python and pip, as well as an isolated location to
 install packages to. However, this environment will not be used until it is
 _activated_. To activate the virtual environment, run the following command:
 
-After running this command, your shell prompt should begin with `(env)` , which
+```bash
+# Activate the virtual environment
+source .venv/bin/activate
+```
+
+After running this command, your shell prompt should begin with `(.venv)` , which
 indicates that the virtual environment has been activated. This state will only
 affect your current shell, so if you start a new shell, you will need to
 activate the virtual environment again to use it. When the virtual environment
@@ -54,7 +59,7 @@ Python 3.9.20
 
 ```
 
-Also note that `python` and `pip` live inside the `env` folder (in this output,
+Also note that `python` and `pip` live inside the `.venv` folder (in this output,
 the path to the current folder is replaced with `...`):
 
 Before you continue, you should upgrade `pip` and some related packages in the
@@ -86,7 +91,7 @@ dealing with virtual environments frequently:
 adds some convenient shell support for creating and managing virtual
 environments.
 
-Warning
+## Warning
 
 We currently discourage using `pipenv` with FiftyOne, as it has known issues
 with installing packages from custom package indices.

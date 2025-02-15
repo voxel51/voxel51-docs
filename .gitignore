@@ -138,3 +138,6 @@ dist
 # Symlinks
 docs/ts_api
 docs/api
+
+# Python virtual environment
+.venv/
