@@ -9,10 +9,20 @@ A step above would be setting up local development.
 To install and edit the doc:
 
 1. Make and activate a virtual environment
+
+```python
+# Create a virtual environment named '.venv'
+python3 -m venv .venv
+
+# Activate the virtual environment
+source .venv/bin/activate
+````
+
 2. Be in the root directory of the repo
 3. `pip install -r requirements.txt`
-4. Run `mkdocs serve`
-5.  PARTY!
+4. Run `mkdocs serve` 
+
+If you find errors while executing `mkdocs serve` related to the docs/api and docs/ts_api folders delete them and rerun the command. 
 
 To build the API docs along with the general docs you should use build.sh
 
