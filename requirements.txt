@@ -16,7 +16,7 @@ fastjsonschema==2.21.1
 ghp-import==2.1.0
 idna==3.10
 ipykernel==6.29.5
-ipython==8.31.0
+ipython==8.18.0
 jedi==0.19.2
 Jinja2==3.1.5
 jsonschema==4.23.0
