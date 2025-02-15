@@ -22,7 +22,7 @@ source .venv/bin/activate
 3. `pip install -r requirements.txt`
 4. Run `mkdocs serve` 
 
-If you find errors while executing `mkdocs serve` related to the docs/api and docs/ts_api folders delete them and rerun the command. 
+If you find errors while executing `mkdocs serve` related to the `docs/api` and `docs/ts_api` folders delete their symlinks and rerun the command. 
 
 To build the API docs along with the general docs you should use build.sh
 
