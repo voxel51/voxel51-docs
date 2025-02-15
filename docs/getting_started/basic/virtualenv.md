@@ -27,14 +27,11 @@ In this case, `python3` should be used in the next step.
 
 Navigate to a folder where you would like to create the virtual environment.
 Using the suitable Python version you have identified, run the following to
-create a virtual environment called `.venv` (you can choose any name, but .venv is the recommended in the Python documentation ):
+create a virtual environment called `.venv` (you can choose any name, but .venv is the recommended standard in the Python [documentation](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments)):
 
-```python
+```bash
+# Create a virtual environment
 python3 -m venv .venv
-
-# Activate the virtual environment
-source .venv/bin/activate
-
 ```
 
 Replace `python3` at the beginning of a command if your Python executable has a
@@ -42,6 +39,11 @@ different name. This will create a new virtual environment in the `.venv` folder
 with standalone copies of Python and pip, as well as an isolated location to
 install packages to. However, this environment will not be used until it is
 _activated_. To activate the virtual environment, run the following command:
+
+```bash
+# Activate the virtual environment
+source .venv/bin/activate
+```
 
 After running this command, your shell prompt should begin with `(.venv)` , which
 indicates that the virtual environment has been activated. This state will only

@@ -1,4 +1,4 @@
-# Beta version of the  Voxel51 Technical Documentation
+# Beta Version of the Voxel51 Technical Documentation
 This is the source repository for the Voxel51 documentation site - https://beta-docs.voxel51.com
 
 We love pull requests - everything from typos to full Jupyter Notebooks.
