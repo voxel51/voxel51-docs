@@ -91,7 +91,7 @@ dealing with virtual environments frequently:
 adds some convenient shell support for creating and managing virtual
 environments.
 
-Warning
+## Warning
 
 We currently discourage using `pipenv` with FiftyOne, as it has known issues
 with installing packages from custom package indices.
