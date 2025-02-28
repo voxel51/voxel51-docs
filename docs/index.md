@@ -1,6 +1,7 @@
-# FiftyOne [¶](\#fiftyone "Permalink to this headline")
+# FiftyOne test [¶](\#fiftyone "Permalink to this headline")
 
-**The open-source tool for building high-quality datasets and computer vision models**
+**The open-source tool for building high-quality datasets and computer vision
+models**
 
 Nothing hinders the success of machine learning systems more than poor quality
 data. And without the right tools, improving a model can be time-consuming and
@@ -92,7 +93,9 @@ to learn about new features as they come out.
 
 ### Curating datasets
 
-Surveys show that machine learning engineers spend over half of their time wrangling data, but it doesn't have to be that way. Use FiftyOne's powerful dataset import and manipulation capabilities to manage your data with ease.
+Surveys show that machine learning engineers spend over half of their time
+wrangling data, but it doesn't have to be that way. Use FiftyOne's powerful
+dataset import and manipulation capabilities to manage your data with ease.
 
 [Learn how to load data into FiftyOne](fiftyone_concepts/dataset_creation/index.md)
 
@@ -100,7 +103,9 @@ Surveys show that machine learning engineers spend over half of their time wrang
 
 ### Evaluating models
 
-Aggregate metrics alone don’t give you the full picture of your ML models. In practice, the limiting factor on your model’s performance is often data quality issues that you need to see to address. FiftyOne makes it easy to do just that.
+Aggregate metrics alone don’t give you the full picture of your ML models. In
+practice, the limiting factor on your model’s performance is often data quality
+issues that you need to see to address. FiftyOne makes it easy to do just that.
 
 [See how to evaluate models with FiftyOne](tutorials/evaluate_detections.ipynb)
 
@@ -108,7 +113,10 @@ Aggregate metrics alone don’t give you the full picture of your ML models. In 
 
 ### Visualizing embeddings
 
-Are you using embeddings to analyze your data and models? Use FiftyOne's embeddings visualization capabilities to reveal hidden structure in you data, mine hard samples, pre-annotate data, recommend new samples for annotation, and more.
+Are you using embeddings to analyze your data and models? Use FiftyOne's
+embeddings visualization capabilities to reveal hidden structure in you data,
+mine hard samples, pre-annotate data, recommend new samples for annotation, and
+more.
 
 [Experience the power of embeddings](tutorials/image_embeddings.ipynb)
 
@@ -116,7 +124,10 @@ Are you using embeddings to analyze your data and models? Use FiftyOne's embeddi
 
 ### Working with geolocation
 
-Many datasets have location metadata, but visualizing location-based datasets has traditionally required closed source or cloud-based tools. FiftyOne provides native support for storing, visualizing, and querying datasets by location.
+Many datasets have location metadata, but visualizing location-based datasets
+has traditionally required closed source or cloud-based tools. FiftyOne
+provides native support for storing, visualizing, and querying datasets by
+location.
 
 [Visualize your location data](fiftyone_concepts/plots.md#geolocation-plots)
 
@@ -124,7 +135,9 @@ Many datasets have location metadata, but visualizing location-based datasets ha
 
 ### Finding annotation mistakes
 
-Annotations mistakes create an artificial ceiling on the performance of your model. However, finding these mistakes by hand is not feasible! Use FiftyOne to automatically identify possible label mistakes in your datasets.
+Annotations mistakes create an artificial ceiling on the performance of your
+model. However, finding these mistakes by hand is not feasible! Use FiftyOne to
+automatically identify possible label mistakes in your datasets.
 
 [Check out the label mistakes tutorial](tutorials/classification_mistakes.ipynb)
 
@@ -132,7 +145,9 @@ Annotations mistakes create an artificial ceiling on the performance of your mod
 
 ### Removing redundant images
 
-During model training, the best results will be seen when training on unique data. Use FiftyOne to automatically remove duplicate or near-duplicate images from your datasets and curate diverse training datasets from your raw data.
+During model training, the best results will be seen when training on unique
+data. Use FiftyOne to automatically remove duplicate or near-duplicate images
+from your datasets and curate diverse training datasets from your raw data.
 
 [Try the image uniqueness tutorial](tutorials/uniqueness.ipynb)
 
@@ -173,7 +188,8 @@ your datasets. FiftyOne supports loading datasets in a variety of common
 formats out-of-the-box, and it also provides the extensibility to load
 datasets in custom formats.
 
-Check out [loading datasets](fiftyone_concepts/dataset_creation/index.md) to see
+Check out [loading datasets](fiftyone_concepts/dataset_creation/index.md) to
+see
 how to load your data into FiftyOne.
 
 ### FiftyOne App [¶](\#fiftyone-app "Permalink to this headline")
@@ -213,7 +229,8 @@ With plugins, you can add new functionality to the FiftyOne App, create
 integrations with other tools and APIs, render custom panels, and add custom
 buttons to menus.
 
-With [FiftyOne Teams](teams/teams_plugins.md#teams-delegated-operations), you can even write
+With [FiftyOne Teams](teams/teams_plugins.md#teams-delegated-operations), you
+can even write
 plugins that allow users to execute long-running tasks from within the App that
 run on a connected compute cluster.
 
@@ -285,19 +302,22 @@ Where should you go from here? You could…
 - [Install FiftyOne](getting_started/basic/install.md#installing-fiftyone)
 
 - Try one of the [tutorials](tutorials/index.md) that demonstrate the unique
-capabilities of FiftyOne
+  capabilities of FiftyOne
 
 - Explore [recipes](how_do_i/recipes/index.md) for integrating FiftyOne into
-your current ML workflows
+  your current ML workflows
 
-- Check out the [cheat sheets](how_do_i/cheat_sheets/index.md) for topics you may
-want to master quickly
+- Check out the [cheat sheets](how_do_i/cheat_sheets/index.md) for topics you
+  may
+  want to master quickly
 
-- Consult the [user guide](fiftyone_concepts/index.md) for detailed instructions on
-how to accomplish various tasks with FiftyOne
+- Consult the [user guide](fiftyone_concepts/index.md) for detailed
+  instructions on
+  how to accomplish various tasks with FiftyOne
 
 ## Need Support? [¶](\#need-support "Permalink to this headline")
 
 If you run into any issues with FiftyOne or have any burning questions, feel
-free to [connect with us on Discord](https://community.voxel51.com) or reach out to
+free to [connect with us on Discord](https://community.voxel51.com) or reach
+out to
 us at [support@voxel51.com](mailto:support%40voxel51.com).
