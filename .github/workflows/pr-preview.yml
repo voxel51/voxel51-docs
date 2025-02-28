@@ -1,0 +1,41 @@
+name: Deploy PR previews
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install python dependencies
+        if: github.event.action != 'closed'
+        run: |
+          python -m venv .venv && \
+          . .venv/bin/activate && \
+          pip install -r requirements.txt
+
+      - name: Install NPM dependencies
+        if: github.event.action != 'closed'
+        run: yarn install
+
+      - name: Build Docs
+        if: github.event.action != 'closed'
+        run: |
+          ./build.sh --venv ./.venv/bin/activate
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./site/
