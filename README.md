@@ -24,7 +24,7 @@ To install and edit the general docs doc:
 ````
 2. Be in the root directory of the repo
 3. `pip install -r requirements.txt`
-4. Run `mkdocs serve --dirty`. The --dirty flag specifies that if you edit a single file, mkdocs serve will only rebuild that one file rather than the entire documentation site. To do a clean build and force mkdocs to build everything run `mkdocs server`. Clean is the default behavior.
+4. Run `mkdocs serve --dirty`. The --dirty flag specifies that if you edit a single file, mkdocs serve will only rebuild that one file rather than the entire documentation site. To do a clean build and force mkdocs to build everything run `mkdocs serve`. Clean is the default behavior.
 5.  PARTY!
 
 If you find errors while executing `mkdocs serve` related to the `docs/api` and `docs/ts_api` folders delete their symlinks and rerun the command. 

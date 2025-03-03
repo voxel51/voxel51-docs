@@ -27,54 +27,56 @@ VERSION="1.3"
 REPO_URL="https://github.com/voxel51/fiftyone.git"
 VENV_ACTIVATE="${HOME}/virtualenvs/vdoc-mkdocs/bin/activate"
 
-# Parse command line arguments
-while [[ $# -gt 0 ]]; do
-    case $1 in
-        -h|--help)
-            show_usage
-            exit 0
-            ;;
-        -v|--verbose)
-            VERBOSE=1
-            set -x  # Enable bash debug mode
-            shift
-            ;;
-        --skip-clone)
-            SKIP_CLONE=1
-            shift
-            ;;
-        --version)
-            VERSION="$2"
-            shift 2
-            ;;
-        --repo-url)
-            REPO_URL="$2"
-            shift 2
-            ;;
-        --venv)
-            VENV_ACTIVATE="$2"
-            shift 2
-            ;;
-        --skip-python-api)
-            SKIP_PYTHON_API=1
-            shift
-            ;;
-        --skip-ts-api)
-            SKIP_TS_API=1
-            shift
-            ;;
-        --skip-all-api)
-            SKIP_PYTHON_API=1
-            SKIP_TS_API=1
-            shift
-            ;;
-        *)
-            log_error "Unknown option: $1"
-            show_usage
-            exit 1
-            ;;
-    esac
-done
+parse_args() {
+    # Parse command line arguments
+    while [[ $# -gt 0 ]]; do
+        case $1 in
+            -h|--help)
+                show_usage
+                exit 0
+                ;;
+            -v|--verbose)
+                VERBOSE=1
+                set -x  # Enable bash debug mode
+                shift
+                ;;
+            --skip-clone)
+                SKIP_CLONE=1
+                shift
+                ;;
+            --version)
+                VERSION="$2"
+                shift 2
+                ;;
+            --repo-url)
+                REPO_URL="$2"
+                shift 2
+                ;;
+            --venv)
+                VENV_ACTIVATE="$2"
+                shift 2
+                ;;
+            --skip-python-api)
+                SKIP_PYTHON_API=1
+                shift
+                ;;
+            --skip-ts-api)
+                SKIP_TS_API=1
+                shift
+                ;;
+            --skip-all-api)
+                SKIP_PYTHON_API=1
+                SKIP_TS_API=1
+                shift
+                ;;
+            *)
+                log_error "Unknown option: $1"
+                show_usage
+                exit 1
+                ;;
+        esac
+    done
+}
 
 # Logging functions
 log_info() {
@@ -157,8 +159,12 @@ check_dependencies() {
 # Function to check and activate virtual environment
 check_venv() {
     if [ ! -f "$VENV_ACTIVATE" ]; then
-        log_error "Virtual environment activation script not found at: $VENV_ACTIVATE"
-        exit 1
+        # Try again with /bin/activate
+        VENV_ACTIVATE="$VENV_ACTIVATE/bin/activate"
+        if [ ! -f "$VENV_ACTIVATE" ]; then
+            log_error "Virtual environment activation script not found at: $VENV_ACTIVATE"
+            exit 1
+        fi
     fi
     log_info "Activating virtual environment..."
     # shellcheck source=/dev/null
@@ -170,6 +176,8 @@ check_venv() {
 
 # Main execution starts here
 main() {
+    parse_args "$@"
+
     log_info "Starting documentation build process..."
 
     # Check and activate virtual environment

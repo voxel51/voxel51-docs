@@ -119,8 +119,8 @@ nav:
       - Developing Plugins: plugins/developing_plugins.md
   - Integrations:
     - integrations/index.md
-  - References:
-      - references/index.md
+  - API References:
+      - api_references/index.md
       - Python API: api/index.html
       - TypeScript API: ts_api/index.html
       - CLI: cli/index.md
