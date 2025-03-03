@@ -33,7 +33,8 @@ If you find errors while executing `mkdocs serve` related to the `docs/api` and 
 To buid the entire doc site (only been test on Linux)
 1. Follow steps 1-3 above
 2. `./build.sh --venv <location of the venv you created in step 1 above>`
-3. Celebration!
+3. Run `mkdocs serve`
+4. Celebration!
 
 To build the API docs along with the general docs you should use build.sh
 
