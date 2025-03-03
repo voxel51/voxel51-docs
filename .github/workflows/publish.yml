@@ -4,9 +4,12 @@ on:
   push:
     branches:
       - main
-    paths:
-      - .github/workflows/web-app-build.yaml
-      - docs/**
+    paths-ignore:
+      - CONTRIBUTING.md
+      - GETTING_STARTED_FORMAT.md
+      - LICENSE
+      - README.md
+      - .gitignore
 
 env:
   BUILT_DOCS_DIR: site/
@@ -39,7 +42,7 @@ jobs:
           python -m venv .venv && \
           . .venv/bin/activate && \
           pip install -r requirements.txt
-      
+
       - name: Install NPM dependencies
         run: yarn install
 
