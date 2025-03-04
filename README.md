@@ -7,6 +7,8 @@ We love pull requests - everything from typos to full Jupyter Notebooks.
 At its most simple, you can fork the repo in GitHub, make and commit your edits, and then open a PR.
 A step above would be setting up local development.
 
+## Editing the markdown documentation (under /docs)
+
 To install and edit the general docs doc:
 
 1. Make and activate a virtual environment, we recommend you to use **Python 3.11** for this.
@@ -31,6 +33,8 @@ To install and edit the general docs doc:
 
 If you find errors while executing `mkdocs serve` related to the `docs/api` and `docs/ts_api` folders delete their symlinks and rerun the command.
 
+## Building the Entire Site
+
 To build the entire doc site (only been test on Linux)
 
 1. Follow steps 1-3 above
@@ -49,6 +53,8 @@ that will allow you to serve up the directory as a web site.
 3. Celebration!
 
 To build the API docs along with the general docs you should use build.sh
+
+## Contributing
 
 Please be sure to read our [CONTRIBUTING guide](CONTRIBUTING.md).
 
