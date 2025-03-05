@@ -1,5 +1,5 @@
-body {
-  font-family: "Palanquin", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+body, p {
+  font-family: "Inter", Arial, sans-serif;
 }
 
 .navbar-default.mainnavbar {
