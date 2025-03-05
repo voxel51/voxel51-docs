@@ -23,7 +23,7 @@ VERBOSE=0
 SKIP_CLONE=0
 SKIP_PYTHON_API=0
 SKIP_TS_API=0
-VERSION="1.3"
+VERSION="1.3.0"
 REPO_URL="https://github.com/voxel51/fiftyone.git"
 VENV_ACTIVATE="${HOME}/virtualenvs/vdoc-mkdocs/bin/activate"
 
