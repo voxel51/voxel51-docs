@@ -9,3 +9,9 @@ body, p {
 .navbar-default.mainnavbar .navlinks a {
 	color: white !important;
 }
+
+.api-logo {
+	display: inline;
+	max-width: 24px;
+	height: auto;
+}
