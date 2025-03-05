@@ -1,0 +1,12 @@
+body {
+  font-family: "Palanquin", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar-default {
+	background-color: rgba(255, 109, 4, 1);
+}
+
+.navbar-default.mainnavbar a,
+.navbar-default.mainnavbar p {
+	color: white !important;
+}
