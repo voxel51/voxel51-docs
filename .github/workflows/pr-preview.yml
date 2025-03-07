@@ -10,32 +10,50 @@ on:
 
 concurrency: preview-${{ github.ref }}
 
+env:
+  BUILT_DOCS_DIR: site/
+  PREVIEW_BASE_URL: https://beta-docs.dev.fiftyone.ai
+
 jobs:
   deploy-preview:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    if: ${{ github.event.action != 'closed' }}
+    permissions:
+      contents: read
+      id-token: write
+    id: publish
+    uses: ./.github/workflows/_publish.yml
+    with:
+      src-dir: ${{ env.BUILT_DOCS_DIR }}
+      dest-dir: pr-${{ github.event.number }}
+    secrets: inherit
 
-      - name: Install python dependencies
-        if: github.event.action != 'closed'
-        run: |
-          python -m venv .venv && \
-          . .venv/bin/activate && \
-          pip install -r requirements.txt
+  leave-pr-comment:
+    needs: publish
+    permissions:
+      pull-requests: write
+    uses: marocchino/sticky-pull-request-comment@v2
+    with:
+      header: pr-preview
+      message: |
+        View preview at <br> ${{ env.PREVIEW_BASE_URL }}/pr-${{ github.event.number }}/index.html <br>
 
-      - name: Install NPM dependencies
-        if: github.event.action != 'closed'
-        run: yarn install
+  clean-deployment:
+    if: ${{ github.event.action == 'closed' }}
+    permissions:
+      contents: read
+      id-token: write
+    id: clean-deployment
+    uses: ./.github/workflows/_clean_deployment.yml
+    with:
+      path: pr-${{ github.event.number }}
+    secrets: inherit
 
-      - name: Build Docs
-        if: github.event.action != 'closed'
-        run: |
-          ./build.sh --venv ./.venv/bin/activate
-        env:
-          NODE_OPTIONS: --max-old-space-size=4096
-
-      - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
-        with:
-          source-dir: ./site/
+  update-pr-comment:
+    needs: clean-deployment
+    permissions:
+      pull-requests: write
+    uses: marocchino/sticky-pull-request-comment@v2
+    with:
+      header: pr-preview
+      message: |
+        The preview for this PR has been removed

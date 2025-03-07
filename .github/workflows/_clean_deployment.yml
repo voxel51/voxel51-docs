@@ -1,0 +1,42 @@
+name: Clean Docs Deployment
+
+on:
+  workflow_call:
+    inputs:
+      path:
+        type: string
+        required: true
+    secrets:
+      GCP_DOCS_PROJECT:
+        required: true
+      GCP_DOCS_SERVICE_ACCOUNT:
+        required: true
+      GOOGLE_WORKLOAD_IDP_SECRET_NAME:
+        required: true
+      GCP_DOCS_LOCATION:
+        required: true
+
+jobs:
+  clean-deployment:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      # we don't actually need the code, but google-github-actions/auth requires this for auth to work
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          project_id: ${{ secrets.GCP_DOCS_PROJECT }}
+          service_account: ${{ secrets.GCP_DOCS_SERVICE_ACCOUNT }}
+          workload_identity_provider: ${{ secrets.GOOGLE_WORKLOAD_IDP_SECRET_NAME }}
+
+      - name: Setup Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Clean up deployment
+        run: |
+          gsutil rm -r ${{ secrets.GCP_DOCS_LOCATION }}/${{ inputs.path }}

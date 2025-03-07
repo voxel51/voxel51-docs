@@ -1,0 +1,67 @@
+name: Publish Voxel51 Docs
+
+on:
+  workflow_call:
+    inputs:
+      src-dir:
+        type: string
+        required: true
+      dest-dir:
+        type: string
+        required: false
+    secrets:
+      GCP_DOCS_PROJECT:
+        required: true
+      GCP_DOCS_SERVICE_ACCOUNT:
+        required: true
+      GOOGLE_WORKLOAD_IDP_SECRET_NAME:
+        required: true
+      GCP_DOCS_LOCATION:
+        required: true
+
+jobs:
+  publish-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          project_id: ${{ secrets.GCP_DOCS_PROJECT }}
+          service_account: ${{ secrets.GCP_DOCS_SERVICE_ACCOUNT }}
+          workload_identity_provider: ${{ secrets.GOOGLE_WORKLOAD_IDP_SECRET_NAME }}
+
+      - name: Setup Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install python dependencies
+        run: |
+          python -m venv .venv && \
+          . .venv/bin/activate && \
+          pip install -r requirements.txt
+
+      - name: Install NPM dependencies
+        run: yarn install
+
+      - name: Build Docs
+        run: |
+          ./build.sh --venv ./.venv/bin/activate
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+
+      - name: Sync to bucket
+        uses: google-github-actions/upload-cloud-storage@v2
+        with:
+          path: ${{ inputs.src-dir }}
+          destination: ${{ secrets.GCP_DOCS_LOCATION }}/${{ inputs.dest-dir }}
+          parent: false
