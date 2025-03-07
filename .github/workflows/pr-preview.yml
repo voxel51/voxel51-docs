@@ -11,7 +11,6 @@ on:
 concurrency: preview-${{ github.ref }}
 
 env:
-  BUILT_DOCS_DIR: site/
   PREVIEW_BASE_URL: https://beta-docs.dev.fiftyone.ai
 
 jobs:
@@ -22,7 +21,7 @@ jobs:
       id-token: write
     uses: ./.github/workflows/_publish.yml
     with:
-      src-dir: ${{ env.BUILT_DOCS_DIR }}
+      src-dir: site/
       dest-dir: pr-${{ github.event.number }}
     secrets: inherit
 

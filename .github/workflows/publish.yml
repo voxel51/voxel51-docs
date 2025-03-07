@@ -11,9 +11,6 @@ on:
       - README.md
       - .gitignore
 
-env:
-  BUILT_DOCS_DIR: site/
-
 jobs:
   publish-docs:
     permissions:
@@ -21,5 +18,5 @@ jobs:
       id-token: write
     uses: ./.github/workflows/_publish.yml
     with:
-      src-dir: ${{ env.BUILT_DOCS_DIR }}
+      src-dir: site/
     secrets: inherit
