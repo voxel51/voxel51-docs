@@ -37,7 +37,7 @@ jobs:
         with:
           header: pr-preview
           message: |
-          View preview at <br> ${{ env.PREVIEW_BASE_URL }}/pr-${{ github.event.number }}/index.html <br>
+            View preview at <br> ${{ env.PREVIEW_BASE_URL }}/pr-${{ github.event.number }}/index.html <br>
 
   clean-deployment:
     if: ${{ github.event.action == 'closed' }}
