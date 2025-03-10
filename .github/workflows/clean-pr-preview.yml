@@ -1,0 +1,30 @@
+name: Clean PR preview
+
+on:
+  pull_request:
+    types:
+      - closed
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  clean-deployment:
+    permissions:
+      contents: read
+      id-token: write
+    uses: ./.github/workflows/_clean_deployment.yml
+    with:
+      path: pr-${{ github.event.number }}
+    secrets: inherit
+
+  update-pr-comment:
+    needs: clean-deployment
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: pr-preview
+          message: |
+            The preview for this PR has been removed
