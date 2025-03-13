@@ -34,9 +34,31 @@ markdown_extensions:
 plugins:
   - search:
       lang: en
-  - mkdocs-jupyter:
-      include_requirejs: true # required for plotly
-      ignore: ["tutorials/evaluate_classifications.ipynb", "tutorials/image_embeddings.ipynb"] # this may need to be reformatted
+  - gen-files:
+      scripts:
+        - scripts/gen_ref_pages.py
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [temp_workspace/fiftyone]
+          options:
+            show_bases: true
+            group_by_category: true
+            summary: true
+            # might not want
+            show_labels: true
+            docstring_style: sphinx
+            # docstring_options https://mkdocstrings.github.io/griffe/reference/docstrings/#google-style
+            # There are a lot of options under here https://mkdocstrings.github.io/griffe/reference/docstrings/#google-style
+            annotations_path: full
+            show_signature_annotations: true
+            separate_signature: true
+
+
+#  - mkdocs-jupyter:
+#      include_requirejs: true # required for plotly
+#      ignore: ["tutorials/evaluate_classifications.ipynb", "tutorials/image_embeddings.ipynb"] # this may need to be reformatted
       # include_source: True if we want to ease making a download button
       # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#download-notebook-link
       # execute: true  if we want to execute the code before rendering

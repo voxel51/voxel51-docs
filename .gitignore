@@ -141,3 +141,4 @@ docs/api
 
 # Python virtual environment
 .venv/
+temp_workspace/
