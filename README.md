@@ -5,13 +5,14 @@ This is the source repository for the Voxel51 documentation site - <https://beta
 We love pull requests - everything from typos to full Jupyter Notebooks.
 
 At its most simple, you can fork the repo in GitHub, make and commit your edits, and then open a PR.
-A step above would be setting up local development.
+
+If you are willing to put in more effort than read on.
 
 ## Editing the markdown documentation (under /docs)
 
 To install and edit the general docs doc:
 
-1. Make and activate a virtual environment, we recommend you to use **Python 3.11** for this.
+1. Make and activate a virtual environment, we recommend  **Python 3.11**.
 
 ```python
 # Create a virtual environment named '.venv'
