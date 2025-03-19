@@ -31,6 +31,8 @@ To install and edit the general docs doc:
 4. Run `mkdocs serve --dirty`. The --dirty flag specifies that if you edit a single file, mkdocs serve will only rebuild that one file rather than the entire documentation site. To do a clean build and force mkdocs to build everything run `mkdocs serve`. Clean is the default behavior.
 5. PARTY!
 
+Please note, jupyter notebooks with external images require the build.sh to be run in order for the images to be visible in the doc rendering.
+
 If you find errors while executing `mkdocs serve` related to the `docs/api` and `docs/ts_api` folders delete their symlinks and rerun the command.
 
 ## Building the Entire Site
@@ -39,16 +41,19 @@ To build the entire doc site (only been test on Linux)
 
 1. Follow steps 1-3 above
 2. `./build.sh --venv <location of the venv you created in step 1 above>`
-   3. The script will first clone the fiftyone repo, then build the API docs, then encode and embed images in jupyter
+   
+   1. The script will first clone the fiftyone repo, then build the API docs, then encode and embed images in jupyter
    notebooks, and finally will build the entire site
-   4. You will see a lot of log output with some warnings. Those are expected, ignore for now
-3. The built site will now be in a directory named "site". This directory is sister directory to the
+   2. You will see a lot of log output with some warnings. Those are expected, ignore for now
+      
+4. The built site will now be in a directory named "site". This directory is sister directory to the
 docs directory
-4. To get the site to render properly you need to open it in a web server. Most IDEs have a built in web server
+5. To get the site to render properly you need to open it in a web server. Most IDEs have a built in web server
 that will allow you to serve up the directory as a web site.
-   5. VSCode has Live Preview - <https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server>
-   6. Jetbrains products has a live preview as well - <https://www.jetbrains.com/help/idea/editing-html-files.html>
-   7. If you already have python on your machine, at the terminal, change into the `site` directory and execute the following
+
+   - VSCode has Live Preview - <https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server>
+   - Jetbrains products has a live preview as well - <https://www.jetbrains.com/help/idea/editing-html-files.html>
+   - If you already have python on your machine, at the terminal, change into the `site` directory and execute the following
    command `python3 -m http.server`. This will spin up a simple web server.
 3. Celebration!
 
