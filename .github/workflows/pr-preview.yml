@@ -3,15 +3,18 @@ name: Deploy PR previews
 on:
   pull_request:
     types:
-      - opened
-      - reopened
-      - synchronize
       - closed
+
+  pull_request_review:
+    types: [submitted]
 
 concurrency: preview-${{ github.ref }}
 
 jobs:
   deploy-preview:
+    if: |
+      (github.event_name == 'pull_request_review' && github.event.review.state == 'approved') ||
+      (github.event_name == 'pull_request' && github.event.action == 'closed')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
