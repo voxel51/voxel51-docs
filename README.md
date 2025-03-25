@@ -1,5 +1,4 @@
 # Beta Version of the Voxel51 Technical Documentation
-TEST PR
 
 This is the source repository for the Voxel51 documentation site - <https://beta-docs.voxel51.com>
 
