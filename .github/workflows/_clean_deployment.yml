@@ -39,4 +39,4 @@ jobs:
 
       - name: Clean up deployment
         run: |
-          gsutil rm -r ${{ secrets.GCP_DOCS_LOCATION }}/${{ inputs.path }}
+          gsutil rm -r gs://${{ secrets.GCP_DOCS_LOCATION }}/${{ inputs.path }}
