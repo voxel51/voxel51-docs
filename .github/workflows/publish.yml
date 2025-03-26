@@ -19,4 +19,5 @@ jobs:
     uses: ./.github/workflows/_publish.yml
     with:
       src-dir: site/
+      secret-key: GCP_DOCS_LOCATION
     secrets: inherit

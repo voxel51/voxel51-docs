@@ -9,8 +9,13 @@ on:
       dest-dir:
         type: string
         required: false
+      secret-key:
+        type: string
+        required: false
     secrets:
       GCP_DOCS_PROJECT:
+        required: true
+      GCP_PREVIEW_DOCS_PROJECT:
         required: true
       GCP_DOCS_SERVICE_ACCOUNT:
         required: true
@@ -63,5 +68,5 @@ jobs:
         uses: google-github-actions/upload-cloud-storage@v2
         with:
           path: ${{ inputs.src-dir }}
-          destination: ${{ secrets.GCP_DOCS_LOCATION }}/${{ inputs.dest-dir }}
+          destination: ${{ secrets[github.event.inputs.secret-key] }}/${{ inputs.dest-dir }}
           parent: false
