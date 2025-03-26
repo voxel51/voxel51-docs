@@ -7,10 +7,10 @@ on:
       src-dir:
         type: string
         required: true
-      dest-dir:
-        type: string
-        required: false
       secret-key:
+        type: string
+        required: true
+      dest-dir:
         type: string
         required: false
     secrets:
@@ -69,5 +69,5 @@ jobs:
         uses: google-github-actions/upload-cloud-storage@v2
         with:
           path: ${{ inputs.src-dir }}
-          destination: ${{ secrets[github.event.inputs.secret-key] }}/${{ inputs.dest-dir }}
+          destination: ${{ secrets[inputs.secret-key] }}/${{ inputs.dest-dir }}
           parent: false
