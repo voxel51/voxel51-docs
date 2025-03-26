@@ -11,7 +11,7 @@ on:
 concurrency: preview-${{ github.ref }}
 
 env:
-  PREVIEW_BASE_URL: https://preview-docs.voxel51.com/previews
+  PREVIEW_BASE_URL: https://preview-docs.voxel51.com
 
 jobs:
   deploy-preview:
