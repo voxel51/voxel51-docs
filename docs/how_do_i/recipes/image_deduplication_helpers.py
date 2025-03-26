@@ -19,6 +19,7 @@ A random 5% of the samples are duplicates, instead of the original samples.
 | `voxel51.com <https://voxel51.com/>`_
 |
 """
+
 import os
 import random
 
@@ -140,13 +141,8 @@ FINE_CLASSES = [
 
 
 def download_dataset():
-    print(
-        "Downloading dataset of %d samples to:\n\t%s"
-        % (DATASET_SIZE, DATASET_DIR)
-    )
-    print(
-        "and corrupting the data (%d%% duplicates)" % (100 * CORRUPTION_RATE)
-    )
+    print("Downloading dataset of %d samples to:\n\t%s" % (DATASET_SIZE, DATASET_DIR))
+    print("and corrupting the data (%d%% duplicates)" % (100 * CORRUPTION_RATE))
 
     # if not empty, delete current contents
     etau.ensure_empty_dir(DATASET_DIR, cleanup=True)
