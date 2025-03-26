@@ -16,13 +16,13 @@ on:
     secrets:
       GCP_DOCS_PROJECT:
         required: true
-      GCP_PREVIEW_DOCS_PROJECT:
-        required: true
       GCP_DOCS_SERVICE_ACCOUNT:
         required: true
       GOOGLE_WORKLOAD_IDP_SECRET_NAME:
         required: true
       GCP_DOCS_LOCATION:
+        required: true
+      GCP_PREVIEW_DOCS_LOCATION:
         required: true
 
 jobs:
