@@ -14,7 +14,6 @@ rerunning the FiftyOne install. So, try this first before reading on:
 ```python
 pip install --upgrade pip setuptools wheel build
 pip install fiftyone
-
 ```
 
 ## Python/pip incompatibilities [¶](\#python-pip-incompatibilities "Permalink to this headline")
@@ -27,18 +26,15 @@ old, you may encounter errors like these:
 ```python
 ERROR: Could not find a version that satisfies the requirement fiftyone (from versions: none)
 ERROR: No matching distribution found for fiftyone
-
 ```
 
 ```python
 Could not find a version that satisfies the requirement fiftyone-brain (from versions: )
 No matching distribution found for fiftyone-brain
-
 ```
 
 ```python
 fiftyone requires Python '>=3.9' but the running Python is 3.4.10
-
 ```
 
 To resolve this, you will need to use Python 3.9 or newer, and pip 19.3 or
@@ -103,19 +99,16 @@ may encounter errors such as:
 
 ```python
 .../IPython/core/interactiveshell.py:935: UserWarning: Attempting to work in a virtualenv. If you encounter problems, please install IPython inside the virtualenv.
-
 ```
 
 ```python
 File ".../fiftyone/core/../_service_main.py", line 29, in <module>
     import psutil
 ModuleNotFoundError: No module named 'psutil'
-
 ```
 
 ```python
 ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused
-
 ```
 
 To resolve this, install IPython in your active virtual environment (see the
@@ -123,7 +116,6 @@ To resolve this, install IPython in your active virtual environment (see the
 
 ```python
 pip install ipython
-
 ```
 
 ## Import and database issues [¶](\#import-and-database-issues "Permalink to this headline")
@@ -150,14 +142,12 @@ VERSION=0.7.0
 pip install fiftyone==0.7.3
 fiftyone migrate --all -v $VERSION
 pip install fiftyone==$VERSION
-
 ```
 
 To install a FiftyOne version prior to v0.7.0, you must add `--index`:
 
 ```python
 pip install --index https://pypi.voxel51.com fiftyone==<version>
-
 ```
 
 ## Database exits [¶](\#database-exits "Permalink to this headline")
@@ -192,7 +182,6 @@ On Ubuntu, `libssl` packages can be install with the following command:
 
 ```python
 sudo apt install libssl-dev
-
 ```
 
 If you still face issues with imports, you can follow
@@ -206,7 +195,6 @@ If your encounter a `psutil.NoSuchProcessExists` exists when importing
 
 ```python
 psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=XXXX)
-
 ```
 
 Downloading and installing the Microsoft Visual C++ Redistributable from this
@@ -224,22 +212,19 @@ menu. Once the Developer Tools pop out is open, click the <kbd>Console</kbd>
 tab. If you see an error similar to:
 
 ??? info "No Content in Jupyter Notebook"
-
     If using a Jupyter Notebook, you should check using a web browser using the
     same process above to see if the same error is shown.
 
-```
+```txt
 Failed to load module script: Expected a JavaScript module script but the
 server responded with a MIME type of "text/plain". Strict MIME type checking
 is enforced for module scripts per HTML spec.
-
 ```
 
 This is likely due to a registry misconfiguration. This can be remedied by
 modifying a few keys in the Windows Registry.
 
 !!! danger
-
     Modifying the Windows Registry can have **serious** consequences if done
     incorrectly. Make sure to back up the registry before making any changes as
     incorrect changes to the registry can cause system instability or even

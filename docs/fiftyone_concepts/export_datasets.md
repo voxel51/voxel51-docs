@@ -991,7 +991,6 @@ the image in a nested subfolder of `data/`
 
 - An absolute path to an image, which may or may not be in the `data/` folder
 
-
 Note
 
 See [`COCODetectionDatasetExporter`](../api/fiftyone.utils.coco.html#fiftyone.utils.coco.COCODetectionDatasetExporter "fiftyone.utils.coco.COCODetectionDatasetExporter")
@@ -1658,7 +1657,6 @@ of the corresponding images, which can be any of the following:
 the image in a nested subfolder of `data/`
 
 - An absolute path to an image, which may or may not be in the `data/` folder
-
 
 Note
 

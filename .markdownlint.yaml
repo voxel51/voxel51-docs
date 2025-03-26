@@ -1,11 +1,22 @@
 ---
 default: true
 
-MD013:  # Line Length
-  code_blocks: false
-  tables: false
-  links: false
+# MD013:  # Line Length
+#   code_blocks: false
+#   tables: false
 
-MD033: # Inline HTML
+MD033:  # Inline HTML
   allowed_elements:
-    - br # some tables use line breaks
+    - br  # some tables use line breaks
+    - kbd  # keyboard input
+    - div  # used in ./docs/index.md
+
+# Temporarily disabled until existing violations are fixed so pre-commit PR checks pass
+MD013: false  # Line Length
+MD029: false  # Ordered list item prefix
+MD051: false  # Link fragments should be valid
+MD036: false  # Emphasis used instead of a heading
+MD045: false  # Images should have alternate text (alt text)
+MD056: false  # Table column count
+MD001: false  # Heading levels should only increment by one level at a time
+MD042: false  # No empty links

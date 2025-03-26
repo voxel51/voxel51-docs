@@ -1,3 +1,4 @@
+---
 site_name: Voxel51 Documentation
 theme:
   name: material
@@ -38,12 +39,14 @@ plugins:
   - search:
       lang: en
   - mkdocs-jupyter:
-      include_requirejs: true  # required for plotly
-      ignore: ["tutorials/evaluate_classifications.ipynb", "tutorials/image_embeddings.ipynb"]  # this may need to be reformatted
-      # include_source: True if we want to ease making a download button
-      # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#download-notebook-link
-      # execute: true  if we want to execute the code before rendering
-      # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#execute-notebook
+      include_requirejs: true # required for plotly
+      ignore: # this may need to be reformatted
+        - "tutorials/evaluate_classifications.ipynb"
+        - "tutorials/image_embeddings.ipynb"
+        # include_source: True if we want to ease making a download button
+        # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#download-notebook-link
+        # execute: true  if we want to execute the code before rendering
+        # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#execute-notebook
 
 extra:
   version:
@@ -55,78 +58,78 @@ extra_css:
 nav:
   - Home: index.md
   - Getting started:
-      - getting_started/index.md
+    - getting_started/index.md
+    - Installing: getting_started/basic/install.md
+    - Basics:
+      - getting_started/basic/index.md
       - Installing: getting_started/basic/install.md
-      - Basics:
-        - getting_started/basic/index.md
-        - Installing: getting_started/basic/install.md
-        - Virtualenvs: getting_started/basic/virtualenv.md
-        - Datasets, Samples, and Fields: getting_started/basic/datasets_samples_fields.md
-        - Tour of the Application: getting_started/basic/application_tour.md
-        - Visualizing Embeddings: getting_started/basic/viz_embeddings.md
-        - Subsetting and Sample Data: getting_started/basic/subset_sample.md
-        - Zero Shot Classification for Labeling: getting_started/basic/zero_shot_label.md
-        - Creating and Editing Fields and Labels: getting_started/basic/edit_fields.md
-        - Model Fine-Tuning: getting_started/basic/fine_tuning.md
-        - Model Evaluation: getting_started/basic/model_eval.md
-        - What's Next: getting_started/basic/next_steps.md
-        - Troubleshooting: getting_started/basic/troubleshooting.md
-      - Focused Getting Starteds:
-        - getting_started/focused_getting_starteds/index.md
-        - Medical Imaging: getting_started/focused_getting_starteds/medical_imaging/index.md
+      - Virtualenvs: getting_started/basic/virtualenv.md
+      - Datasets, Samples, and Fields: getting_started/basic/datasets_samples_fields.md
+      - Tour of the Application: getting_started/basic/application_tour.md
+      - Visualizing Embeddings: getting_started/basic/viz_embeddings.md
+      - Subsetting and Sample Data: getting_started/basic/subset_sample.md
+      - Zero Shot Classification for Labeling: getting_started/basic/zero_shot_label.md
+      - Creating and Editing Fields and Labels: getting_started/basic/edit_fields.md
+      - Model Fine-Tuning: getting_started/basic/fine_tuning.md
+      - Model Evaluation: getting_started/basic/model_eval.md
+      - What's Next: getting_started/basic/next_steps.md
+      - Troubleshooting: getting_started/basic/troubleshooting.md
+    - Focused Getting Starteds:
+      - getting_started/focused_getting_starteds/index.md
+      - Medical Imaging: getting_started/focused_getting_starteds/medical_imaging/index.md
   - FiftyOne Concepts:
-      - fiftyone_concepts/index.md
-      - Basics: fiftyone_concepts/basics.md
-      - Running Environments: fiftyone_concepts/running_environments.md
-      - Loading Data into FiftyOne:
-          - fiftyone_concepts/dataset_creation/index.md
-          - Datasets from Disk: fiftyone_concepts/dataset_creation/datasets.md
-          - Using Sample Parsers: fiftyone_concepts/dataset_creation/samples.md
-      - Using Datasets: fiftyone_concepts/using_datasets.md
-      - Dataset Views: fiftyone_concepts/using_views.md
-      - Grouped Datasets: fiftyone_concepts/groups.md
-      - Using the App: fiftyone_concepts/app.md
-      - Annotating Datasets: fiftyone_concepts/annotation.md
-      - Evaluating Models: fiftyone_concepts/evaluation.md
-      - Using Aggregations: fiftyone_concepts/using_aggregations.md
-      - Interactive Plots: fiftyone_concepts/plots.md
-      - Exporting Datasets: fiftyone_concepts/export_datasets.md
-      - Drawing Labels on Samples: fiftyone_concepts/draw_labels.md
-      - Configuring FiftyOne: fiftyone_concepts/config.md
-      - Machine Learning (FiftyOne Brain): fiftyone_concepts/brain.md
+    - fiftyone_concepts/index.md
+    - Basics: fiftyone_concepts/basics.md
+    - Running Environments: fiftyone_concepts/running_environments.md
+    - Loading Data into FiftyOne:
+      - fiftyone_concepts/dataset_creation/index.md
+      - Datasets from Disk: fiftyone_concepts/dataset_creation/datasets.md
+      - Using Sample Parsers: fiftyone_concepts/dataset_creation/samples.md
+    - Using Datasets: fiftyone_concepts/using_datasets.md
+    - Dataset Views: fiftyone_concepts/using_views.md
+    - Grouped Datasets: fiftyone_concepts/groups.md
+    - Using the App: fiftyone_concepts/app.md
+    - Annotating Datasets: fiftyone_concepts/annotation.md
+    - Evaluating Models: fiftyone_concepts/evaluation.md
+    - Using Aggregations: fiftyone_concepts/using_aggregations.md
+    - Interactive Plots: fiftyone_concepts/plots.md
+    - Exporting Datasets: fiftyone_concepts/export_datasets.md
+    - Drawing Labels on Samples: fiftyone_concepts/draw_labels.md
+    - Configuring FiftyOne: fiftyone_concepts/config.md
+    - Machine Learning (FiftyOne Brain): fiftyone_concepts/brain.md
   - How Do I:
-      - how_do_i/index.md
-      - Cheat Sheets: how_do_i/cheat_sheets/index.md
-      - Recipes: how_do_i/recipes/index.md
+    - how_do_i/index.md
+    - Cheat Sheets: how_do_i/cheat_sheets/index.md
+    - Recipes: how_do_i/recipes/index.md
   - Tutorials: tutorials/index.md
   - Data:
-      - data/index.md
-      - Zoo Datasets:
-          - Dataset Zoo: data/dataset_zoo/index.md
-          - Built-In Zoo Datasets: data/dataset_zoo/datasets.md
-          - Remotely-Sourced Zoo Datasets: data/dataset_zoo/remote.md
-          - Zoo Data API: data/dataset_zoo/api.md
-      - Hugging Face Datasets: data/hugging_face_data.md
+    - data/index.md
+    - Zoo Datasets:
+      - Dataset Zoo: data/dataset_zoo/index.md
+      - Built-In Zoo Datasets: data/dataset_zoo/datasets.md
+      - Remotely-Sourced Zoo Datasets: data/dataset_zoo/remote.md
+      - Zoo Data API: data/dataset_zoo/api.md
+    - Hugging Face Datasets: data/hugging_face_data.md
   - Models:
-      - models/index.md
-      - Zoo Models:
-          - models/model_zoo/index.md
-          - Built-in Models: models/model_zoo/models.md
-          - Remote Models: models/model_zoo/remote.md
-          - Model Interface: models/model_zoo/design.md
-          - API: models/model_zoo/api.md
-      - Hugging Face Models: data/hugging_face_data.md
+    - models/index.md
+    - Zoo Models:
+      - models/model_zoo/index.md
+      - Built-in Models: models/model_zoo/models.md
+      - Remote Models: models/model_zoo/remote.md
+      - Model Interface: models/model_zoo/design.md
+      - API: models/model_zoo/api.md
+    - Hugging Face Models: data/hugging_face_data.md
   - Plugins:
-      - plugins/index.md
-      - Using Plugins: plugins/using_plugins.md
-      - Developing Plugins: plugins/developing_plugins.md
+    - plugins/index.md
+    - Using Plugins: plugins/using_plugins.md
+    - Developing Plugins: plugins/developing_plugins.md
   - Integrations:
     - integrations/index.md
   - API References:
-      - api_references/index.md
-      - Python API: api/index.html
-      - TypeScript API: ts_api/index.html
-      - CLI: cli/index.md
+    - api_references/index.md
+    - Python API: api/index.html
+    - TypeScript API: ts_api/index.html
+    - CLI: cli/index.md
   - Community: community.md
   - FiftyOne Teams: teams/index.md
   - Releases: release-notes.md

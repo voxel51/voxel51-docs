@@ -14,8 +14,10 @@ repos:
     rev: v1.5.5
     hooks:
       - id: forbid-tabs
+        exclude: docs/_static/jquery-3.5.1.js
         exclude_types:
           - makefile
+          - svg
   - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
     rev: v1.1.2
     hooks:
@@ -35,7 +37,16 @@ repos:
       - id: codespell
         args:
           - -Lfo,fom,dota,ative,ment,fot
-        exclude: .*.css
+        exclude: |
+          (?x)^(
+            .*.css|
+            docs/_static/jquery.js|
+            docs/_static/jquery-3.5.1.js|
+            .*.ipynb|
+            docs/_static/underscore-1.12.0.js|
+            docs/assets/main.js|
+            docs/_static/js/vendor/popper.min.js
+          )$
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.37.0
     hooks:
