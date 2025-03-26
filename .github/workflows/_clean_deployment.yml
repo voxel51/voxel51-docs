@@ -14,7 +14,7 @@ on:
         required: true
       GOOGLE_WORKLOAD_IDP_SECRET_NAME:
         required: true
-      GCP_DOCS_LOCATION:
+      GCP_PREVIEW_DOCS_LOCATION:
         required: true
 
 jobs:
