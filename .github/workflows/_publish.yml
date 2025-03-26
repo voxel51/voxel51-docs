@@ -1,4 +1,4 @@
-name: Publish Voxel51 Docs
+name: Composite Publish Voxel51 Docs
 
 on:
   workflow_call:

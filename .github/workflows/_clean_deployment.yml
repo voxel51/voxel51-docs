@@ -1,4 +1,4 @@
-name: Clean Docs Deployment
+name: Composite Clean Docs Deployment
 
 on:
   workflow_call:
