@@ -26,7 +26,6 @@ asdf:  ## Update plugins, add plugins, install plugins, set local, reshim
 	@echo "Reshimming.."
 	@asdf reshim
 
-
 hooks:  ## Install git hooks (pre-commit)
 	@pre-commit install
 	@pre-commit install --hook-type commit-msg
@@ -36,3 +35,17 @@ hooks:  ## Install git hooks (pre-commit)
 
 pre-commit:  ## Run pre-commit against all files
 	@pre-commit run -a
+
+build:  ## Run `mkdocs build` in a poetry virtual environment
+	mkdocs build
+
+serve: ## Run `mkdocs serve` in a poetry virtual environment
+	mkdocs serve
+
+serve-dirty: ## Run `mkdocs serve` in a poetry virtual environment
+	mkdocs serve --dirty
+
+venv:
+	python3 -m venv .venv
+	source .venv/bin/activate
+	pip install -r requirements.txt
