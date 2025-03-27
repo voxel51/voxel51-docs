@@ -11,8 +11,10 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.6
-      - uses: actions/setup-python@v5.2.0
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/setup-python@v5.4.0
+      - name: Temporary SQLite/LZMA - Install missing libraries
+        run: sudo apt install -y libsqlite3-dev libbz2-dev liblzma-dev libreadline-dev
       - name: install asdf & tools
         uses: asdf-vm/actions/install@1117842ea70e2711a0072e3a71265cbfe2c830be
       - uses: pre-commit/action@v3.0.1
