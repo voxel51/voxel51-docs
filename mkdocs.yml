@@ -62,8 +62,6 @@ nav:
     - Installing: getting_started/basic/install.md
     - Basics:
       - getting_started/basic/index.md
-      - Installing: getting_started/basic/install.md
-      - Virtualenvs: getting_started/basic/virtualenv.md
       - Datasets, Samples, and Fields: getting_started/basic/datasets_samples_fields.md
       - Tour of the Application: getting_started/basic/application_tour.md
       - Visualizing Embeddings: getting_started/basic/viz_embeddings.md
@@ -73,12 +71,13 @@ nav:
       - Model Fine-Tuning: getting_started/basic/fine_tuning.md
       - Model Evaluation: getting_started/basic/model_eval.md
       - What's Next: getting_started/basic/next_steps.md
-      - Troubleshooting: getting_started/basic/troubleshooting.md
     - Focused Getting Starteds:
       - getting_started/focused_getting_starteds/index.md
       - Medical Imaging: getting_started/focused_getting_starteds/medical_imaging/index.md
   - FiftyOne Concepts:
     - fiftyone_concepts/index.md
+    - Virtualenvs: fiftyone_concepts/virtualenv.md
+    - Installation: fiftyone_concepts/install.md
     - Basics: fiftyone_concepts/basics.md
     - Running Environments: fiftyone_concepts/running_environments.md
     - Loading Data into FiftyOne:
@@ -96,7 +95,8 @@ nav:
     - Exporting Datasets: fiftyone_concepts/export_datasets.md
     - Drawing Labels on Samples: fiftyone_concepts/draw_labels.md
     - Configuring FiftyOne: fiftyone_concepts/config.md
-    - Machine Learning (FiftyOne Brain): fiftyone_concepts/brain.md
+    - FiftyOne Brain (Machine Learning): fiftyone_concepts/brain.md
+    - Troubleshooting: fiftyone_concepts/troubleshooting.md
   - How Do I:
     - how_do_i/index.md
     - Cheat Sheets: how_do_i/cheat_sheets/index.md
