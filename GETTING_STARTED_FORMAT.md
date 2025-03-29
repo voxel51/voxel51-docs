@@ -2,7 +2,7 @@
 
 the folder structure should look like
 
-```
+```txt
 folder_name
     images
         index_img1.jpg

@@ -31,7 +31,6 @@ any fields created are now added to a `DATA QUALITY` sidebar group
 long-running operations like computing embeddings when using
 [API connections](teams/api_connection.md#teams-api-connection)
 
-
 ## FiftyOne 1.2.0 [¶](\#fiftyone-1-2-0 "Permalink to this headline")
 
 _Released December 20, 2024_
@@ -93,12 +92,10 @@ resizing as expected in some cases
 panel
 [#5286](https://github.com/voxel51/fiftyone/pull/5286)
 
-
 SDK
 
 - Optimized [`dataset.first()`](api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.first "fiftyone.core.dataset.Dataset.first") calls
 [#5305](https://github.com/voxel51/fiftyone/pull/5305)
-
 
 Brain
 
@@ -106,14 +103,12 @@ Brain
 to use the `vectorSearch` type
 [#218](https://github.com/voxel51/fiftyone-brain/pull/218)
 
-
 Zoo
 
 - Fixed a bug with loading the
 [rtdetr-l-coco-torch](models/model_zoo/models.md#model-zoo-rtdetr-l-coco-torch) and
 [rtdetr-x-coco-torch](models/model_zoo/models.md#model-zoo-rtdetr-x-coco-torch) zoo models
 [#5220](https://github.com/voxel51/fiftyone/pull/5220)
-
 
 ## FiftyOne Teams 2.2.0 [¶](\#fiftyone-teams-2-2-0 "Permalink to this headline")
 
@@ -144,7 +139,6 @@ create the necessary indexes to optimize queries on large datasets
 sending user invitiations via email when running in
 [Internal Mode](teams/pluggable_auth.md#internal-mode)
 
-
 ## FiftyOne 1.1.0 [¶](\#fiftyone-1-1-0 "Permalink to this headline")
 
 _Released December 6, 2024_
@@ -164,7 +158,6 @@ detecting near-duplicate samples in different splits of your datasets
 - Added a [near duplicates method](fiftyone_concepts/brain.md#brain-near-duplicates) that scans
 your datasets and detects potential duplicate samples
 
-
 App
 
 - Added zoom-to-crop and set-look-at for selected labels in the
@@ -179,7 +172,6 @@ App
 - Fixed a bug that prevented video playback from working for videos with
 unknown frame rate
 [#5155](https://github.com/voxel51/fiftyone/pull/5155)
-
 
 SDK
 
@@ -213,7 +205,6 @@ operators now support clearing fields of views, in addition to full datasets
 - Added optional `email` parameter to the
 [CVAT integration](integrations/cvat.md#cvat-integration) [#5218](https://github.com/voxel51/fiftyone/pull/5218)
 
-
 Brain
 
 - Added support for passing existing
@@ -225,7 +216,6 @@ Brain
 
 - Upgraded the [Pinecone integration](integrations/pinecone.md#pinecone-integration) to support
 `pinecone-client>=3.2` [#202](https://github.com/voxel51/fiftyone-brain/pull/202)
-
 
 Plugins
 
@@ -275,7 +265,6 @@ to enable running delegated operations
 MongoDB <v5
 [#5181](https://github.com/voxel51/fiftyone/pull/5181)
 
-
 ## FiftyOne Teams 2.1.3 [¶](\#fiftyone-teams-2-1-3 "Permalink to this headline")
 
 _Released November 8, 2024_
@@ -298,7 +287,6 @@ to the [Model Zoo](models/model_zoo/index.md#model-zoo) [#4979](https://github.c
 [in the zoo](models/model_zoo/models.md#model-zoo-models) for easier navigation
 [#4899](https://github.com/voxel51/fiftyone/pull/4899)
 
-
 Core
 
 - Fixed input shape in the depth estimation transformer
@@ -306,7 +294,6 @@ Core
 
 - Added graceful handling of empty datasets when computing embeddings
 [#5043](https://github.com/voxel51/fiftyone/pull/5043)
-
 
 App
 
@@ -330,14 +317,12 @@ building custom animations
 - Fixed batch selection with ctrl + click in the grid
 [#5046](https://github.com/voxel51/fiftyone/pull/5046)
 
-
 ## FiftyOne Teams 2.1.2 [¶](\#fiftyone-teams-2-1-2 "Permalink to this headline")
 
 _Released October 31, 2024_
 
 - Fixed an issue that prevented `delegation_target` from being properly set when
 running delegated operations with orchestrator registration enabled
-
 
 ## FiftyOne Teams 2.1.1 [¶](\#fiftyone-teams-2-1-1 "Permalink to this headline")
 
@@ -348,7 +333,6 @@ Includes all updates from [FiftyOne 1.0.1](#release-notes-v1-0-1), plus:
 - Fixed an issue with Auth0 connections for deployments behind proxies
 
 - Bumped dependency requirement `voxel51-eta>=0.13`
-
 
 ## FiftyOne 1.0.1 [¶](\#fiftyone-1-0-1 "Permalink to this headline")
 
@@ -369,7 +353,6 @@ App
 `fiftyone app launch` commands from launching the App
 [#4888](https://github.com/voxel51/fiftyone/pull/4888)
 
-
 Core
 
 - COCO exports now use 1-based categories
@@ -377,7 +360,6 @@ Core
 
 - Fixed a bug when passing the `classes` argument to load specific classes in
 [COCO format](fiftyone_concepts/dataset_creation/datasets.md#cocodetectiondataset-import) [#4884](https://github.com/voxel51/fiftyone/pull/4884)
-
 
 ## FiftyOne Teams 2.1.0 [¶](\#fiftyone-teams-2-1-0 "Permalink to this headline")
 
@@ -396,7 +378,6 @@ Includes all updates from [FiftyOne 1.0.0](#release-notes-v1-0-0), plus:
 
 - Fixed a BSON serialization bug that could cause errors when cloning or
 exporting certain dataset views from the Teams UI
-
 
 ## FiftyOne 1.0.0 [¶](\#fiftyone-1-0-0 "Permalink to this headline")
 
@@ -429,7 +410,6 @@ stored in GitHub or public URLs
 [#4733](https://github.com/voxel51/fiftyone/pull/4733),
 [#4828](https://github.com/voxel51/fiftyone/pull/4828)
 
-
 App
 
 - Added dozens of [builtin operators](plugins/using_plugins.md#using-operators) for performing
@@ -458,7 +438,6 @@ navigating between groups in the modal
 
 - Fixed [heatmaps](fiftyone_concepts/using_datasets.md#heatmaps) rendering for values outside of the `range`
 attribute [#4865](https://github.com/voxel51/fiftyone/pull/4865)
-
 
 Core
 
@@ -492,7 +471,6 @@ the [`Dataset`](api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fi
 
 - Deprecated [Python 3.8 support](faq/deprecation.md#deprecation-python-3-8)
 
-
 Plugins
 
 - Added
@@ -516,7 +494,6 @@ components
 - Ensure the App loads when plugins fail to load
 [#4769](https://github.com/voxel51/fiftyone/pull/4769)
 
-
 ## FiftyOne 0.25.2 [¶](\#fiftyone-0-25-2 "Permalink to this headline")
 
 _Released September 19, 2024_
@@ -524,7 +501,6 @@ _Released September 19, 2024_
 - Require `pymongo<4.9` to fix database connections
 
 - Require `pydicom<3` for [DICOM datasets](fiftyone_concepts/dataset_creation/datasets.md#dicomdataset-import)
-
 
 ## FiftyOne Teams 2.0.1 [¶](\#fiftyone-teams-2-0-1 "Permalink to this headline")
 
@@ -549,7 +525,6 @@ otherwise have access to the dataset
 - Fixed a bug that erroneously caused the currently selected samples to be
 cleared when navigating between samples or closing the sample modal
 
-
 ## FiftyOne 0.25.1 [¶](\#fiftyone-0-25-1 "Permalink to this headline")
 
 _Released September 6, 2024_
@@ -573,7 +548,6 @@ when the grid is reset
 - Disabled `fiftyone-desktop` builds until package size can be optimized
 [#4746](https://github.com/voxel51/fiftyone/pull/4746)
 
-
 SDK
 
 - Added support for loading lists of TXT files in
@@ -586,7 +560,6 @@ SDK
 [Ultralytics models](integrations/ultralytics.md#ultralytics-integration) that don’t support track
 IDs
 [#4720](https://github.com/voxel51/fiftyone/pull/4720)
-
 
 Plugins
 
@@ -603,7 +576,6 @@ state/data would inadvertently clobber other existing values
 - Fixed a spurious warning that would appear for delegated operations that
 don’t return outputs
 [#4715](https://github.com/voxel51/fiftyone/pull/4715)
-
 
 ## FiftyOne Teams 2.0.0 [¶](\#fiftyone-teams-2-0-0 "Permalink to this headline")
 
@@ -626,7 +598,6 @@ respect the executing user’s role and dataset permissions
 
 - Guests can no longer access operators/panels in custom plugins
 
-
 App
 
 - Added a caching layer to optimize media serving in the App
@@ -643,7 +614,6 @@ saved workspaces, and runs
 - Fixed a bug that prevented the Recent views widget from showing all recently
 loaded views as intended
 
-
 CAS
 
 - Added an `Audit` page to the [Super Admin UI](teams/pluggable_auth.md#super-admin-ui) that
@@ -654,7 +624,6 @@ useful, for example, if groups are defined via hooks
 
 - Legacy mode deployments now have access to the relevant pages of the Super
 Admin UI
-
 
 SDK
 
@@ -670,7 +639,6 @@ gracefully support fields with missing media paths
 `add_cloud_credentials()`
 to control whether existing cloud credentials with the same prefix for a
 provider are overwritten
-
 
 ## FiftyOne 0.25.0 [¶](\#fiftyone-0-25-0 "Permalink to this headline")
 
@@ -698,7 +666,6 @@ native text and image searches on FiftyOne datasets!
 - Added an [image representativeness](fiftyone_concepts/brain.md#brain-image-representativeness)
 method to the Brain that can be used to find the most common/uncommon types
 of images in your datasets
-
 
 App
 
@@ -737,7 +704,6 @@ scenes in the modal
 - Fixed keyboard shortcuts when viewing dynamic groups in the modal
 [#4510](https://github.com/voxel51/fiftyone/pull/4510)
 
-
 Annotation
 
 - Added support for annotating [frame views](fiftyone_concepts/using_views.md#frame-views) [#4477](https://github.com/voxel51/fiftyone/pull/4477)
@@ -746,7 +712,6 @@ Annotation
 
 - Added support for preserving existing COCO IDs when exporting in
 [COCO format](fiftyone_concepts/export_datasets.md#cocodetectiondataset-export) [#4530](https://github.com/voxel51/fiftyone/pull/4530)
-
 
 Core
 
@@ -774,7 +739,6 @@ by expressions
 
 - Fixed a concatenation bug when downloading videos from
 [CVAT](integrations/cvat.md#cvat-integration) [#4674](https://github.com/voxel51/fiftyone/pull/4674)
-
 
 Plugins
 
@@ -807,7 +771,6 @@ operator for programmatically setting the extended selection
 operator for logging plugin events in the App
 [#4489](https://github.com/voxel51/fiftyone/pull/4489)
 
-
 Zoo
 
 - Added [YOLOv10 and RT-DETR models](integrations/ultralytics.md#ultralytics-object-detection)
@@ -835,7 +798,6 @@ transforms
 [#4509](https://github.com/voxel51/fiftyone/pull/4509),
 [#4512](https://github.com/voxel51/fiftyone/pull/4512)
 
-
 ## FiftyOne Teams 1.7.1 [¶](\#fiftyone-teams-1-7-1 "Permalink to this headline")
 
 _Released June 11, 2024_
@@ -850,7 +812,6 @@ Includes all updates from [FiftyOne 0.24.1](#release-notes-v0-24-1), plus:
 
 - Optimized export of cloud-backed 3D scenes
 
-
 ## FiftyOne 0.24.1 [¶](\#fiftyone-0-24-1 "Permalink to this headline")
 
 _Released June 11, 2024_
@@ -861,13 +822,11 @@ What’s New
 Open Images v7 to the model zoo!
 [#4398](https://github.com/voxel51/fiftyone/pull/4398)
 
-
 App
 
 - Fixed a regression from FiftyOne 0.24.0 that would prevent operator outputs
 and error states from displaying in the App
 [#4445](https://github.com/voxel51/fiftyone/pull/4445)
-
 
 Core
 
@@ -876,7 +835,6 @@ Core
 
 - Fixed a bug that could cause 3D assets to be omitted when exporting 3D scenes
 [#4442](https://github.com/voxel51/fiftyone/pull/4442)
-
 
 Utils
 
@@ -887,12 +845,10 @@ and [`make_clips_dataset()`](api/fiftyone.core.clips.html#fiftyone.core.clips.ma
 utilities can now be directly called
 [#4416](https://github.com/voxel51/fiftyone/pull/4416)
 
-
 Annotation
 
 - Added support loading annotations for large CVAT tasks with many jobs
 [#4392](https://github.com/voxel51/fiftyone/pull/4392)
-
 
 ## FiftyOne Teams 1.7.0 [¶](\#fiftyone-teams-1-7-0 "Permalink to this headline")
 
@@ -911,7 +867,6 @@ your FiftyOne Teams deployment
 
 - Fixed a regression from FiftyOne Teams 1.6 that could cause login errors when
 accepting invites
-
 
 ## FiftyOne 0.24.0 [¶](\#fiftyone-0-24-0 "Permalink to this headline")
 
@@ -942,7 +897,6 @@ as an option for zero shot object detection
 
 - Added a new [anomaly detection tutorial](tutorials/anomaly_detection.md) [#4312](https://github.com/voxel51/fiftyone/pull/4312)
 
-
 App
 
 - Added a `media_fallback` option to the
@@ -967,7 +921,6 @@ fields
 views into group datasets
 [#4299](https://github.com/voxel51/fiftyone/pull/4299)
 
-
 Core
 
 - Gracefully handle None-valued `tags` fields
@@ -987,7 +940,6 @@ slices [#4350](https://github.com/voxel51/fiftyone/pull/4350)
 - Fixed a timezone bug with [`DateField`](api/fiftyone.core.fields.html#fiftyone.core.fields.DateField "fiftyone.core.fields.DateField") for GMT+ users
 [#4371](https://github.com/voxel51/fiftyone/pull/4371)
 
-
 Utils
 
 - Added support for non-sequential category IDs when importing/exporting data
@@ -998,7 +950,6 @@ in [COCO format](fiftyone_concepts/dataset_creation/datasets.md#cocodetectiondat
 tracking utility
 [#4372](https://github.com/voxel51/fiftyone/pull/4372),
 [#4296](https://github.com/voxel51/fiftyone/pull/4296)
-
 
 Plugins
 
@@ -1023,11 +974,9 @@ method for setting the current spaces layout from operators
 operation
 [#4417](https://github.com/voxel51/fiftyone/pull/4417)
 
-
 Zoo
 
 - Fixed a bug with [YOLO-NAS inference](integrations/super_gradients.md#super-gradients-integration) [#4429](https://github.com/voxel51/fiftyone/pull/4429)
-
 
 ## FiftyOne Teams 1.6.1 [¶](\#fiftyone-teams-1-6-1 "Permalink to this headline")
 
@@ -1036,8 +985,7 @@ _Released May 10, 2024_
 Bugs
 
 - Fixed an issue with logging into FiftyOne Teams in Enterprise Proxy
-enviornments
-
+environments
 
 ## FiftyOne Teams 1.6.0 [¶](\#fiftyone-teams-1-6-0 "Permalink to this headline")
 
@@ -1062,13 +1010,11 @@ Teams deployments
 
 - Added the ability to search for users on the Users page
 
-
 ## FiftyOne Teams 1.5.10 [¶](\#fiftyone-teams-1-5-10 "Permalink to this headline")
 
 _Released April 18, 2024_
 
 - Fixed an issue where video datasets were not loading due to ffmpeg dependency
-
 
 ## FiftyOne Teams 1.5.9 [¶](\#fiftyone-teams-1-5-9 "Permalink to this headline")
 
@@ -1093,7 +1039,6 @@ method no longer caches all cloud media involved in the export
 - Optimized performance of data-intensive API calls when using
 [API connections](teams/api_connection.md#teams-api-connection)
 
-
 ## FiftyOne 0.23.8 [¶](\#fiftyone-0-23-8 "Permalink to this headline")
 
 _Released April 15, 2024_
@@ -1103,7 +1048,6 @@ News
 - Released a [Hugging Face Hub integration](integrations/huggingface.md#huggingface-hub) for
 programmatically publishing and downloading datasets to/from Hugging Face Hub!
 [#4193](https://github.com/voxel51/fiftyone/pull/4193)
-
 
 App
 
@@ -1142,7 +1086,6 @@ currently selected samples
 - Fixed a bug where the saved view dropdown would cover the view stage popover
 [#4242](https://github.com/voxel51/fiftyone/pull/4242)
 
-
 Core
 
 - All [autosave contexts](fiftyone_concepts/using_datasets.md#efficient-batch-edits) now respect the
@@ -1169,7 +1112,6 @@ efficiently read from multiple files in a threadpool
 - Fixed matplotlib style deprecation error
 [#4213](https://github.com/voxel51/fiftyone/pull/4213)
 
-
 Docs
 
 - Added a [clustering tutorial](tutorials/clustering.md) [#4245](https://github.com/voxel51/fiftyone/pull/4245)
@@ -1179,13 +1121,11 @@ Docs
 
 - Refreshed many popular [tutorials](tutorials/index.md#tutorials) [#4207](https://github.com/voxel51/fiftyone/pull/4207)
 
-
 Annotation
 
 - Upgraded the [Labelbox integration](integrations/labelbox.md#labelbox-integration) to support
 the Export V2 API
 [#4260](https://github.com/voxel51/fiftyone/pull/4260)
-
 
 Plugins
 
@@ -1209,7 +1149,6 @@ potentially result in degraded performance
 method in operators
 [#4198](https://github.com/voxel51/fiftyone/pull/4198)
 
-
 Zoo
 
 - Added support for loading
@@ -1227,7 +1166,6 @@ to FiftyOne datasets
 [Segment Anything](models/model_zoo/models.md#model-zoo-segment-anything-vitb-torch) models to the
 frames of video datasets
 [#4229](https://github.com/voxel51/fiftyone/pull/4229)
-
 
 ## FiftyOne Teams 1.5.8 [¶](\#fiftyone-teams-1-5-8 "Permalink to this headline")
 
@@ -1249,7 +1187,6 @@ App
 
 - Fixed app crash when many None-valued fields exist in the sample modal
 [#4154](https://github.com/voxel51/fiftyone/pull/4154)
-
 
 Docs
 
@@ -1278,7 +1215,6 @@ on socials
 - Updated the lightning mode docs to clarify that
 wildcard indexes should not generally be used by default
 [#4138](https://github.com/voxel51/fiftyone/pull/4138)
-
 
 Plugins and Operators
 
@@ -1318,7 +1254,6 @@ operator execution via
 [#4170](https://github.com/voxel51/fiftyone/pull/4170) and
 [#4178](https://github.com/voxel51/fiftyone/pull/4178)
 
-
 Core
 
 - Improved [SuperGradients](integrations/super_gradients.md#super-gradients-integration) inference
@@ -1355,7 +1290,6 @@ in [`location_scatterplot()`](api/fiftyone.core.plots.plotly.html#fiftyone.core.
 - Cloning a dataset or view now includes any custom MongoDB indexes
 [#4115](https://github.com/voxel51/fiftyone/pull/4115)
 
-
 ## FiftyOne Teams 1.5.7 [¶](\#fiftyone-teams-1-5-7 "Permalink to this headline")
 
 _Released March 6, 2024_
@@ -1371,7 +1305,6 @@ using [API connections](teams/api_connection.md#teams-api-connection)
 
 - Added support for including prefixes when providing
 [bucket-specific credentials](teams/installation.md#teams-cloud-storage-page)
-
 
 ## FiftyOne 0.23.6 [¶](\#fiftyone-0-23-6 "Permalink to this headline")
 
@@ -1401,7 +1334,6 @@ What’s New
 - Removed App dependency on `_cls` for embedded documents
 [#4090](https://github.com/voxel51/fiftyone/pull/4090)
 
-
 Bugs
 
 - Fixed issue with filter counts on video datasets in the App
@@ -1420,7 +1352,6 @@ Bugs
 selection is present
 [#4113](https://github.com/voxel51/fiftyone/pull/4113)
 
-
 ## FiftyOne Teams 1.5.6 [¶](\#fiftyone-teams-1-5-6 "Permalink to this headline")
 
 _Released February 14, 2024_
@@ -1430,7 +1361,6 @@ Includes all updates from [FiftyOne 0.23.5](#release-notes-v0-23-5), plus:
 - Improved dataset search user experience
 
 - Post login redirects will now send the user to the correct page
-
 
 ## FiftyOne 0.23.5 [¶](\#fiftyone-0-23-5 "Permalink to this headline")
 
@@ -1446,7 +1376,6 @@ What’s New
 - Added support for apply monocular depth estimation transformers from the
 Hugging Face `transformers` library directly to FiftyOne datasets
 [#4082](https://github.com/voxel51/fiftyone/pull/4035)
-
 
 Bugs
 
@@ -1473,7 +1402,6 @@ Bugs
 - Enabled tagging in sidebar lightning mode
 [#4048](https://github.com/voxel51/fiftyone/pull/4048)
 
-
 ## FiftyOne Teams 1.5.5 [¶](\#fiftyone-teams-1-5-5 "Permalink to this headline")
 
 _Released January 25, 2024_
@@ -1484,7 +1412,6 @@ Bugs
 
 - Fixed a proxy URL bug that prevented custom JS panels from launching
 
-
 ## FiftyOne 0.23.4 [¶](\#fiftyone-0-23-4 "Permalink to this headline")
 
 _Released January 25, 2024_
@@ -1494,12 +1421,10 @@ Core
 - Added support for passing kwargs directly when creating custom runs
 [#4039](https://github.com/voxel51/fiftyone/pull/4039)
 
-
 Brain
 
 - Added support for registering
 [custom visualization methods](fiftyone_concepts/brain.md#brain-visualization-api) [#4038](https://github.com/voxel51/fiftyone/pull/4038)
-
 
 ## FiftyOne Teams 1.5.4 [¶](\#fiftyone-teams-1-5-4 "Permalink to this headline")
 
@@ -1520,7 +1445,6 @@ display the API URI to users in the Teams App
 
 - Updated `motor` dependency to 3.3.0
 
-
 Bugs
 
 - Fixed a regression when exporting cloud-backed media to
@@ -1533,7 +1457,6 @@ proxy URL
 `compute_similarity()` over API
 connections with the [MongoDB backend](integrations/mongodb.md#mongodb-integration)
 
-
 ## FiftyOne 0.23.3 [¶](\#fiftyone-0-23-3 "Permalink to this headline")
 
 _Released January 19, 2024_
@@ -1545,7 +1468,6 @@ running inference with `transformers` models on your FiftyOne datasets!
 
 - Released a [SuperGradients integration](integrations/super_gradients.md#super-gradients-integration)
 for running inference with YOLO-NAS architectures!
-
 
 App
 
@@ -1575,7 +1497,6 @@ added to video slices in mixed datasets
 - Fixed keyboard navigation for dropdowns throughout the App
 [#3965](https://github.com/voxel51/fiftyone/pull/3965)
 
-
 Brain
 
 - Added support for passing
@@ -1596,7 +1517,6 @@ for configuring whether run cleanup happens
 - Fixed issues with similarity searches on views and with pre-computed embeddings
 using the [MongoDB backend](integrations/mongodb.md#mongodb-integration)
 
-
 Core
 
 - Added dynamic batching to bulk writes like
@@ -1611,7 +1531,6 @@ Core
 - Fixed issues with embedded document field schemas
 [#4002](https://github.com/voxel51/fiftyone/pull/4002)
 
-
 Models
 
 - Added support for directly passing
@@ -1625,7 +1544,6 @@ Models
 [OpenCLIP](models/model_zoo/models.md#model-zoo-open-clip-torch) models
 [#3960](https://github.com/voxel51/fiftyone/pull/3960)
 
-
 Plugins
 
 - Added a builtin `delete_selected_labels` operator
@@ -1636,14 +1554,12 @@ Plugins
 format to be consistent with other SDK methods
 [#3998](https://github.com/voxel51/fiftyone/pull/3998)
 
-
 Tutorials
 
 - Added a
 [monocular depth estimation](tutorials/monocular_depth_estimation.md)
 tutorial
 [#3991](https://github.com/voxel51/fiftyone/pull/3991)
-
 
 ## FiftyOne Teams 1.5.3 [¶](\#fiftyone-teams-1-5-3 "Permalink to this headline")
 
@@ -1668,7 +1584,6 @@ and other large batched computations when using
 
 - Trimmed API logging of large batch SDK operations
 
-
 ## FiftyOne 0.23.2 [¶](\#fiftyone-0-23-2 "Permalink to this headline")
 
 _Released December 21, 2023_
@@ -1677,7 +1592,6 @@ News
 
 - Added [OpenCLIP](models/model_zoo/models.md#model-zoo-open-clip-torch) to the FiftyOne Model Zoo!
 [#3925](https://github.com/voxel51/fiftyone/pull/3925)
-
 
 App
 
@@ -1699,7 +1613,6 @@ values
 
 - Fixed issue where users could not select scalar fields in the sidebar
 [#3938](https://github.com/voxel51/fiftyone/pull/3938)
-
 
 Core
 
@@ -1727,13 +1640,11 @@ Core
 - Fixed overwriting dataset metadata with empty values during import
 [#3913](https://github.com/voxel51/fiftyone/pull/3913)
 
-
 Annotation
 
 - Added support for annotating multiple label fields using the Label Studio
 backend
 [#3895](https://github.com/voxel51/fiftyone/pull/3895)
-
 
 Plugins
 
@@ -1760,7 +1671,6 @@ robustness to dataset name changes
 - Fixed issue with JS plugin App configs
 [#3924](https://github.com/voxel51/fiftyone/pull/3924)
 
-
 ## FiftyOne Teams 1.5.2 [¶](\#fiftyone-teams-1-5-2 "Permalink to this headline")
 
 _Released December 11, 2023_
@@ -1770,7 +1680,6 @@ Bugs
 - Avoid creating non-existent database indexes on API startup
 
 - Avoid errors when archiving snapshots with corrupted run results
-
 
 ## FiftyOne Teams 1.5.1 [¶](\#fiftyone-teams-1-5-1 "Permalink to this headline")
 
@@ -1792,7 +1701,6 @@ App
 
 - Fixed `session.dataset = None` [#3890](https://github.com/voxel51/fiftyone/pull/3890)
 
-
 Core
 
 - Fixed inferring doubly-nested dynamic list field types
@@ -1805,7 +1713,6 @@ when `Pillow<7` is installed
 
 - Fixed default group indexes creation when importing a
 [FiftyOneDataset](fiftyone_concepts/dataset_creation/datasets.md#fiftyonedataset-import) [#3894](https://github.com/voxel51/fiftyone/pull/3894)
-
 
 ## FiftyOne Teams 1.5.0 [¶](\#fiftyone-teams-1-5-0 "Permalink to this headline")
 
@@ -1860,7 +1767,6 @@ query parameters
 
 - Added debug logging on API startup
 
-
 Bugs
 
 - Fixed an issue with the [Runs page](teams/teams_plugins.md#teams-runs-page) when viewing
@@ -1882,7 +1788,6 @@ as disabled in the operator browser
 
 - Improved reliability of similarity sort actions
 
-
 ## FiftyOne 0.23.0 [¶](\#fiftyone-0-23-0 "Permalink to this headline")
 
 _Released December 6, 2023_
@@ -1897,7 +1802,6 @@ and image searches on FiftyOne datasets!
 
 - Released a [V7 integration](integrations/v7.md#v7-integration) for annotating FiftyOne
 datasets!
-
 
 App
 
@@ -1948,7 +1852,6 @@ search menu
 compatibility
 [#3723](https://github.com/voxel51/fiftyone/pull/3723)
 
-
 Core
 
 - Adding support for registering
@@ -1964,7 +1867,6 @@ implementation
 
 - Added support for parsing and exporting visibility attribute for keypoints in
 [COCO format](fiftyone_concepts/export_datasets.md#cocodetectiondataset-export) [#3808](https://github.com/voxel51/fiftyone/pull/3808)
-
 
 Plugins
 
@@ -1999,7 +1901,6 @@ constructor signature for enhanced forward/backward compatibility
 - Improved default value control in operator forms
 [#3371](https://github.com/voxel51/fiftyone/pull/3371)
 
-
 Annotation
 
 - Updated the [Labelbox integration](integrations/labelbox.md#labelbox-integration) to support the
@@ -2010,7 +1911,6 @@ latest version of the Labelbox API
 images to the [CVAT integration](integrations/cvat.md#cvat-integration) with sufficiently
 new versions of the CVAT SDK
 [#3823](https://github.com/voxel51/fiftyone/pull/3823)
-
 
 Bugs
 
@@ -2101,7 +2001,6 @@ format exports due to concurrent edits
 - Fixed an error when pressing the esc key in the App
 [#3662](https://github.com/voxel51/fiftyone/pull/3662)
 
-
 ## FiftyOne Teams 1.4.5 [¶](\#fiftyone-teams-1-4-5 "Permalink to this headline")
 
 _Released November 21, 2023_
@@ -2109,7 +2008,6 @@ _Released November 21, 2023_
 General
 
 - Added debug log events to API server startup
-
 
 ## FiftyOne Teams 1.4.4 [¶](\#fiftyone-teams-1-4-4 "Permalink to this headline")
 
@@ -2125,7 +2023,6 @@ General
 
 - Further improved dataset listing queries
 
-
 Bugs
 
 - Fixed clips, frames, and patches views for grouped datasets in the App
@@ -2133,7 +2030,6 @@ Bugs
 - Fixed cloud credential initialization during deployment restarts
 
 - Fixed snapshot diff computation in large datasets with MongoDB < v6.0
-
 
 ## FiftyOne 0.22.3 [¶](\#fiftyone-0-22-3 "Permalink to this headline")
 
@@ -2143,7 +2039,6 @@ Core
 
 - Optimized
 [`sort_by_similarity()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.sort_by_similarity "fiftyone.core.collections.SampleCollection.sort_by_similarity") [#3733](https://github.com/voxel51/fiftyone/pull/3733)
-
 
 App
 
@@ -2165,7 +2060,6 @@ in the sample modal
 - Fixed [3D detections](fiftyone_concepts/app.md#app-3d-orthographic-projections) in the grid
 [#3761](https://github.com/voxel51/fiftyone/pull/3761)
 
-
 Brain
 
 - Optimized similarity backends when performing KNN queries against their
@@ -2182,7 +2076,6 @@ on an index that uses the `embeddings_field` parameter
 [`compute_embeddings()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.compute_embeddings "fiftyone.core.collections.SampleCollection.compute_embeddings")
 when `skip_existing=True` is provided
 
-
 Plugins
 
 - Fixed `on_startup` [Operator execution](plugins/using_plugins.md#using-operators) [#3731](https://github.com/voxel51/fiftyone/pull/3731)
@@ -2197,13 +2090,11 @@ Plugins
 - Fixed `ctx.secrets` in
 [`resolve_input()`](api/fiftyone.operators.operator.html#fiftyone.operators.operator.Operator.resolve_input "fiftyone.operators.operator.Operator.resolve_input") [#3759](https://github.com/voxel51/fiftyone/pull/3759)
 
-
 CLI
 
 - Added [fiftyone delegated fail](cli/index.md#cli-fiftyone-delegated-fail) and
 [fiftyone delegated delete](cli/index.md#cli-fiftyone-delegated-delete) commands
 [#3721](https://github.com/voxel51/fiftyone/pull/3721)
-
 
 ## FiftyOne Teams 1.4.3 [¶](\#fiftyone-teams-1-4-3 "Permalink to this headline")
 
@@ -2223,7 +2114,6 @@ cleared manually
 - Reduced max export size of datasets to 100MB
 
 - Users will now only _see an operator_ if their role meets the required role
-
 
 ## FiftyOne 0.22.2 [¶](\#fiftyone-0-22-2 "Permalink to this headline")
 
@@ -2245,7 +2135,6 @@ Core
 - Fixed an [issue](https://github.com/voxel51/fiftyone/issues/3688) where
 CVAT import fails when `insert_new` is `False` [#3691](https://github.com/voxel51/fiftyone/pull/3691)
 
-
 App
 
 - Fixed dataset recreation across processes
@@ -2261,7 +2150,6 @@ filters are present
 
 - Fixed browser cache issues when upgrading
 [#3683](https://github.com/voxel51/fiftyone/pull/3683)
-
 
 Plugins
 
@@ -2302,13 +2190,11 @@ utility for checking if an operator exists
 default
 [#3656](https://github.com/voxel51/fiftyone/pull/3656)
 
-
 Zoo
 
 - Fixed issue preventing [DINOv2](integrations/pytorch_hub.md#dinov2-example) models from being
 loaded
 [#3660](https://github.com/voxel51/fiftyone/pull/3690)
-
 
 ## FiftyOne Teams 1.4.2 [¶](\#fiftyone-teams-1-4-2 "Permalink to this headline")
 
@@ -2338,13 +2224,11 @@ of client
 
 - Fixed Python 3.7 support in the fiftyone-teams SDK
 
-
 App
 
 - Searching users has been improved
 
 - Resolved issue with recent views not displaying properly
-
 
 ## FiftyOne 0.22.1 [¶](\#fiftyone-0-22-1 "Permalink to this headline")
 
@@ -2368,7 +2252,6 @@ properly handling primitive types
 - Fixed an issue launching the App in Databrick notebooks
 [#3609](https://github.com/voxel51/fiftyone/pull/3609)
 
-
 Core
 
 - Resolved groups aggregation issue resulting in unstable ordering of documents
@@ -2380,7 +2263,6 @@ property
 
 - Fixed issue with empty segmentation mask conversion in COCO-formatted datasets
 [#3595](https://github.com/voxel51/fiftyone/pull/3595/commits/ad0607aeabbd5d6dcbcfccc622ee5caf1f71f930)
-
 
 Plugins
 
@@ -2408,7 +2290,6 @@ during
 and
 [`resolve_output()`](api/fiftyone.operators.operator.html#fiftyone.operators.operator.Operator.resolve_output "fiftyone.operators.operator.Operator.resolve_output") [#3575](https://github.com/voxel51/fiftyone/pull/3574)
 
-
 ## FiftyOne Teams 1.4.1 [¶](\#fiftyone-teams-1-4-1 "Permalink to this headline")
 
 _Released September 21, 2023_
@@ -2416,7 +2297,6 @@ _Released September 21, 2023_
 Bugs
 
 - Patched a regression that prevented the Teams App from working behind proxies
-
 
 ## FiftyOne Teams 1.4.0 [¶](\#fiftyone-teams-1-4-0 "Permalink to this headline")
 
@@ -2431,7 +2311,6 @@ News
 - Added support for scheduling
 [delegated operations](teams/teams_plugins.md#teams-delegated-operations) via the App
 
-
 App
 
 - Admins can now [upload secrets](teams/secrets.md#teams-secrets) via the UI which are
@@ -2441,7 +2320,6 @@ made available to all plugins and delegated operations at runtime
 
 - Optimized page load times when opening a dataset for the first time in a new
 web session
-
 
 ## FiftyOne 0.22.0 [¶](\#fiftyone-0-22-0 "Permalink to this headline")
 
@@ -2456,7 +2334,6 @@ News
 - Added support for scheduling [delegated operations](plugins/index.md#fiftyone-plugins)
 from within the App!
 [#3312](https://github.com/voxel51/fiftyone/pull/3312)
-
 
 App
 
@@ -2497,7 +2374,6 @@ sparse (missing) slices
 
 - Fixed a bug where attributes of grouped samples were missing in the modal
 [#3436](https://github.com/voxel51/fiftyone/pull/3436)
-
 
 Core
 
@@ -2545,7 +2421,6 @@ crash
 when given incomplete keypoint skeletons
 [#3429](https://github.com/voxel51/fiftyone/pull/3429)
 
-
 Plugins
 
 - Added a new
@@ -2565,7 +2440,6 @@ that allows for browsing file systems and selecting files or directories
 [`Placement`](api/fiftyone.operators.types.html#fiftyone.operators.types.Placement "fiftyone.operators.types.Placement") components
 [#3537](https://github.com/voxel51/fiftyone/pull/3537)
 
-
 Zoo
 
 - Graceful handling of empty prompts when using
@@ -2576,7 +2450,6 @@ Zoo
 [Segment Anything](models/model_zoo/models.md#model-zoo-segment-anything-vitb-torch) model weights
 were not loaded and auto-inference would only return one set of masks
 [#3465](https://github.com/voxel51/fiftyone/pull/3465)
-
 
 ## FiftyOne Teams 1.3.6 [¶](\#fiftyone-teams-1-3-6 "Permalink to this headline")
 
@@ -2596,7 +2469,6 @@ App
 - Fixed a bug when using the sidebar to filter views that have selected fields
 [#3405](https://github.com/voxel51/fiftyone/pull/3405)
 
-
 ## FiftyOne Teams 1.3.5 [¶](\#fiftyone-teams-1-3-5 "Permalink to this headline")
 
 _Released August 7, 2023_
@@ -2611,12 +2483,10 @@ not appear when matches across multiple types collide
 - Upgraded the [Plugin configuration UI](teams/teams_plugins.md#teams-plugins) to better explain
 the available Operator permission configuration options
 
-
 SDK
 
 - Significant performance optimizations by introducing cursor batching for
 relevant API endpoints
-
 
 ## FiftyOne 0.21.5 [¶](\#fiftyone-0-21-5 "Permalink to this headline")
 
@@ -2635,7 +2505,6 @@ News
 - Added support for loading models from
 [PyTorch Hub](integrations/pytorch_hub.md#pytorch-hub-integration)!
 [#2949](https://github.com/voxel51/fiftyone/pull/2949)
-
 
 App
 
@@ -2684,7 +2553,6 @@ for certain slices
 - Removed the maximum `starlette` version requirement
 [#3297](https://github.com/voxel51/fiftyone/pull/3297)
 
-
 Plugins
 
 - Added support for accessing the currently selected labels in the App within
@@ -2700,7 +2568,6 @@ plugin execution contexts
 - Fixed some bugs that prevented customer visualizer plugins from being
 recognized
 [#3357](https://github.com/voxel51/fiftyone/pull/3357)
-
 
 Core
 
@@ -2732,7 +2599,6 @@ recognize dynamic fields
 grouped datasets
 [#3327](https://github.com/voxel51/fiftyone/pull/3327)
 
-
 Zoo
 
 - Use `weights` parameter instead of deprecated `pretrained` parameter for
@@ -2746,7 +2612,6 @@ torchvision models
 [ActivityNet](data/dataset_zoo/datasets.md#dataset-zoo-activitynet-200) and
 [Kinetics](data/dataset_zoo/datasets.md#dataset-zoo-kinetics-700-2020) [#3382](https://github.com/voxel51/fiftyone/pull/3382)
 
-
 Annotation
 
 - Upgraded the [Labelbox integration](integrations/labelbox.md#labelbox-integration) to support
@@ -2755,7 +2620,6 @@ the latest Labelbox API version
 
 - Fixed text and checkbox attribute usage when using CVAT 2.5
 [#3373](https://github.com/voxel51/fiftyone/pull/3373)
-
 
 Brain
 
@@ -2771,7 +2635,6 @@ stored in dataset fields
 [#3304](https://github.com/voxel51/fiftyone/issues/3304),
 [#3305](https://github.com/voxel51/fiftyone/issues/3305)
 
-
 Docs
 
 - Fixed some documentation typos
@@ -2779,14 +2642,12 @@ Docs
 [#3289](https://github.com/voxel51/fiftyone/issues/3289),
 [#3290](https://github.com/voxel51/fiftyone/issues/3290)
 
-
 ## FiftyOne 0.21.4 [¶](\#fiftyone-0-21-4 "Permalink to this headline")
 
 _Released July 14, 2023_
 
 - Fixed [`Session`](api/fiftyone.core.session.html#fiftyone.core.session.Session "fiftyone.core.session.Session") event emission
 [#3301](https://github.com/voxel51/fiftyone/pull/3301)
-
 
 ## FiftyOne Teams 1.3.3 [¶](\#fiftyone-teams-1-3-3 "Permalink to this headline")
 
@@ -2802,7 +2663,6 @@ automatically adding any uploaded files to your local cache
 
 - Fixed a bug when launching the App locally via API connections
 
-
 ## FiftyOne 0.21.3 [¶](\#fiftyone-0-21-3 "Permalink to this headline")
 
 _Released July 12, 2023_
@@ -2814,7 +2674,6 @@ image searches on FiftyOne datasets!
 
 - Released a [LanceDB integration](integrations/lancedb.md#lancedb-integration) for native text
 and image searches on FiftyOne datasets!
-
 
 App
 
@@ -2834,7 +2693,6 @@ applying multiple sidebar filters
 - Fixed label tags grid bubbles for filterless views
 [#3257](https://github.com/voxel51/fiftyone/pull/3267)
 
-
 Core
 
 - Added a [`merge_sample()`](api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.merge_sample "fiftyone.core.dataset.Dataset.merge_sample")
@@ -2846,7 +2704,6 @@ method for merging individual samples into existing datasets
 
 - Fixed a bug when filtering keypoints stored in embedded documents
 [#3279](https://github.com/voxel51/fiftyone/pull/3279)
-
 
 ## FiftyOne Teams 1.3.2 [¶](\#fiftyone-teams-1-3-2 "Permalink to this headline")
 
@@ -2866,7 +2723,6 @@ App
 - Fixes redundant sidebar groups for custom schemas
 [#3250](https://github.com/voxel51/fiftyone/pull/3250)
 
-
 ## FiftyOne Teams 1.3.1 [¶](\#fiftyone-teams-1-3-1 "Permalink to this headline")
 
 _Released June 30, 2023_
@@ -2884,7 +2740,6 @@ credentials uploaded via the Teams UI to be properly recognized
 - Reverted a change from Teams 1.3.0 so that the SDK again supports the
 declared minimum version requirement of `pymongo==3.12`
 
-
 SDK
 
 - Updated the order of precedence for SDK connections so that
@@ -2898,7 +2753,6 @@ names via API connections
 
 - Fixed a bug when deleting datasets using API connections
 
-
 Management SDK
 
 - Added support for
@@ -2908,7 +2762,6 @@ addition to invitation ID
 - Added support for
 [configuring permissions](teams/management_sdk.md#teams-sdk-dataset-permissions) for invited
 users that have not yet logged in
-
 
 ## FiftyOne 0.21.1 [¶](\#fiftyone-0-21-1 "Permalink to this headline")
 
@@ -2946,7 +2799,6 @@ sample tags [#3171](https://github.com/voxel51/fiftyone/pull/3171)
 [dynamic groups](fiftyone_concepts/app.md#app-dynamic-groups) in the App
 [#3172](https://github.com/voxel51/fiftyone/pull/3172)
 
-
 Core
 
 - Methods like
@@ -2974,7 +2826,6 @@ declare subfields of [`Polyline`](api/fiftyone.core.labels.html#fiftyone.core.la
 video dataset views
 [#3159](https://github.com/voxel51/fiftyone/pull/3159)
 
-
 Plugins
 
 - Added support for rendering markdown-style tables using the Operator table
@@ -2992,13 +2843,11 @@ view type [#3162](https://github.com/voxel51/fiftyone/pull/3162)
 - Fixed a bug with `read_only=True` mode for certain Operator view types
 [#3225](https://github.com/voxel51/fiftyone/pull/3225)
 
-
 Annotation
 
 - Added support for CVAT’s `frame_start`, `frame_stop`, and `frame_step`
 options when creating annotation tasks
 [#3181](https://github.com/voxel51/fiftyone/pull/3181)
-
 
 ## FiftyOne Teams 1.3.0 [¶](\#fiftyone-teams-1-3-0 "Permalink to this headline")
 
@@ -3025,7 +2874,6 @@ large files while they are downloading
 
 - Fixed a bug when cloning views into new datasets via the Teams UI
 
-
 Admin
 
 - Added support for [uploading and managing plugins](teams/teams_plugins.md#teams-plugins) via
@@ -3036,7 +2884,6 @@ credentials
 
 - Fixed a bug that prevented Azure/MinIO credentials uploaded via the Teams UI
 from being properly recognized by the App
-
 
 ## FiftyOne 0.21.0 [¶](\#fiftyone-0-21-0 "Permalink to this headline")
 
@@ -3080,7 +2927,6 @@ render [#3122](https://github.com/voxel51/fiftyone/pull/3122)
 - Added a welcome message that displays when the App is launched for the first
 time with a new FiftyOne version
 [#3092](https://github.com/voxel51/fiftyone/pull/3092)
-
 
 Core
 
@@ -3129,7 +2975,6 @@ and runs [#2970](https://github.com/voxel51/fiftyone/pull/2970),
 
 - Replaced `pkg_resources` with `importlib.metadata` [#2930](https://github.com/voxel51/fiftyone/pull/2930)
 
-
 Plugins
 
 - Added [Operators](plugins/using_plugins.md#using-operators) to the plugin framework
@@ -3138,7 +2983,6 @@ Plugins
 - Added CLI methods for [plugins](cli/index.md#cli-fiftyone-plugins) and
 [operators](cli/index.md#cli-fiftyone-operators) [#3025](https://github.com/voxel51/fiftyone/pull/3025),
 [#3038](https://github.com/voxel51/fiftyone/pull/3038)
-
 
 Annotation
 
@@ -3158,18 +3002,15 @@ closed shapes [#3123](https://github.com/voxel51/fiftyone/pull/3123)
 - Fixed broken Scale docs links and unlabeled annotation task support
 [#2916](https://github.com/voxel51/fiftyone/pull/2916)
 
-
 Zoo
 
 - Added the [Sama-COCO dataset](data/dataset_zoo/datasets.md#dataset-zoo-sama-coco) to the zoo!
 [#2904](https://github.com/voxel51/fiftyone/pull/2904)
 
-
 Tutorials
 
 - Updated detection mistakes tutorial to avoid unnecessarily resetting the App
 [#3034](https://github.com/voxel51/fiftyone/pull/3034)
-
 
 ## FiftyOne Teams 1.2.1 [¶](\#fiftyone-teams-1-2-1 "Permalink to this headline")
 
@@ -3186,12 +3027,10 @@ being presented with a cryptic server error
 - Improved the accuracy of size estimates when exporting filepaths and/or tags
 from the Teams UI
 
-
 Admin
 
 - Added support for uploading Azure storage credentials for your deployment via
 the `Settings > Cloud storage` page
-
 
 SDK
 
@@ -3199,14 +3038,12 @@ SDK
 [this section](teams/installation.md#teams-azure) to see how to provide your storage
 credentials
 
-
 Deployment
 
 - Added support for deploying into Microsoft Azure environments
 
 - Fixed a bug that prevented the dataset page from loading for deployments
 running MongoDB 4.4
-
 
 ## FiftyOne 0.20.1 [¶](\#fiftyone-0-20-1 "Permalink to this headline")
 
@@ -3233,7 +3070,6 @@ when rendering segmentations in the App
 - Fixed a bug when rendering heatmaps stored as images on disk
 [#2872](https://github.com/voxel51/fiftyone/pull/2872),
 [#2880](https://github.com/voxel51/fiftyone/pull/2880)
-
 
 Core
 
@@ -3274,7 +3110,6 @@ previously contain videos
 - Fixed a validation bug when importing COCO datasets whose description is not
 a string [#2848](https://github.com/voxel51/fiftyone/pull/2848)
 
-
 Documentation
 
 - Updated the source URLs for the [Caltech-101](data/dataset_zoo/datasets.md#dataset-zoo-caltech101)
@@ -3283,7 +3118,6 @@ and [Caltech-256](data/dataset_zoo/datasets.md#dataset-zoo-caltech256) datasets
 
 - Fixed a typo in the [Caltech-256](data/dataset_zoo/datasets.md#dataset-zoo-caltech256) dataset
 documentation [#2842](https://github.com/voxel51/fiftyone/pull/2842)
-
 
 ## FiftyOne Teams 1.2 [¶](\#fiftyone-teams-1-2 "Permalink to this headline")
 
@@ -3302,7 +3136,6 @@ users
 [default access level](teams/roles_and_permissions.md#teams-default-access) that Members receive on
 newly created datasets Dataset page
 
-
 Dataset page
 
 - Added support for viewing [Segmentation](fiftyone_concepts/using_datasets.md#semantic-segmentation) and
@@ -3314,11 +3147,9 @@ through the Teams UI
 - Stack traces for unhandled errors are now presented directly in the App so
 that users can self-diagnose issues
 
-
 Deployment
 
 - Added support for sharded databases
-
 
 ## FiftyOne 0.20.0 [¶](\#fiftyone-0-20-0 "Permalink to this headline")
 
@@ -3335,7 +3166,6 @@ image searches on FiftyOne datasets!
 
 - Released a [Pinecone integration](integrations/pinecone.md#pinecone-integration) for native text
 and image searches on FiftyOne datasets!
-
 
 App
 
@@ -3474,7 +3304,6 @@ views
 - Fixed a bug when matching by tags that contain spaces
 [#2658](https://github.com/voxel51/fiftyone/pull/2658)
 
-
 Core
 
 - Added support for querying by vectors and text prompts
@@ -3553,12 +3382,10 @@ list documents
 - Fixed a bug in deferred saves where filtered list updates were not being
 applied [#2727](https://github.com/voxel51/fiftyone/pull/2727)
 
-
 Annotation
 
 - Added support for passing CVAT organization to annotation jobs
 [#2716](https://github.com/voxel51/fiftyone/pull/2716)
-
 
 Docs
 
@@ -3573,12 +3400,10 @@ embedded document creation
 - Fixed broken torchvision dataset links in the docs
 [#2771](https://github.com/voxel51/fiftyone/pull/2771)
 
-
 Zoo
 
 - Added a `tensorflow-macos` option when loading TF models from the
 [Model Zoo](models/model_zoo/index.md#model-zoo) [#2685](https://github.com/voxel51/fiftyone/pull/2685)
-
 
 Tutorials
 
@@ -3589,7 +3414,6 @@ dataset [#2818](https://github.com/voxel51/fiftyone/pull/2818)
 - Added a [YOLOv8 tutorial](tutorials/yolov8.md) [#2755](https://github.com/voxel51/fiftyone/pull/2755)
 
 - Updated the media in the [Open Images tutorial](tutorials/open_images.md) [#2665](https://github.com/voxel51/fiftyone/pull/2665)
-
 
 ## FiftyOne Teams 1.1.1 [¶](\#fiftyone-teams-1-1-1 "Permalink to this headline")
 
@@ -3603,7 +3427,6 @@ Plugins
 - Resolved a bug that prevented Teams deployments from recognizing installed
 plugins
 
-
 ## FiftyOne 0.19.1 [¶](\#fiftyone-0-19-1 "Permalink to this headline")
 
 _Released February 14, 2023_
@@ -3616,13 +3439,11 @@ App
 - Fixed a bug that prevented launching the App in Databricks notebooks
 [#2647](https://github.com/voxel51/fiftyone/pull/2647)
 
-
 Core
 
 - Fixed a bug in certain environments that prevented progress bars from
 rendering correctly
 [#2647](https://github.com/voxel51/fiftyone/pull/2647)
-
 
 ## FiftyOne Teams 1.1 [¶](\#fiftyone-teams-1-1 "Permalink to this headline")
 
@@ -3641,12 +3462,10 @@ User roles
 role. Note that Guest is a view-only role and does not contribute to your
 license count. You can add unlimited Guest users to your deployment!
 
-
 Homepage
 
 - Added a Recent views widget to the homepage that shows the most recent saved
 views that you have viewed in the Teams UI
-
 
 Dataset page
 
@@ -3657,11 +3476,9 @@ selections, etc) into a new dataset from the UI
 in various formats (filepaths only, filepaths and tags, media only, labels
 only, media and labels)
 
-
 Deployment
 
 - Added support for deploying Teams into environments with proxy networks
-
 
 ## FiftyOne 0.19.0 [¶](\#fiftyone-0-19-0 "Permalink to this headline")
 
@@ -3671,7 +3488,6 @@ News
 
 - [FiftyOne Teams](teams/index.md#fiftyone-teams) documentation is now publicly
 available! [#2388](https://github.com/voxel51/fiftyone/pull/2388)
-
 
 App
 
@@ -3743,7 +3559,6 @@ disk [#2358](https://github.com/voxel51/fiftyone/pull/2358)
 - Fixed bugs with multiple media fields when loading views that exclude fields
 [#2378](https://github.com/voxel51/fiftyone/pull/2378),
 [#2303](https://github.com/voxel51/fiftyone/pull/2303)
-
 
 Core
 
@@ -3862,7 +3677,6 @@ and type to
 - Fixed a bug in default sidebar group expansion
 [#2441](https://github.com/voxel51/fiftyone/pull/2441)
 
-
 Annotation
 
 - Added support for CVAT 2.4
@@ -3877,7 +3691,6 @@ Annotation
 - Fixed a bug when checking if CVAT tasks exist
 [#2070](https://github.com/voxel51/fiftyone/pull/2070)
 
-
 Zoo
 
 - Added [Open Images V7](data/dataset_zoo/datasets.md#dataset-zoo-open-images-v7) to the zoo
@@ -3890,7 +3703,6 @@ legacy 3D visualizer settings
 
 - Added support for filtering datasets when using
 [`list_zoo_datasets()`](api/fiftyone.zoo.datasets.html#fiftyone.zoo.datasets.list_zoo_datasets "fiftyone.zoo.datasets.list_zoo_datasets") [#2448](https://github.com/voxel51/fiftyone/pull/2448)
-
 
 Docs
 
@@ -3914,7 +3726,6 @@ label formats [#2498](https://github.com/voxel51/fiftyone/pull/2498)
 - Added a [filtering](how_do_i/cheat_sheets/filtering_cheat_sheet.md#filtering-cheat-sheet) cheat sheet
 [#2447](https://github.com/voxel51/fiftyone/pull/2447)
 
-
 ## FiftyOne Teams 1.0 [¶](\#fiftyone-teams-1-0 "Permalink to this headline")
 
 _Released November 8, 2022_
@@ -3926,7 +3737,6 @@ News
 
 - FiftyOne Teams is now generally available,
 [read more here](teams/index.md#fiftyone-teams)!
-
 
 ## FiftyOne 0.18.0 [¶](\#fiftyone-0-18-0 "Permalink to this headline")
 
@@ -3983,7 +3793,6 @@ alternate media fields
 - Fixed some issues with datetime rendering and timezone handling
 [#2111](https://github.com/voxel51/fiftyone/issues/2111),
 [#2112](https://github.com/voxel51/fiftyone/issues/2112)
-
 
 Core
 
@@ -4043,7 +3852,6 @@ with `ObjectId` fields
 - Added support for including the export directory in the `dataset.yaml` file
 generated by [YOLOv5 exports](fiftyone_concepts/export_datasets.md#yolov5dataset-export) [#2114](https://github.com/voxel51/fiftyone/pull/2114)
 
-
 Annotation
 
 - Updated the default CVAT endpoint to [https://app.cvat.ai](https://app.cvat.ai) [#2228](https://github.com/voxel51/fiftyone/pull/2228)
@@ -4052,13 +3860,11 @@ Annotation
 crash when using the Label Studio backend
 [#2145](https://github.com/voxel51/fiftyone/pull/2145)
 
-
 Zoo
 
 - Added support for using CUDA devices when running the
 [CLIP model](models/model_zoo/models.md#model-zoo-clip-vit-base32-torch) from the zoo
 [#2201](https://github.com/voxel51/fiftyone/pull/2201)
-
 
 ## FiftyOne 0.17.2 [¶](\#fiftyone-0-17-2 "Permalink to this headline")
 
@@ -4069,7 +3875,6 @@ App
 - Fixed a backward compatibility bug when connecting to older database versions
 [#2103](https://github.com/voxel51/fiftyone/pull/2103)
 
-
 ## FiftyOne 0.17.1 [¶](\#fiftyone-0-17-1 "Permalink to this headline")
 
 _Released September 20, 2022_
@@ -4078,7 +3883,6 @@ Core
 
 - Removed `TypedDict` usage introduced in v0.17.0 that is not supported in
 Python 3.7 [#2100](https://github.com/voxel51/fiftyone/pull/2100)
-
 
 ## FiftyOne 0.17.0 [¶](\#fiftyone-0-17-0 "Permalink to this headline")
 
@@ -4102,7 +3906,6 @@ new [Map panel](fiftyone_concepts/app.md#app-map-panel) [#1976](https://github.c
 
 - Fixed Google Colab screenshotting and cell updates
 [#2069](https://github.com/voxel51/fiftyone/pull/2069)
-
 
 Core
 
@@ -4146,13 +3949,11 @@ label attributes [#2051](https://github.com/voxel51/fiftyone/pull/2051)
 bug that caused all frames to be included, even if the view filters the
 frames [#2029](https://github.com/voxel51/fiftyone/pull/2029)
 
-
 Docs
 
 - Added a [tutorial](tutorials/detectron2.md) showing how to integrate
 FiftyOne into a Detectron2 model training pipeline
 [#2054](https://github.com/voxel51/fiftyone/pull/2054)
-
 
 Annotation
 
@@ -4161,7 +3962,6 @@ Annotation
 
 - Fixed an error that occurred when deserializing Label Studio annotation
 results [#2074](https://github.com/voxel51/fiftyone/pull/2074)
-
 
 Zoo
 
@@ -4173,7 +3973,6 @@ to the dataset zoo! [#1765](https://github.com/voxel51/fiftyone/pull/1765)
 
 - Added the [KITTI Multiview dataset](data/dataset_zoo/datasets.md#dataset-zoo-kitti-multiview) to the
 dataset zoo! [#1765](https://github.com/voxel51/fiftyone/pull/1765)
-
 
 ## FiftyOne 0.16.6 [¶](\#fiftyone-0-16-6 "Permalink to this headline")
 
@@ -4194,7 +3993,6 @@ App
 
 - Fixed classification confusion matrix connections
 [#1967](https://github.com/voxel51/fiftyone/pull/1967)
-
 
 Core
 
@@ -4272,7 +4070,6 @@ when `select_fields` is `True` [#1922](https://github.com/voxel51/fiftyone/pull/
 - Fixed a bug that prevented assignment of array-valued dynamic attributes
 to labels [#1922](https://github.com/voxel51/fiftyone/pull/1922)
 
-
 Annotation
 
 - Added a new [Label Studio integration!](integrations/labelstudio.md#label-studio-integration) [#1848](https://github.com/voxel51/fiftyone/pull/1848)
@@ -4289,7 +4086,6 @@ interface [#1997](https://github.com/voxel51/fiftyone/pull/1997)
 - Fixed uploading to a CVAT project when no label schema is provided
 [#1926](https://github.com/voxel51/fiftyone/pull/1926)
 
-
 ## FiftyOne 0.16.5 [¶](\#fiftyone-0-16-5 "Permalink to this headline")
 
 _Released June 24, 2022_
@@ -4302,7 +4098,6 @@ App
 - Fixed dataset results for long dataset names
 [#1907](https://github.com/voxel51/fiftyone/pull/1907)
 
-
 ## FiftyOne 0.16.4 [¶](\#fiftyone-0-16-4 "Permalink to this headline")
 
 _Released June 21, 2022_
@@ -4311,7 +4106,6 @@ App
 
 - Fixed frame fields omission in the sidebar
 [#1899](https://github.com/voxel51/fiftyone/pull/1899)
-
 
 ## FiftyOne 0.16.3 [¶](\#fiftyone-0-16-3 "Permalink to this headline")
 
@@ -4363,7 +4157,6 @@ values [#1817](https://github.com/voxel51/fiftyone/pull/1817)
 - Fixed App issues related to dataset deletion and dataset schema changes
 [#1875](https://github.com/voxel51/fiftyone/pull/1875)
 
-
 Core
 
 - Added `skeleton` and `skeleton_key` to the OpenLABEL
@@ -4404,7 +4197,6 @@ for organizing datasets
 - Removed non-XML or non-TXT files from CVAT, KITTI, CVATVideo
 [#1884](https://github.com/voxel51/fiftyone/pull/1884)
 
-
 Annotation
 
 - Updated CVAT task and project processing
@@ -4412,7 +4204,6 @@ Annotation
 
 - Added the ability to upload and download group ids from CVAT
 [#1876](https://github.com/voxel51/fiftyone/pull/1876)
-
 
 ## FiftyOne 0.16.2 [¶](\#fiftyone-0-16-2 "Permalink to this headline")
 
@@ -4438,12 +4229,10 @@ clear to the user that it must be installed to use video datasets in the App
 - Fixed issues with patches views
 [#1808](https://github.com/voxel51/fiftyone/pull/1808)
 
-
 Core
 
 - Fixed errors related to session-attached plots
 [#1808](https://github.com/voxel51/fiftyone/pull/1808)
-
 
 ## FiftyOne 0.16.1 [¶](\#fiftyone-0-16-1 "Permalink to this headline")
 
@@ -4475,13 +4264,11 @@ from showing their label filters when expanded in the sidebar
 - Fixed fortran array handling for masks and maps
 [#1790](https://github.com/voxel51/fiftyone/pull/1790)
 
-
 Core
 
 - Fixed a formatting issue when raising an exception because unsupported
 plotting backend was requested
 [#1794](https://github.com/voxel51/fiftyone/pull/1794)
-
 
 ## FiftyOne 0.16.0 [¶](\#fiftyone-0-16-0 "Permalink to this headline")
 
@@ -4518,7 +4305,6 @@ tags [#1713](https://github.com/voxel51/fiftyone/pull/1713)
 - Fixed keypoint skeleton rendering for named skeletons of frame fields
 [#1713](https://github.com/voxel51/fiftyone/pull/1713)
 
-
 Core
 
 - Fixed edge cases in
@@ -4540,7 +4326,6 @@ deleted [#1747](https://github.com/voxel51/fiftyone/pull/1747)
 utility to automatically find duplicate objects based on IoU
 [#1714](https://github.com/voxel51/fiftyone/pull/1714)
 
-
 ## FiftyOne 0.15.1 [¶](\#fiftyone-0-15-1 "Permalink to this headline")
 
 _Released April 26, 2022_
@@ -4556,7 +4341,6 @@ attributes on [`Keypoint`](api/fiftyone.core.labels.html#fiftyone.core.labels.Ke
 
 - Added support for rendering Fortan-ordered arrays
 [#1660](https://github.com/voxel51/fiftyone/pull/1660)
-
 
 Core
 
@@ -4599,19 +4383,16 @@ in [CVATImageDataset format](fiftyone_concepts/export_datasets.md#cvatimagedatas
 - Fixed a `KeyError` bug when loading dataset with relative paths on Windows
 [#1675](https://github.com/voxel51/fiftyone/pull/1675)
 
-
 Brain
 
 - Added `fiftyone-brain` wheels for Python 3.10
 
 - Added support for installing `fiftyone-brain` on Apple Silicon
 
-
 Annotation
 
 - Fixed a `CSRF Failed` error when connecting to some CVAT servers
 [#1668](https://github.com/voxel51/fiftyone/pull/1668)
-
 
 Integrations
 
@@ -4619,13 +4400,11 @@ Integrations
 Flash versions 0.7.0 or later
 [#1671](https://github.com/voxel51/fiftyone/pull/1671)
 
-
 Zoo
 
 - Added the [Families in the Wild dataset](data/dataset_zoo/datasets.md#dataset-zoo-fiw) to the
 FiftyOne Dataset Zoo!
 [#1663](https://github.com/voxel51/fiftyone/pull/1663)
-
 
 ## FiftyOne 0.15.0 [¶](\#fiftyone-0-15-0 "Permalink to this headline")
 
@@ -4635,7 +4414,6 @@ App
 
 - Fixed [`Regression`](api/fiftyone.core.labels.html#fiftyone.core.labels.Regression "fiftyone.core.labels.Regression") rendering in the
 visualizer [#1604](https://github.com/voxel51/fiftyone/pull/1604)
-
 
 Core
 
@@ -4675,7 +4453,6 @@ when aggregating expressions that involve both [`Sample`](api/fiftyone.core.samp
 [video](fiftyone_concepts/dataset_creation/datasets.md#openlabelvideodataset-import) datasets in
 [OpenLABEL format](https://www.asam.net/index.php?eID=dumpFile&t=f&f=3876&token=413e8c85031ae64cc35cf42d0768627514868b2f#_introduction) [#1609](https://github.com/voxel51/fiftyone/pull/1609)
 
-
 Annotation
 
 - Added support for CVATv2 servers when using the CVAT backend
@@ -4699,7 +4476,6 @@ annotation of video-level labels
 labels not being uploaded to the annotation backend
 [#1647](https://github.com/voxel51/fiftyone/pull/1647)
 
-
 Docs
 
 - Added [documentation](fiftyone_concepts/using_datasets.md#custom-embedded-documents) for defining custom
@@ -4712,7 +4488,6 @@ user guide [#1617](https://github.com/voxel51/fiftyone/pull/1617)
 - Added a [recipe](recipes/creating_views.md) for creating views and view
 expressions [#1641](https://github.com/voxel51/fiftyone/pull/1641)
 
-
 ## FiftyOne 0.14.4 [¶](\#fiftyone-0-14-4 "Permalink to this headline")
 
 _Released February 7, 2022_
@@ -4724,14 +4499,12 @@ FiftyOne is now a recommended tool for downloading, visualizing, and
 evaluating on the Activitynet dataset! Check out
 [this guide](integrations/activitynet.md#activitynet) for more details
 
-
 App
 
 - Fixed encoding of sample media URLs so image and video filepaths with special
 characters are supported
 
 - Fixed an error that would occur when rendering empty [`Keypoint`](api/fiftyone.core.labels.html#fiftyone.core.labels.Keypoint "fiftyone.core.labels.Keypoint") instances
-
 
 Core
 
@@ -4796,7 +4569,6 @@ and
 - Resolved a bug that would previously cause an error when writing aggregations
 on video datasets that involve applying expressions directly to `"frames"`
 
-
 Annotation
 
 - Added support for [importing](fiftyone_concepts/dataset_creation/datasets.md#cvatimagedataset-import) and
@@ -4808,7 +4580,6 @@ specified in calls to
 [`annotate()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.annotate "fiftyone.core.collections.SampleCollection.annotate")
 
 - CVAT login credentials are no longer included in exception messages
-
 
 Zoo
 
@@ -4826,7 +4597,6 @@ zoo!
 
 - Added [Kinetics 700-2020](data/dataset_zoo/datasets.md#dataset-zoo-kinetics-700-2020) to the dataset
 zoo!
-
 
 ## FiftyOne 0.14.3 [¶](\#fiftyone-0-14-3 "Permalink to this headline")
 
@@ -4887,7 +4657,6 @@ from working as expected when `key_field="id"` argument is used
 
 - [`OpenImagesDetectionResults.plot_pr_curves()`](api/fiftyone.utils.eval.openimages.html#fiftyone.utils.eval.openimages.OpenImagesDetectionResults.plot_pr_curves "fiftyone.utils.eval.openimages.OpenImagesDetectionResults.plot_pr_curves")
 
-
 Brain
 
 - Graceful handling of missing/uncomputable embeddings in
@@ -4898,7 +4667,6 @@ Brain
 
 - Removed a spurious warning message that was previously logged when computing
 patch embeddings for a collection containing samples with no patches
-
 
 Annotation
 
@@ -4921,7 +4689,6 @@ unexpected annotations returned by the CVAT API
 - Added support for passing request headers to the CVAT API
 
 - Fixed a bug that occurred when importing single frame track segments from CVAT
-
 
 Zoo
 
@@ -4959,7 +4726,6 @@ downloaded
 
 - [ssd-mobilenet-v1-fpn-640-coco17](models/model_zoo/models.md#model-zoo-ssd-mobilenet-v1-fpn-640-coco17)
 
-
 ## FiftyOne 0.14.2 [¶](\#fiftyone-0-14-2 "Permalink to this headline")
 
 _Released November 24, 2021_
@@ -4968,7 +4734,6 @@ App
 
 - Improved mask loading times for [`Segmentation`](api/fiftyone.core.labels.html#fiftyone.core.labels.Segmentation "fiftyone.core.labels.Segmentation"), [`Heatmap`](api/fiftyone.core.labels.html#fiftyone.core.labels.Heatmap "fiftyone.core.labels.Heatmap"), and [`Detection`](api/fiftyone.core.labels.html#fiftyone.core.labels.Detection "fiftyone.core.labels.Detection")
 labels with instance masks
-
 
 Core
 
@@ -4989,7 +4754,6 @@ and
 that could occur when computing predictions/embeddings for very large
 datasets with Torch models
 
-
 Brain
 
 - Added the `points` keyword argument to
@@ -5005,7 +4769,6 @@ with interactive embeddings plots
 required dependencies are installed prior to performing any expensive
 computations
 
-
 Annotation
 
 - Changed CVAT uploads to retain original filenames
@@ -5013,13 +4776,11 @@ Annotation
 - A helpful error is now raised when the `"frames."` prefix is omitted from
 label fields when requesting spatial annotations on video datasets
 
-
 Zoo
 
 - Patched an issue that prevented downloading the
 [VOC-2007](data/dataset_zoo/datasets.md#dataset-zoo-voc-2007) and
 [VOC-2012](data/dataset_zoo/datasets.md#dataset-zoo-voc-2012) datasets from the zoo
-
 
 ## FiftyOne 0.14.1 [¶](\#fiftyone-0-14-1 "Permalink to this headline")
 
@@ -5037,7 +4798,6 @@ be inferred from the filepath, e.g. without an extension
 - Fixed first pixel coloring for segmentations
 
 - Added graceful handling of nonfinites ( `-inf`, `inf`, and `nan`)
-
 
 Core
 
@@ -5093,7 +4853,6 @@ rather than multiprocessing
 - Updated evaluation confusion matrices to always include rows and columns for
 missing/other
 
-
 Annotation
 
 - Added support for annotating multiple label fields in one CVAT task
@@ -5116,7 +4875,6 @@ of a video
 
 - Fixed a bug when annotating with `allow_additions=False`
 
-
 Docs
 
 - Added a section on [adding model predictions](fiftyone_concepts/dataset_creation/index.md#model-predictions) to
@@ -5130,7 +4888,6 @@ existing datasets to the user guide
 and COCO that require explicit class lists
 
 - Documented the supported label types for all exporters
-
 
 ## FiftyOne 0.14.0 [¶](\#fiftyone-0-14-0 "Permalink to this headline")
 
@@ -5157,7 +4914,6 @@ in the video visualizer
 - Added a `default_app_address` setting to the FiftyOne config for restricting
 sessions to a hostname. See [this page](fiftyone_concepts/running_environments.md#restricting-app-address) for
 more details
-
 
 Core
 
@@ -5207,7 +4963,6 @@ to the view expression API
 - Missing ground truth/predictions are now included by default when viewing
 [confusion matrices](fiftyone_concepts/plots.md#confusion-matrix-plots) for detection tasks
 
-
 Annotation
 
 - Added support for specifying per-class attributes when
@@ -5246,7 +5001,6 @@ builtin occlusion icon when
 [annotating label attributes](integrations/cvat.md#cvat-label-attributes) using the CVAT
 backend
 
-
 ## FiftyOne 0.13.3 [¶](\#fiftyone-0-13-3 "Permalink to this headline")
 
 _Released September 22, 2021_
@@ -5259,7 +5013,6 @@ values
 - Fixed some audio-related bugs when viewing video samples with audio channels
 
 - Fixed a bug that prevented boolean App filters from working properly
-
 
 Core
 
@@ -5290,7 +5043,6 @@ video datasets, respectively
 [interactive plots](fiftyone_concepts/plots.md#interactive-plots) from working properly on
 sufficiently large datasets
 
-
 Annotation
 
 - Added support for annotating semantic segmentations and instance
@@ -5314,7 +5066,6 @@ from being imported properly
 than 3 vertices to be deleted when editing existing labels with the CVAT
 backend
 
-
 ## FiftyOne 0.13.2 [¶](\#fiftyone-0-13-2 "Permalink to this headline")
 
 _Released September 3, 2021_
@@ -5329,7 +5080,6 @@ and time-to-interaction in the Fields Sidebar!
 - Fixed count inconsistencies for large sets of
 [`StringField`](api/fiftyone.core.fields.html#fiftyone.core.fields.StringField "fiftyone.core.fields.StringField") results in the
 Fields Sidebar
-
 
 Core
 
@@ -5349,7 +5099,6 @@ empty-valued attributes in their schema and/or individual labels
 - Added support for importing CVAT-style attributes when loading labels in
 COCO and VOC formats
 
-
 ## FiftyOne 0.13.1 [¶](\#fiftyone-0-13-1 "Permalink to this headline")
 
 _Released August 25, 2021_
@@ -5358,13 +5107,11 @@ App
 
 - Fixed `id` rendering in the grid when the `id` checkbox is active
 
-
 Annotation
 
 - Fixed a bug that could cause mismatches between media and their pre-existing
 labels when uploading data to CVAT for annotation whose source media lives in
 multiple directories
-
 
 ## FiftyOne 0.13.0 [¶](\#fiftyone-0-13-0 "Permalink to this headline")
 
@@ -5396,7 +5143,6 @@ modal when working with datasets with no label fields
 - Fixed a bug that prevented the desktop App from launching when using source
 builds
 
-
 Brain
 
 - Added new
@@ -5418,7 +5164,6 @@ you to identify near-duplicate images or objects in a dataset
 - Added a new
 `compute_exact_duplicates()`
 method that can identify exactly duplicate media in a dataset
-
 
 Core
 
@@ -5447,7 +5192,6 @@ working with [BDD format](fiftyone_concepts/dataset_creation/datasets.md#bdddata
 
 - Fixed some Windows-style path bugs
 
-
 Annotation
 
 - Added a powerful [annotation API](fiftyone_concepts/annotation.md#fiftyone-annotation) that makes it
@@ -5457,7 +5201,6 @@ them
 - Added a native [CVAT integration](integrations/cvat.md#cvat-integration) that enables you
 to use the annotation API with
 [CVAT](https://github.com/opencv/cvat)
-
 
 Docs
 
@@ -5473,7 +5216,6 @@ the brain user guide
 - Added a [new section](fiftyone_concepts/plots.md#plot-selection-modes) to the plots user guide
 page explaining how to control the selection mode of interactive plots linked
 to labels
-
 
 ## FiftyOne 0.12.0 [¶](\#fiftyone-0-12-0 "Permalink to this headline")
 
@@ -5507,7 +5249,6 @@ to `True`
 ( [`BooleanField`](api/fiftyone.core.fields.html#fiftyone.core.fields.BooleanField "fiftyone.core.fields.BooleanField") and
 [`StringField`](api/fiftyone.core.fields.html#fiftyone.core.fields.StringField "fiftyone.core.fields.StringField") fields)
 
-
 Core
 
 - Added support for importing [DICOM datasets](fiftyone_concepts/dataset_creation/datasets.md#dicomdataset-import)
@@ -5521,7 +5262,6 @@ datasets using
 - When adding samples to datasets, `None`-valued sample fields are now
 gracefully ignored when expanding dataset schemas
 
-
 Docs
 
 - Added [Using the image visualizer](fiftyone_concepts/app.md#app-image-visualizer) and
@@ -5531,12 +5271,10 @@ App user guide
 - Added sections covering [merging datasets](fiftyone_concepts/using_datasets.md#merging-datasets) and
 [batch updates](fiftyone_concepts/using_datasets.md#batch-updates) to the dataset user guide page
 
-
 Zoo
 
 - Patched an Open Images issue where `classes` or `attrs` requirements were
 being ignored when loading a dataset with no `max_samples` requirement
-
 
 ## FiftyOne 0.11.2.1 [¶](\#fiftyone-0-11-2-1 "Permalink to this headline")
 
@@ -5553,7 +5291,6 @@ where Open Images has never been downloaded
 
 - Patched loading of COCO datasets
 
-
 ## FiftyOne 0.11.2 [¶](\#fiftyone-0-11-2 "Permalink to this headline")
 
 _Released July 27, 2021_
@@ -5567,7 +5304,6 @@ App
 - Fixed a bug that could cause
 [`Session.wait()`](api/fiftyone.core.session.html#fiftyone.core.session.Session.wait "fiftyone.core.session.Session.wait") to exit when the
 App’s tab is refreshed in the browser
-
 
 Core
 
@@ -5640,7 +5376,6 @@ filesystems
 [Open Images V6](data/dataset_zoo/datasets.md#dataset-zoo-open-images-v6) dataset after partial
 downloads involving only a subset of the available label types
 
-
 Zoo
 
 - Added support for importing license data when loading the
@@ -5658,7 +5393,6 @@ unlabeled test split of [COCO-2014](data/dataset_zoo/datasets.md#dataset-zoo-coc
 - Fixed a bug that prevented Windows users from downloading the
 [Open Images V6](data/dataset_zoo/datasets.md#dataset-zoo-open-images-v6) dataset
 
-
 ## FiftyOne 0.11.1 [¶](\#fiftyone-0-11-1 "Permalink to this headline")
 
 _Released June 29, 2021_
@@ -5667,7 +5401,6 @@ App
 
 - Updated the expired [Slack community link](https://slack.voxel51.com) in
 the App menu bar
-
 
 ## FiftyOne 0.11.0 [¶](\#fiftyone-0-11-0 "Permalink to this headline")
 
@@ -5680,12 +5413,10 @@ FiftyOne is now a recommended tool for downloading, visualizing, and
 evaluating on the COCO dataset! Check out [this guide](integrations/coco.md#coco) for more
 details
 
-
 App
 
 - Fixed a bug that prevented `sample_id` fields from appearing in the App
 when working with frames and patches views
-
 
 Core
 
@@ -5712,7 +5443,6 @@ type to support both image and video datasets
 and [`exporting`](api/fiftyone.utils.coco.html#fiftyone.utils.coco.COCODetectionDatasetExporter "fiftyone.utils.coco.COCODetectionDatasetExporter") extra
 attributes in COCO format via a new `extra_attrs` parameter
 
-
 Zoo
 
 - Added support for partial downloads and loading segmentations to the
@@ -5724,7 +5454,6 @@ Zoo
 of the available classes, all labels for matching samples will now be loaded
 by default
 
-
 Docs
 
 - Added a [new page](integrations/coco.md#coco) demonstrating how to use FiftyOne to download,
@@ -5732,7 +5461,6 @@ visualize, and evaluate on the COCO dataset
 
 - Added a [new page](integrations/open_images.md#open-images) demonstrating how to use FiftyOne to
 download, visualize, and evaluate on the Open Images dataset
-
 
 ## FiftyOne 0.10.0 [¶](\#fiftyone-0-10-0 "Permalink to this headline")
 
@@ -5747,7 +5475,6 @@ team to make it easy to train
 tasks on your FiftyOne datasets. Check out
 [this guide]() for more details
 
-
 Core
 
 - Updated the
@@ -5757,12 +5484,10 @@ methods to natively support applying
 [Lightning Flash](https://github.com/PyTorchLightning/lightning-flash)
 models to FiftyOne datasets!
 
-
 Docs
 
 - Added a [new page]() demonstrating how to use the
 Lightning Flash integration
-
 
 ## FiftyOne 0.9.4 [¶](\#fiftyone-0-9-4 "Permalink to this headline")
 
@@ -5777,7 +5502,6 @@ App
 
 - Fixed a bug that caused the App to crash on some Windows machines by ensuring
 the correct MIME type is set for JavaScript files
-
 
 Core
 
@@ -5857,7 +5581,6 @@ contains None-valued fields
 [`ViewExpression.contains()`](api/fiftyone.core.expressions.html#fiftyone.core.expressions.ViewExpression.contains "fiftyone.core.expressions.ViewExpression.contains")
 from accepting [`ViewExpression`](api/fiftyone.core.expressions.html#fiftyone.core.expressions.ViewExpression "fiftyone.core.expressions.ViewExpression") instances as arguments
 
-
 Zoo
 
 - Fixed a string encoding issue that prevented some Windows users from loading
@@ -5867,13 +5590,11 @@ the [Open Images V6](data/dataset_zoo/datasets.md#dataset-zoo-open-images-v6) da
 (formerly named `vgg16-imagenet-tf`) to reflect the fact that it only
 supports TensorFlow 1.X
 
-
 Docs
 
 - Added example usages of
 [`to_frames()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.to_frames "fiftyone.core.collections.SampleCollection.to_frames")
 to the [user guide](fiftyone_concepts/using_views.md#frame-views)
-
 
 ## FiftyOne 0.9.3 [¶](\#fiftyone-0-9-3 "Permalink to this headline")
 
@@ -5887,7 +5608,6 @@ array data (e.g., logits) from properly loading in the App
 - Fixed a bug that prevented loading video datasets in the App in Google Colab
 environments
 
-
 ## FiftyOne 0.9.2 [¶](\#fiftyone-0-9-2 "Permalink to this headline")
 
 _Released May 16, 2021_
@@ -5898,7 +5618,6 @@ Zoo
 later from loading the [Open Images V6](data/dataset_zoo/datasets.md#dataset-zoo-open-images-v6)
 dataset
 
-
 ## FiftyOne 0.9.1 [¶](\#fiftyone-0-9-1 "Permalink to this headline")
 
 _Released May 12, 2021_
@@ -5906,7 +5625,6 @@ _Released May 12, 2021_
 App
 
 - Fixed a bug that caused the App to crash when choosing to `Color by value`
-
 
 ## FiftyOne 0.9.0 [¶](\#fiftyone-0-9-0 "Permalink to this headline")
 
@@ -5919,7 +5637,6 @@ News
 to make FiftyOne a recommended tool for downloading, visualizing, and
 evaluating on the Open Images Dataset! Check out
 [this guide](integrations/open_images.md#open-images) for more details
-
 
 App
 
@@ -5946,13 +5663,11 @@ functionality and interaction
 - Added support for [`Session.wait()`](api/fiftyone.core.session.html#fiftyone.core.session.Session.wait "fiftyone.core.session.Session.wait")
 in browser contexts
 
-
 Brain
 
 - Added a `compute_similarity()`
 method for indexing samples and object patches by similarity. See
 [this page](fiftyone_concepts/brain.md#brain-similarity) for usage details
-
 
 Core
 
@@ -6004,11 +5719,9 @@ method
 are now cached on the [`Dataset`](api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset "fiftyone.core.dataset.Dataset") object in-memory so that subsequent
 retrievals of the results in the same session will be instant
 
-
 Zoo
 
 - Added [Open Images V6](data/dataset_zoo/datasets.md#dataset-zoo-open-images-v6) to the dataset zoo!
-
 
 Docs
 
@@ -6043,7 +5756,6 @@ to the [detection mistakes tutorial](tutorials/detection_mistakes.md)
 [`to_patches()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.to_patches "fiftyone.core.collections.SampleCollection.to_patches")
 to the [adding detections recipe](recipes/adding_detections.md)
 
-
 ## FiftyOne 0.8.0 [¶](\#fiftyone-0-8-0 "Permalink to this headline")
 
 _Released April 5, 2021_
@@ -6072,7 +5784,6 @@ fields
 
 - Fixed hiding, clearing, and only showing selected samples in the samples grid
 
-
 Brain
 
 - Added a `compute_visualization()` method that uses embeddings and dimensionality reduction methods to generate interactive visualizations of the samples and/or labels in a dataset. Check out [this page](fiftyone_concepts/brain.md#brain-embeddings-visualization) for details. Features include:
@@ -6088,7 +5799,6 @@ Brain
 - Use this capability in a Jupyter notebook and you can interact with the
 plots to select samples/labels of interest in a connected [`Session`](api/fiftyone.core.session.html#fiftyone.core.session.Session "fiftyone.core.session.Session")
 
-
 - Added support for saving brain method results on datasets. Previous brain
 results can now be loaded at any time via
 [`Dataset.load_brain_results()`](api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.load_brain_results "fiftyone.core.dataset.Dataset.load_brain_results")
@@ -6096,7 +5806,6 @@ results can now be loaded at any time via
 - Added support for providing a custom [`Model`](api/fiftyone.core.models.html#fiftyone.core.models.Model "fiftyone.core.models.Model") or model from the
 [Model Zoo](models/model_zoo/index.md#model-zoo) to
 `compute_uniqueness()`
-
 
 Core
 
@@ -6124,7 +5833,6 @@ type for importing and exporting datasets in GeoJSON format
 and
 [`SampleCollection.geo_within()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.geo_within "fiftyone.core.collections.SampleCollection.geo_within")
 view stages for querying datasets with location data
-
 
 - Upgraded the implementation of the
 [FiftyOneDataset](fiftyone_concepts/export_datasets.md#fiftyonedataset-export) format, which is now 10-100x
@@ -6159,7 +5867,6 @@ string tags for the labels (analogous to the `tags` attribute of [`Sample`](api/
 
 - [`SampleCollection.count_label_tags()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.count_label_tags "fiftyone.core.collections.SampleCollection.count_label_tags")
 
-
 - **BREAKING CHANGE**: Renamed all applicable API components that previously referenced “objects” to use the more widely applicable term “labels”. Affected attributes, classes, and methods are:
 
 - [`Session.selected_labels`](api/fiftyone.core.session.html#fiftyone.core.session.Session.selected_labels "fiftyone.core.session.Session.selected_labels") (previously `selected_objects`)
@@ -6171,7 +5878,6 @@ string tags for the labels (analogous to the `tags` attribute of [`Sample`](api/
 - [`SelectLabels`](api/fiftyone.core.stages.html#fiftyone.core.stages.SelectLabels "fiftyone.core.stages.SelectLabels") (previously `SelectObjects`)
 
 - [`ExcludeLabels`](api/fiftyone.core.stages.html#fiftyone.core.stages.ExcludeLabels "fiftyone.core.stages.ExcludeLabels") (previously `ExcludeObjects`)
-
 
 - Added new keyword arguments `ids`, `tags`, and `fields` to
 [`SampleCollection.select_labels()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.select_labels "fiftyone.core.collections.SampleCollection.select_labels")
@@ -6236,18 +5942,15 @@ excluded fields
 - Fixed copying of [`DatasetView`](api/fiftyone.core.view.html#fiftyone.core.view.DatasetView "fiftyone.core.view.DatasetView") instances where
 [`ViewField`](api/fiftyone.core.expressions.html#fiftyone.core.expressions.ViewField "fiftyone.core.expressions.ViewField") is used
 
-
 Zoo
 
 - Added the [quickstart-geo](data/dataset_zoo/datasets.md#dataset-zoo-quickstart-geo) dataset to
 enable quick exploration of location-based datasets
 
-
 CLI
 
 - Removed the `--desktop` flag from the
 [fiftyone app connect](cli/index.md#cli-fiftyone-app-connect) command
-
 
 Docs
 
@@ -6262,7 +5965,6 @@ on image datasets
 - Added a [visualizing embedding](fiftyone_concepts/brain.md#brain-embeddings-visualization) section
 to the Brain user guide
 
-
 ## FiftyOne 0.7.4 [¶](\#fiftyone-0-7-4 "Permalink to this headline")
 
 _Released March 2, 2021_
@@ -6272,7 +5974,6 @@ App
 - Fixed a bug that prevented [`Session`](api/fiftyone.core.session.html#fiftyone.core.session.Session "fiftyone.core.session.Session") updates from triggering App updates
 
 - Fixed hiding labels in the expanded sample view
-
 
 Brain
 
@@ -6287,7 +5988,6 @@ for details
 
 - Updated `compute_mistakenness()`
 to use FiftyOne’s evaluation framework
-
 
 Core
 
@@ -6305,11 +6005,9 @@ managing a corrupted database
 - Added automatic field generation for `labelbox_id_field` when using
 [`import_from_labelbox()`](api/fiftyone.utils.labelbox.html#fiftyone.utils.labelbox.import_from_labelbox "fiftyone.utils.labelbox.import_from_labelbox")
 
-
 CLI
 
 - Added a [dataset stats](cli/index.md#cli-fiftyone-datasets-stats) command
-
 
 ## FiftyOne 0.7.3 [¶](\#fiftyone-0-7-3 "Permalink to this headline")
 
@@ -6347,7 +6045,6 @@ Sidebar
 
 - The App will no longer crash when samples whose source media is unsupported
 or missing are loaded
-
 
 Core
 
@@ -6398,7 +6095,6 @@ will now gracefully skip samples for which media metadata cannot be computed
 - Added a [`stats()`](api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.stats "fiftyone.core.dataset.Dataset.stats") method for
 listing helpful info about the size of various entities of a dataset
 
-
 Zoo
 
 - Added support for storing logits for many [zoo models](models/model_zoo/index.md#model-zoo) when
@@ -6411,12 +6107,10 @@ stored on a per-model basis rather than as a global default value in
 All detection models still have a default confidence threshold of 0.3, and
 all other model types have no default confidence threshold
 
-
 CLI
 
 - Added a [migration API](getting_started/basic/install.md#downgrading-fiftyone) to provide better support
 for downgrading the version of your `fiftyone` package
-
 
 Docs
 
@@ -6426,7 +6120,6 @@ explains how to evaluate various types of models with FiftyOne
 - Removed legacy `--index` flags from the install instructions from the
 [troubleshooting page](getting_started/basic/troubleshooting.md#troubleshooting) which prevented a valid
 installation
-
 
 ## FiftyOne 0.7.2 [¶](\#fiftyone-0-7-2 "Permalink to this headline")
 
@@ -6549,12 +6242,15 @@ sample collection methods, e.g.,\
 [`bounds()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.bounds "fiftyone.core.collections.SampleCollection.bounds")\
 \
 \
+
 ## FiftyOne 0.7.1 [¶](\#fiftyone-0-7-1 "Permalink to this headline")\
+
 \
 _Released January 8, 2021_\
 \
 App\
 \
+
 - Added automatic screenshotting for [notebook environments](fiftyone_concepts/running_environments.md#notebooks)\
 \
 - Fixed a bug where the Filters Sidebar statistics would not load for empty\
@@ -6642,12 +6338,15 @@ datasets in the zoo\
 in the zoo\
 \
 \
+
 ## FiftyOne 0.7.0 [¶](\#fiftyone-0-7-0 "Permalink to this headline")\
+
 \
 _Released December 21, 2020_\
 \
 App\
 \
+
 - Added web browser support, which is now the default setting\
 \
 - Added [IPython notebook support](fiftyone_concepts/running_environments.md#notebooks), e.g. Jupyter and Google\
@@ -6691,12 +6390,15 @@ were at `fiftyone zoo`)\
 launching the App as a desktop App (rather than a web browser)\
 \
 \
+
 ## FiftyOne 0.6.6 [¶](\#fiftyone-0-6-6 "Permalink to this headline")\
+
 \
 _Released November 25, 2020_\
 \
 App\
 \
+
 - Added a dropdown in the header to change datasets from the App\
 \
 - Added the ability to refresh the App by clicking the FiftyOne logo in the\
@@ -6746,12 +6448,15 @@ detect label mistakes for detection datasets\
 - [Can I serve multiple remote sessions from a machine?](faq/index.md#faq-serve-multiple-remote-sessions)\
 \
 \
+
 ## FiftyOne 0.6.5 [¶](\#fiftyone-0-6-5 "Permalink to this headline")\
+
 \
 _Released November 16, 2020_\
 \
 App\
 \
+
 - Added concurrency to the server which greatly improves loading speeds and\
 time-to-interaction in the Grid, View Bar, and Filters Sidebar for larger\
 datasets and views\
@@ -6830,12 +6535,15 @@ Google Cloud, and Azure\
 - Add an [FAQ page](faq/index.md#faq)\
 \
 \
+
 ## FiftyOne 0.6.4 [¶](\#fiftyone-0-6-4 "Permalink to this headline")\
+
 \
 _Released October 29, 2020_\
 \
 App\
 \
+
 - Improved page load times for video datasets\
 \
 - Improved support for frame- and sample-level labels in display options for\
@@ -6887,12 +6595,15 @@ that emits tensors of patches extracted from images defined by sets of\
 images\
 \
 \
+
 ## FiftyOne 0.6.3 [¶](\#fiftyone-0-6-3 "Permalink to this headline")\
+
 \
 _Released October 20, 2020_\
 \
 App\
 \
+
 - Added sample-level display options stats, filtering, and toggling for video\
 datasets\
 \
@@ -6924,12 +6635,15 @@ utility to re-encode the videos in a sample collection so that they are\
 visualizable in the FiftyOne App\
 \
 \
+
 ## FiftyOne 0.6.2 [¶](\#fiftyone-0-6-2 "Permalink to this headline")\
+
 \
 _Released October 15, 2020_\
 \
 App\
 \
+
 - Improved page and grid load times for video datasets by around 10x\
 \
 - Added filtering, toggling, and statistics for labels with respect to the\
@@ -6986,12 +6700,15 @@ to properly merge the frame-by-frame contents of video samples\
 would not create a copy of the frames of a video sample\
 \
 \
+
 ## FiftyOne 0.6.1 [¶](\#fiftyone-0-6-1 "Permalink to this headline")\
+
 \
 _Released October 7, 2020_\
 \
 App\
 \
+
 - Added support for visualizing keypoints, polylines, and segmentation masks\
 \
 - Added autocompletion when selecting `SortBy` fields in the view bar\
@@ -7043,12 +6760,15 @@ Docs\
 - Fixed some table widths and other display issues\
 \
 \
+
 ## FiftyOne 0.6.0 [¶](\#fiftyone-0-6-0 "Permalink to this headline")\
+
 \
 _Released October 1, 2020_\
 \
 App\
 \
+
 - Added support for visualizing video datasets in the App\
 \
 \
@@ -7081,12 +6801,15 @@ sample fields, for efficiency\
 - Fixed issues with serializing vector fields and numpy arrays\
 \
 \
+
 ## FiftyOne 0.5.6 [¶](\#fiftyone-0-5-6 "Permalink to this headline")\
+
 \
 _Released September 23, 2020_\
 \
 App\
 \
+
 - Added autocompletion to view bar stage fields that accept field names (for\
 example, [`Exists`](api/fiftyone.core.stages.html#fiftyone.core.stages.Exists "fiftyone.core.stages.Exists"))\
 \
@@ -7119,12 +6842,15 @@ method for merging samples in datasets via joining by `filepath`\
 method for renaming sample fields of datasets\
 \
 \
+
 ## FiftyOne 0.5.5 [¶](\#fiftyone-0-5-5 "Permalink to this headline")\
+
 \
 _Released September 15, 2020_\
 \
 App\
 \
+
 - Added support for filtering samples by numeric fields in the sidebar\
 \
 - Confidence bounds are now computed for the confidence slider in the label\
@@ -7151,12 +6877,15 @@ Core\
 for remote sessions, to make starting a remote session from a script easier\
 \
 \
+
 ## FiftyOne 0.5.4 [¶](\#fiftyone-0-5-4 "Permalink to this headline")\
+
 \
 _Released September 9, 2020_\
 \
 App\
 \
+
 - Added support for selecting/excluding samples from the current view in the\
 App by selecting them and then choosing the appropriate option from a sample\
 selection menu\
@@ -7187,12 +6916,15 @@ expect [`Detections`](api/fiftyone.core.labels.html#fiftyone.core.labels.Detecti
 [COCO format](fiftyone_concepts/dataset_creation/datasets.md#cocodetectiondataset-import)\
 \
 \
+
 ## FiftyOne 0.5.3 [¶](\#fiftyone-0-5-3 "Permalink to this headline")\
+
 \
 _Released September 1, 2020_\
 \
 App\
 \
+
 - Added support for filtering labels in the expanded sample view\
 \
 - Added support for displaying detection attributes in the expanded sample view\
@@ -7228,12 +6960,15 @@ stages with random seeds to be regenerated when handing off between the App\
 and Python shell\
 \
 \
+
 ## FiftyOne 0.5.2 [¶](\#fiftyone-0-5-2 "Permalink to this headline")\
+
 \
 _Released August 26, 2020_\
 \
 App\
 \
+
 - Added a label filter to the App that allows you to interactively explore your\
 labels, investigating things like confidence thresholds, individual classes,\
 and more, directly from the App\
@@ -7285,12 +7020,15 @@ tutorial to make it more friendly for execution on CPU-only machines\
 introduced in v0.5.0\
 \
 \
+
 ## FiftyOne 0.5.1 [¶](\#fiftyone-0-5-1 "Permalink to this headline")\
+
 \
 _Released August 18, 2020_\
 \
 App\
 \
+
 - Statistics in the display options sidebar now reflect the current\
 [view](fiftyone_concepts/using_views.md#using-views), not the entire [dataset](fiftyone_concepts/using_datasets.md#using-datasets)\
 \
@@ -7339,12 +7077,15 @@ Docs\
 powered by FiftyOne\
 \
 \
+
 ## FiftyOne 0.5.0 [¶](\#fiftyone-0-5-0 "Permalink to this headline")\
+
 \
 _Released August 11, 2020_\
 \
 News\
 \
+
 - FiftyOne is now open source! Read more about this exciting development\
 [in this press release](https://voxel51.com/press/fiftyone-open-source-launch)\
 \
@@ -7384,12 +7125,15 @@ view stage so that each instance of a view maintains a deterministic set of\
 samples\
 \
 \
+
 ## FiftyOne 0.4.1 [¶](\#fiftyone-0-4-1 "Permalink to this headline")\
+
 \
 _Released August 4, 2020_\
 \
 Core\
 \
+
 - Added a powerful [`fiftyone.core.expressions`](api/fiftyone.core.expressions.html#module-fiftyone.core.expressions "fiftyone.core.expressions") module for constructing\
 complex DatasetView [`match()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.match "fiftyone.core.collections.SampleCollection.match"),\
 [`sort_by()`](api/fiftyone.core.collections.html#fiftyone.core.collections.SampleCollection.sort_by "fiftyone.core.collections.SampleCollection.sort_by"), etc.\
@@ -7425,12 +7169,15 @@ of interest\
 landing pages\
 \
 \
+
 ## FiftyOne 0.4.0 [¶](\#fiftyone-0-4-0 "Permalink to this headline")\
+
 \
 _Released July 21, 2020_\
 \
 App\
 \
+
 - Fixed an issue that could cause launching the App to fail on Windows under\
 Python 3.6 and older\
 \
@@ -7471,12 +7218,15 @@ formats\
 Guide that explains how to customize your FiftyOne Config\
 \
 \
+
 ## FiftyOne 0.3.0 [¶](\#fiftyone-0-3-0 "Permalink to this headline")\
+
 \
 _Released June 24, 2020_\
 \
 App\
 \
+
 - Fixed an issue that could prevent the App from connecting to the FiftyOne\
 backend\
 \
@@ -7527,12 +7277,15 @@ terminal with a `less`-like interface\
 - Added `fiftyone datasets export` to export datasets in any available format\
 \
 \
+
 ## FiftyOne 0.2.1 [¶](\#fiftyone-0-2-1 "Permalink to this headline")\
+
 \
 _Released June 19, 2020_\
 \
 Core\
 \
+
 - Added preliminary Windows support\
 \
 - [`Dataset.add_images_dir()`](api/fiftyone.core.dataset.html#fiftyone.core.dataset.Dataset.add_images_dir "fiftyone.core.dataset.Dataset.add_images_dir")\
@@ -7547,12 +7300,15 @@ CLI\
 remote session\
 \
 \
+
 ## FiftyOne 0.2.0 [¶](\#fiftyone-0-2-0 "Permalink to this headline")\
+
 \
 _Released June 12, 2020_\
 \
 App\
 \
+
 - Added distribution graphs for label fields\
 \
 - Fixed an issue causing cached images from previously-loaded datasets to be\

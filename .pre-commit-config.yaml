@@ -1,16 +1,23 @@
 ---
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v5.0.0
     hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
       - id: check-yaml
+      - id: check-shebang-scripts-are-executable
       - id: end-of-file-fixer
       - id: mixed-line-ending
       - id: trailing-whitespace
   - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.5.4
+    rev: v1.5.5
     hooks:
       - id: forbid-tabs
+        exclude: docs/_static/jquery-3.5.1.js
+        exclude_types:
+          - makefile
+          - svg
   - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
     rev: v1.1.2
     hooks:
@@ -20,23 +27,37 @@ repos:
           - '*'
           - -i
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.36.0
+    rev: v0.44.0
     hooks:
       - id: markdownlint
       - id: markdownlint-fix
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.5
+    rev: v2.4.1
     hooks:
       - id: codespell
         args:
           - -Lfo,fom,dota,ative,ment,fot
-        exclude: .*.css
+        exclude: |
+          (?x)^(
+            .*.css|
+            docs/_static/jquery.js|
+            docs/_static/jquery-3.5.1.js|
+            .*.ipynb|
+            docs/_static/underscore-1.12.0.js|
+            docs/assets/main.js|
+            docs/_static/js/vendor/popper.min.js
+          )$
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.32.0
+    rev: v1.37.0
     hooks:
       - id: yamllint
         entry: yamllint --config-file .yamllint.yaml
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.7.0
+    rev: v1.7.7
     hooks:
       - id: actionlint
+  - repo: https://github.com/psf/black
+    rev: 25.1.0
+    hooks:
+      - id: black
+        language_version: python3.11

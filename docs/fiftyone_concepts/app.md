@@ -1999,7 +1999,8 @@ clips you want to view. After you make a selection, a new [`ToClips`](../api/fif
 will be appended to the view bar and your view will be updated to show the
 clips.
 
-Creating a clips view for a [`TemporalDetection`](../api/fiftyone.core.labels.html#fiftyone.core.labels.TemporalDetection "fiftyone.core.labels.TemporalDetection") or [`TemporalDetections`](../api/fiftyone.core.labels.html#fiftyone.core.labels.TemporalDetections "fiftyone.core.labels.TemporalDetections") field
+Creating a clips view for a [`TemporalDetection`](../api/fiftyone.core.labels.html#fiftyone.core.labels.TemporalDetection "fiftyone.core.labels.TemporalDetection") or
+[`TemporalDetections`](../api/fiftyone.core.labels.html#fiftyone.core.labels.TemporalDetections "fiftyone.core.labels.TemporalDetections") field
 will create one sample per temporal detection defined by its `[first, last]`
 frame support:
 
