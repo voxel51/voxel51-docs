@@ -19,6 +19,7 @@ jobs:
       id-token: write
     uses: ./.github/workflows/_publish.yml
     with:
-      src-dir: site/
       secret-key: GCP_DOCS_LOCATION
+      src-dir: site/
+      src-ref: ${{ github.ref }}
     secrets: inherit
