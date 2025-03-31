@@ -1,3 +1,4 @@
+---
 name: Deploy PR preview
 
 on:
@@ -20,9 +21,10 @@ jobs:
       id-token: write
     uses: ./.github/workflows/_publish.yml
     with:
-      src-dir: site/
       dest-dir: pr-${{ inputs.pr-number }}
       secret-key: GCP_PREVIEW_DOCS_LOCATION
+      src-dir: site/
+      src-ref: refs/pull/${{ inputs.pr-number }}/head
     secrets: inherit
 
   leave-pr-comment:
