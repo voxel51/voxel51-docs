@@ -4,15 +4,18 @@ name: Composite Publish Voxel51 Docs
 on:
   workflow_call:
     inputs:
-      src-dir:
-        type: string
-        required: true
-      secret-key:
-        type: string
-        required: true
       dest-dir:
         type: string
         required: false
+      secret-key:
+        type: string
+        required: true
+      src-dir:
+        type: string
+        required: true
+      src-ref:
+        type: string
+        required: true
     secrets:
       GCP_DOCS_PROJECT:
         required: true
@@ -34,7 +37,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+        with:
+          ref: ${{ inputs.src-ref }}
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
         with:
