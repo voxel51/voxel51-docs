@@ -16,17 +16,27 @@ may conflict with versions already installed on your machine.
 ## Creating a virtual environment using `venv` [¶](\#creating-a-virtual-environment-using-venv "Permalink to this headline")
 
 First, identify a suitable Python executable. On many systems (like MacOS), this will be
-`python3` , but it may be `python` on other systems instead. To confirm your
+`python3`, but it may be `python` on other systems instead. To confirm your
 Python version, pass `--version` to Python. Here is example output from running
 these commands:
 
-```python
-$ python --version
-Python 2.7.17
-$ python3 --version
-Python 3.9.20
+!!! abstract ""
 
-```
+    === "Python 3.x"
+
+        ```shell
+        $ python3 --version
+        Python 3.9.20
+
+        ```
+
+    === "Python 2.x"
+
+        ```shell
+        $ python --version
+        Python 2.7.17
+
+        ```
 
 In this case, `python3` should be used in the next step.
 
@@ -45,12 +55,31 @@ with standalone copies of Python and pip, as well as an isolated location to
 install packages to. However, this environment will not be used until it is
 _activated_. To activate the virtual environment, run the following command:
 
-```bash
-# Activate the virtual environment
-source .venv/bin/activate
-```
+!!! abstract ""
 
-After running this command, your shell prompt should begin with `(.venv)` , which
+    === "MacOS"
+
+        ```shell
+        # Activate the virtual environment
+        source .venv/bin/activate
+
+        ```
+
+    === "Linux"
+
+        ```shell
+        source .venv/bin/activate
+
+        ```
+
+    === "Windows"
+
+        ```powershell
+        .\.venv\Scripts\activate
+
+        ```
+
+After running this command, your shell prompt should begin with `(.venv)`, which
 indicates that the virtual environment has been activated. This state will only
 affect your current shell, so if you start a new shell, you will need to
 activate the virtual environment again to use it. When the virtual environment
@@ -58,7 +87,7 @@ is active, `python` without any suffix will refer to the Python version you
 used to create the virtual environment, so you can use this for the remainder
 of this guide. For example:
 
-```python
+```shell
 $ python --version
 Python 3.9.20
 
@@ -72,10 +101,21 @@ virtual environment. FiftyOne’s packages rely on some newer pip features, so
 older pip versions may fail to locate a downloadable version of FiftyOne
 entirely. To upgrade, run the following command:
 
-```python
-pip install --upgrade pip setuptools wheel build
+!!! example ""
 
-```
+    === "pip"
+
+        ```shell
+        pip install --upgrade pip setuptools wheel build
+
+        ```
+
+    === "uv"
+
+        ```shell
+        uv pip install -U pip setuptools wheel build
+
+        ```
 
 To leave an activated virtual environment and return to using your system-wide
 Python installation, run `deactivate`. For more documentation on `venv`,
