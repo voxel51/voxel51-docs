@@ -44,10 +44,25 @@ Navigate to a folder where you would like to create the virtual environment.
 Using the suitable Python version you have identified, run the following to
 create a virtual environment called `.venv` (you can choose any name, but .venv is the recommended standard in the Python [documentation](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments)):
 
-```bash
-# Create a virtual environment
-python3 -m venv .venv
-```
+!!! example ""
+
+    === "`venv` module"
+
+        ```shell
+        # Create a virtual environment
+        python3 -m venv .venv
+
+        ```
+
+    === "uv"
+
+        ```{ .shell .annotate }
+        uv venv .venv --python 3.11  # (1)!
+
+        ```
+
+        1. Replace `.venv` with another name or `3.11` with another Python version to use.
+        See [`uv` documentation](https://docs.astral.sh/uv/reference/cli/#uv-venv) for more details.
 
 Replace `python3` at the beginning of a command if your Python executable has a
 different name. This will create a new virtual environment in the `.venv` folder,
