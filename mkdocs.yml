@@ -2,8 +2,19 @@ site_name: Voxel51 Documentation
 theme:
   name: material
   palette: 
-    primary: custom
-    accent: custom
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   logo: _static/images/voxel51-logo-white-300.webp
   favicon: _static/images/icons/voxel51-166px.webp
   features:
@@ -34,13 +45,13 @@ markdown_extensions:
 plugins:
   - search:
       lang: en
-  - mkdocs-jupyter:
-      include_requirejs: true # required for plotly
-      ignore: ["tutorials/evaluate_classifications.ipynb", "tutorials/image_embeddings.ipynb"] # this may need to be reformatted
-      # include_source: True if we want to ease making a download button
-      # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#download-notebook-link
-      # execute: true  if we want to execute the code before rendering
-      # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#execute-notebook
+  # - mkdocs-jupyter:
+  #     include_requirejs: true # required for plotly
+  #     ignore: ["tutorials/evaluate_classifications.ipynb", "tutorials/image_embeddings.ipynb"] # this may need to be reformatted
+  #     # include_source: True if we want to ease making a download button
+  #     # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#download-notebook-link
+  #     # execute: true  if we want to execute the code before rendering
+  #     # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#execute-notebook
 
 extra:
   version:
