@@ -146,14 +146,19 @@ which are listed here. These may be particularly useful to review if you are
 dealing with virtual environments frequently:
 
 - There is a similar
-[virtualenv package](https://pypi.org/project/virtualenv/)
+[`virtualenv` package](https://pypi.org/project/virtualenv/)
 ( `pip install virtualenv`) that supports older Python versions.
 
-- [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
+- [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/en/latest/)
 adds some convenient shell support for creating and managing virtual
 environments.
 
+- [`uv`](https://docs.astral.sh/uv/) a Rust based package manager that
+can manage virtual environments, Python installs, projects and tools.
+
 ## Warning
 
-We currently discourage using `pipenv` with FiftyOne, as it has known issues
-with installing packages from custom package indices.
+!!! warning
+
+    We currently discourage using `pipenv` with FiftyOne, as it has known issues
+    with installing packages from custom package indices.
