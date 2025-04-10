@@ -443,7 +443,7 @@ Note
 The `timezone` setting does not affect the internal database representation
 of datetimes, which are always stored as UTC timestamps.
 
-# Configuring the App [¶](\#configuring-the-app "Permalink to this headline")
+## Configuring the App [¶](\#configuring-the-app "Permalink to this headline")
 
 The [FiftyOne App](app.md#fiftyone-app) can also be configured in various ways.
 A new copy of your App config is applied to each [`Session`](../api/fiftyone.core.session.html#fiftyone.core.session.Session "fiftyone.core.session.Session") object that is

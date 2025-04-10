@@ -1,3 +1,5 @@
+# Index
+
 This page holds links to FiftyOne code reference material
 
 [Python API](../api/index.html) for navigating the functions, modules, and classes in the FiftyOne module

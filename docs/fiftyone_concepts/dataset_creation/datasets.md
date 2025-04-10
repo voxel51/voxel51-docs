@@ -676,7 +676,6 @@ path to the image in a nested subfolder of `data/`
 
 - An absolute path to an image, which may or may not be in the `data/` folder
 
-
 Note
 
 See [`COCODetectionDatasetImporter`](../../api/fiftyone.utils.coco.html#fiftyone.utils.coco.COCODetectionDatasetImporter "fiftyone.utils.coco.COCODetectionDatasetImporter")
@@ -1529,7 +1528,6 @@ path to the image in a nested subfolder of `data/`
 
 - An absolute path to an image, which may or may not be in the `data/` folder
 
-
 Note
 
 See [`CVATImageDatasetImporter`](../../api/fiftyone.utils.cvat.html#fiftyone.utils.cvat.CVATImageDatasetImporter "fiftyone.utils.cvat.CVATImageDatasetImporter")
@@ -1697,7 +1695,6 @@ label files can be stored in ways that is understood by FiftyOne:
 associated with the image of the same name. In this case, the `labels_path`
 argument is expected to be a directory, if provided:
 
-
 ```python
 <dataset_dir>/
     data/
@@ -1717,7 +1714,6 @@ additional information provided in the label file to match labels to
 images. Specifically, the image filepath corresponding to a label must be
 stored as a stream:
 
-
 ```python
 <dataset_dir>/
     data/
@@ -1733,7 +1729,6 @@ similar to when there is a single label file, except that the label
 information may be spread out over multiple files. Since the filenames
 cannot be used to match labels to images, the image filepaths must again be
 stored as streams in the labels files:
-
 
 ```python
 <dataset_dir>/
@@ -1896,7 +1891,6 @@ label files can be stored in ways that is understood by FiftyOne:
 associated with the video of the same name. In this case, the `labels_path`
 argument is expected to be a directory, if provided:
 
-
 ```python
 <dataset_dir>/
     data/
@@ -1916,7 +1910,6 @@ additional information provided in the label file to match labels to
 videos. Specifically, the video filepath corresponding to a label must be
 stored as a stream:
 
-
 ```python
 <dataset_dir>/
     data/
@@ -1932,7 +1925,6 @@ similar to when there is a single label file, except that the label
 information may be spread out over multiple files. Since the filenames
 cannot be used to match labels to videos, the video filepaths must again be
 stored as streams in the labels files:
-
 
 ```python
 <dataset_dir>/

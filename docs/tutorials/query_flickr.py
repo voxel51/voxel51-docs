@@ -7,6 +7,7 @@ https://www.flickr.com/services/apps/create.
 Copyright 2017-2024, Voxel51, Inc.
 voxel51.com
 """
+
 import argparse
 from itertools import takewhile
 import os
@@ -16,16 +17,12 @@ import flickrapi
 import eta.core.storage as etas
 
 
-def query_flickr(
-    key, secret, query, number=50, path="data", query_in_path=True
-):
+def query_flickr(key, secret, query, number=50, path="data", query_in_path=True):
     # Flickr api access key
     flickr = flickrapi.FlickrAPI(key, secret, cache=True)
 
     # could also query by tags and tag_mode='all'
-    photos = flickr.walk(
-        text=query, extras="url_c", per_page=50, sort="relevance"
-    )
+    photos = flickr.walk(text=query, extras="url_c", per_page=50, sort="relevance")
 
     urls = []
     for photo in takewhile(lambda _: len(urls) < number, photos):

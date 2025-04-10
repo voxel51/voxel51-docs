@@ -3,4 +3,7 @@ extends: default
 rules:
   indentation:
     spaces: 2
+    # ignore `mkdocs.yml` because `nav` key contains list of strings and dictionaries
+    ignore: |
+      mkdocs.yml
   line-length: disable
