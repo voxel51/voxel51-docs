@@ -1,17 +1,31 @@
-:root {
+:root > * {
   --md-text-font-family: 'Inter', sans-serif;
-
-  --voxel-bg-dark:                 rgb(29, 33, 37);
   --md-primary-fg-color:           rgba(255, 109, 4, 1);
   --md-primary-fg-color--light:    rgba(255, 109, 4, .7);
   --md-primary-fg-color--dark:     rgba(255, 109, 4, 1);
-  --md-primary-bg-color:           hsla(0, 0%, 100%, 1);
-  --md-primary-bg-color--light:    hsla(0, 0%, 100%, 0.7);
 
   --md-accent-fg-color:                rgba(255, 109, 4, 1);
   --md-accent-fg-color--transparent:   rgba(255, 109, 4, 0.1);
   --md-accent-bg-color:                rgba(255, 109, 4, 1);
   --md-accent-bg-color--light:         rgba(255, 109, 4, .7);
+
+  --md-typeset-a-color:                rgba(255, 109, 4, 1);
+  --md-default-fg-color--lighter:      rgba(255, 109, 4, 1);
+}
+
+/* Custom light mode */
+[data-md-color-scheme="custom"] {
+  --md-primary-fg-color:           rgba(255, 109, 4, 1);
+  }
+
+/* Custom dark mode, using slate and custom accent */
+[data-md-color-scheme="slate"][data-md-color-primary=indigo] {
+
+  --voxel-bg-dark:                 rgb(29, 33, 37);
+  --md-primary-fg-color:           rgba(255, 109, 4, 1);
+  /* --md-primary-fg-color--lighter:  rgba(255, 109, 4, 1); */
+  /* --md-default-fg-color--lighter:  rgba(255, 109, 4, 1); */
+  --md-typeset-a-color:            rgb(255, 109, 4);
 }
 
 @font-face {
@@ -76,4 +90,19 @@ html,body,h1,h2,h3,h4,h5,h6,p,div,a,form,button,input,select,textarea,sup,header
 
 .md-header__topic:first-child {
   font-weight: 300;
+}
+
+/* Controls color of annotation after opening */
+.md-tooltip--active+.md-annotation__index:after, :hover>.md-annotation__index:after {
+  --md-accent-fg-color: aqua;
+}
+
+/* Controls hover highlight color for hypertext */
+.md-typeset a:hover {
+  --md-accent-fg-color: aqua;
+}
+
+/* Controls highlight for tabbed content */
+.js .md-typeset .tabbed-labels:before {
+  background: rgba(255, 109, 4, 1);
 }
