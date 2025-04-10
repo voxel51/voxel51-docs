@@ -102,11 +102,13 @@ is active, `python` without any suffix will refer to the Python version you
 used to create the virtual environment, so you can use this for the remainder
 of this guide. For example:
 
-```shell
-$ python --version
-Python 3.9.20
+```{ .shell .annotate }
+python --version
+Python 3.9.20 # (1)!
 
 ```
+
+1. Will return whichever version of Python 🐍 you have installed.
 
 Also note that `python` and `pip` live inside the `.venv` folder (in this output,
 the path to the current folder is replaced with `...`):
