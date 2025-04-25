@@ -172,7 +172,7 @@ to re-encode the source video so it is viewable in the App.
 Note
 
 You must install [FFmpeg](https://ffmpeg.org) in order to work with video
-datasets in FiftyOne. See [this page](../getting_started/basic/troubleshooting.md#troubleshooting-video) for
+datasets in FiftyOne. See [this page](../fiftyone_concepts/troubleshooting.md#troubleshooting-video) for
 installation instructions.
 
 ## What label types are supported? [¶](\#what-label-types-are-supported "Permalink to this headline")
@@ -476,7 +476,7 @@ should resolve the issue for you.
 
 ## Can I downgrade to an older version of FiftyOne? [¶](\#can-i-downgrade-to-an-older-version-of-fiftyone "Permalink to this headline")
 
-Certainly, refer to [these instructions](../getting_started/basic/install.md#downgrading-fiftyone).
+Certainly, refer to [these instructions](../fiftyone_concepts/install.md#downgrading-fiftyone).
 
 ## Are the Brain methods open source? [¶](\#are-the-brain-methods-open-source "Permalink to this headline")
 

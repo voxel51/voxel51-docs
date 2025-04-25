@@ -244,8 +244,8 @@ session = fo.launch_app(dataset)
 ## Database migrations [¶](\#database-migrations "Permalink to this headline")
 
 New FiftyOne versions occasionally introduce data model changes that require
-database migrations when you [upgrade](../getting_started/basic/install.md#upgrading-fiftyone) or
-[downgrade](../getting_started/basic/install.md#downgrading-fiftyone).
+database migrations when you [upgrade](install.md#upgrading-fiftyone) or
+[downgrade](install.md#downgrading-fiftyone).
 
 By default, database upgrades happen automatically in two steps:
 
@@ -258,7 +258,7 @@ per-dataset basis whenever you load the dataset for the first time using a
 newer version of the FiftyOne package
 
 Database downgrades must be manually performed. See
-[this page](../getting_started/basic/install.md#downgrading-fiftyone) for instructions.
+[this page](install.md#downgrading-fiftyone) for instructions.
 
 You can use the [fiftyone migrate](../cli/index.md#cli-fiftyone-migrate) command to view
 the current versions of your client, database, and datasets:

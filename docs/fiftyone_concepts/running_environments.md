@@ -55,7 +55,7 @@ machine via the FiftyOne Python library, launch a
 local machine where you can then interact with the App.
 
 First, `ssh` into your remote machine and
-[install FiftyOne](../getting_started/basic/install.md#installing-fiftyone) if necessary.
+[install FiftyOne](install.md#installing-fiftyone) if necessary.
 
 Then [load a dataset](../fiftyone_concepts/dataset_creation/index.md#loading-datasets) using Python on the remote
 machine and launch a remote session:
@@ -520,7 +520,7 @@ The steps below outline the process.
 **Step 2**
 
 Now [ssh into the instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
-and [install FiftyOne](../getting_started/basic/install.md#installing-fiftyone) if necessary.
+and [install FiftyOne](install.md#installing-fiftyone) if necessary.
 
 ```python
 # On remote machine
@@ -571,7 +571,7 @@ The steps below outline the process.
 **Step 2**
 
 Now [ssh into the instance](https://cloud.google.com/compute/docs/quickstart-linux#connect_to_your_instance)
-and [install FiftyOne](../getting_started/basic/install.md#installing-fiftyone) if necessary.
+and [install FiftyOne](install.md#installing-fiftyone) if necessary.
 
 ```python
 # On remote machine
@@ -620,7 +620,7 @@ The steps below outline the process.
 
 Now
 [ssh into the instance](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal#connect-to-virtual-machine)
-and [install FiftyOne](../getting_started/basic/install.md#installing-fiftyone) if necessary.
+and [install FiftyOne](install.md#installing-fiftyone) if necessary.
 
 ```python
 # On remote machine
@@ -654,7 +654,7 @@ system packages in order to install and use FiftyOne.
 
 For example, the script below shows a set of commands that may be used to
 configure a Debian-like Linux instance, after which you should be able to
-successfully [install FiftyOne](../getting_started/basic/install.md#installing-fiftyone).
+successfully [install FiftyOne](install.md#installing-fiftyone).
 
 ```python
 # Example setup script for a Debian-like virtual machine

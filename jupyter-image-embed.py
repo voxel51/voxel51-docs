@@ -3,7 +3,7 @@ from pathlib import Path
 import base64
 import nbformat
 
-JUPYTER_DIRS = ["./docs/tutorials", "./docs/how_do_i/recipes"]
+JUPYTER_DIRS = ["./docs/tutorials", "./docs/how_do_i/recipes", "./docs/getting_started"]
 
 
 def get_webp_base64(file_path: str | Path) -> str:
