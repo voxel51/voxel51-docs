@@ -63,12 +63,12 @@ Jupyter notebooks. The current plugin does not respect paths for external files 
 `jupyter-image-embed.py` to base64 encode the notebook's images and then store them directly in the notebook.
 
 That script has a list at the top for all the places to find notebooks. It currently has
+
 1. tutorials
 2. recipes
 3. getting started
 
 If you want to start to render notebooks in other locations you will need to add it to the list
-
 
 1. Follow steps 1&2 above
 1. `./build.sh --venv <location of the venv you created in step 1 above>`
@@ -90,7 +90,8 @@ If you want to start to render notebooks in other locations you will need to add
 1. Celebration!
 
 The build script accepts the following options:
-```
+
+```shell
 Options:
     -h, --help             Show this help message
     -v, --verbose          Enable verbose output
@@ -102,7 +103,6 @@ Options:
     --venv VENV_ACTIVATE   Specify the path to your venv's activate script (default: \$HOME/virtualenvs/vdoc-mkdocs/bin/activate)
     --repo-url URL         Specify the repository URL (default: https://github.com/voxel51/fiftyone.git)
 ```
-
 
 To build the API docs along with the general docs you should use build.sh
 
@@ -118,5 +118,5 @@ Before you take on a big editing tasks we highly recommend:
    in the #docs channel - we are friendly and can give you good feedback.
 
 <!-- markdownlint-disable no-inline-html line-length no-alt-text -->
- <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Voxel51 Documentation</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://voxel51.com">Voxel51 Inc</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+<p><span property="dct:title">Voxel51 Documentation</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://voxel51.com">Voxel51 Inc</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
 <!-- markdownlint-enable no-inline-html line-length no-alt-text -->
