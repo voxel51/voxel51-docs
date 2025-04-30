@@ -122,14 +122,14 @@ pip install ipython
 
 FiftyOne includes a `fiftyone-db` package wheel for your operating system and
 hardware. If you have not
-[configured your own database connection](../../fiftyone_concepts/config.md#configuring-mongodb-connection),
+[configured your own database connection](config.md#configuring-mongodb-connection),
 then FiftyOne’s database service will attempt to start up on import using the
 MongoDB distribution provided by `fiftyone-db`. If the database fails to start,
 importing `fiftyone` will result in exceptions being raised.
 
 ## Downgrading to old versions [¶](\#downgrading-to-old-versions "Permalink to this headline")
 
-The [fiftyone migrate](../../cli/index.md#cli-fiftyone-migrate) command was introduced in
+The [fiftyone migrate](../cli/index.md#cli-fiftyone-migrate) command was introduced in
 FiftyOne v0.7.3. If you would like to downgrade from a FiftyOne version
 prior to v0.7.3 (to a yet older version), then you will first need to
 [upgrade](install.md#upgrading-fiftyone) to v0.7.3 or later and then
@@ -185,7 +185,7 @@ sudo apt install libssl-dev
 ```
 
 If you still face issues with imports, you can follow
-[these instructions](../../fiftyone_concepts/config.md#configuring-mongodb-connection) to configure
+[these instructions](config.md#configuring-mongodb-connection) to configure
 FiftyOne to use a MongoDB instance that you have installed yourself.
 
 ### Troubleshooting Windows imports [¶](\#troubleshooting-windows-imports "Permalink to this headline")

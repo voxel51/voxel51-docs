@@ -3,7 +3,7 @@
 Note
 
 Need to collaborate on your datasets? Check out
-[FiftyOne Teams](../../teams/index.md#fiftyone-teams)!
+[FiftyOne Teams](../teams/index.md#fiftyone-teams)!
 
 ## Prerequisites [¶](\#prerequisites "Permalink to this headline")
 
@@ -50,8 +50,8 @@ If you want to work with video datasets, you’ll also need to install
 ## Quickstart [¶](\#quickstart "Permalink to this headline")
 
 Dive right into FiftyOne by opening a Python shell and running the snippet
-below, which downloads a [small dataset](../../data/dataset_zoo/datasets.md#dataset-zoo-quickstart) and
-launches the [FiftyOne App](../../fiftyone_concepts/app.md#fiftyone-app) so you can explore it!
+below, which downloads a [small dataset](../data/dataset_zoo/datasets.md#dataset-zoo-quickstart) and
+launches the [FiftyOne App](app.md#fiftyone-app) so you can explore it!
 
 ```python
 import fiftyone as fo
@@ -64,7 +64,7 @@ session = fo.launch_app(dataset)
 
 Note that if you are running this code in a script, you must include
 [`session.wait()`](../../api/fiftyone.core.session.html#fiftyone.core.session.Session.wait "fiftyone.core.session.Session.wait") to block execution
-until you close the App. See [this page](../../fiftyone_concepts/app.md#creating-an-app-session) for
+until you close the App. See [this page](app.md#creating-an-app-session) for
 more information.
 
 ## Troubleshooting [¶](\#troubleshooting "Permalink to this headline")
@@ -165,8 +165,8 @@ a dataset for the first time in a newer version of FiftyOne.
 Note
 
 If you are working with a
-[custom/shared MongoDB database](../../fiftyone_concepts/config.md#configuring-mongodb-connection), you
-can use [database admin privileges](../../fiftyone_concepts/config.md#database-migrations) to control
+[custom/shared MongoDB database](config.md#configuring-mongodb-connection), you
+can use [database admin privileges](config.md#database-migrations) to control
 which clients are allowed to upgrade your FiftyOne deployment.
 
 ## Downgrading FiftyOne [¶](\#downgrading-fiftyone "Permalink to this headline")
@@ -175,7 +175,7 @@ If you need to downgrade to an older version of FiftyOne for any reason, you
 can do so.
 
 Since new releases occasionally introduce backwards-incompatible changes to the
-data model, you must use the [fiftyone migrate](../../cli/index.md#cli-fiftyone-migrate)
+data model, you must use the [fiftyone migrate](../cli/index.md#cli-fiftyone-migrate)
 command to perform any necessary downward database migrations
 **before installing the older version of FiftyOne**.
 
@@ -198,7 +198,7 @@ fiftyone migrate --info
 
 If you are reading this after encountering an error resulting from downgrading
 your `fiftyone` package without first running
-[fiftyone migrate](../../cli/index.md#cli-fiftyone-migrate), don’t worry, you simply need to
+[fiftyone migrate](../cli/index.md#cli-fiftyone-migrate), don’t worry, you simply need to
 reinstall the newer version of FiftyOne and then follow these instructions.
 
 See [this page](troubleshooting.md#troubleshooting-downgrades) if you need to install
@@ -207,8 +207,8 @@ FiftyOne v0.7.3 or earlier.
 Note
 
 If you are working with a
-[custom/shared MongoDB database](../../fiftyone_concepts/config.md#configuring-mongodb-connection), you
-can use [database admin privileges](../../fiftyone_concepts/config.md#database-migrations) to control
+[custom/shared MongoDB database](config.md#configuring-mongodb-connection), you
+can use [database admin privileges](config.md#database-migrations) to control
 which clients are allowed to downgrade your FiftyOne deployment.
 
 ## Uninstalling FiftyOne [¶](\#uninstalling-fiftyone "Permalink to this headline")
