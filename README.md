@@ -65,8 +65,8 @@ Jupyter notebooks. The current plugin does not respect paths for external files 
 That script has a list at the top for all the places to find notebooks. It currently has
 
 1. tutorials
-2. recipes
-3. getting started
+1. recipes
+1. getting started
 
 If you want to start to render notebooks in other locations you will need to add it to the list
 
@@ -113,8 +113,8 @@ Please be sure to read our [CONTRIBUTING guide](CONTRIBUTING.md).
 Before you take on a big editing tasks we highly recommend:
 
 1. Find an existing Github issue and start discussing what you would like to do
-2. Create a new Github issue so we can discuss it with you
-3. You can also come chat with us [in Discord](https://community.voxel51.com/)
+1. Create a new Github issue so we can discuss it with you
+1. You can also come chat with us [in Discord](https://community.voxel51.com/)
    in the #docs channel - we are friendly and can give you good feedback.
 
 <!-- markdownlint-disable no-inline-html line-length no-alt-text -->
