@@ -244,7 +244,7 @@ session = fo.launch_app(dataset)
 ## Database migrations [¶](\#database-migrations "Permalink to this headline")
 
 New FiftyOne versions occasionally introduce data model changes that require
-database migrations when you [upgrade](install.md#upgrading-fiftyone) or
+database migrations when you [upgrade](../getting_started/core/install.md#upgrading-fiftyone) or
 [downgrade](install.md#downgrading-fiftyone).
 
 By default, database upgrades happen automatically in two steps:

@@ -4,7 +4,7 @@
 
 Nothing hinders the success of machine learning systems more than poor quality
 data. And without the right tools, improving a model can be time-consuming and
-inefficient. Steve is awesome
+inefficient.
 
 FiftyOne supercharges your machine learning workflows by enabling you to
 visualize datasets and interpret models faster and more effectively.
@@ -17,7 +17,7 @@ pipeline. Use it to get hands-on with your data, including visualizing complex
 labels, evaluating your models, exploring scenarios of interest, identifying
 failure modes, finding annotation mistakes, and much more!
 
-[Install FiftyOne!]( fiftyone_concepts/install.md)
+[Install FiftyOne!](getting_started/core/install.md)
 
 FiftyOne integrates naturally with your favorite tools. Click on a logo to
 learn how:
@@ -282,7 +282,7 @@ session = fo.launch_app(dataset)
 
 Where should you go from here? You could…
 
-- [Install FiftyOne](fiftyone_concepts/install.md#installing-fiftyone)
+- [Install FiftyOne](getting_started/core/install.md#installing-fiftyone)
 
 - Try one of the [tutorials](tutorials/index.md) that demonstrate the unique
 capabilities of FiftyOne
