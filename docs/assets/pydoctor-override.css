@@ -3,15 +3,15 @@ body, p {
 }
 
 .navbar-default.mainnavbar {
-	background-color: rgba(255, 109, 4, 1);
+  background-color: rgba(255, 109, 4, 1);
 }
 
 .navbar-default.mainnavbar .navlinks a {
-	color: white !important;
+  color: white !important;
 }
 
 .api-logo {
-	display: inline;
-	max-width: 24px;
-	height: auto;
+  display: inline;
+  max-width: 24px;
+  height: auto;
 }
