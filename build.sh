@@ -223,7 +223,7 @@ main() {
           --html-output="$API_DOC_DIR" \
           --docformat=google \
           --intersphinx=https://docs.python.org/3/objects.inv \
-          --template-dir="$SCRIPT_DIR/pydoctor/pydoctor_templates" \
+          #--template-dir="$SCRIPT_DIR/pydoctor/pydoctor_templates" \
           fiftyone || true
 
       # Check if the output directory was created successfully
