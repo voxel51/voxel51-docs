@@ -43,7 +43,7 @@ plugins:
       ignore: # this may need to be reformatted
         - "tutorials/evaluate_classifications.ipynb"
         - "tutorials/image_embeddings.ipynb"
-        # include_source: True if we want to ease making a download button
+      include_source: True # if we want to ease making a download button
         # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#download-notebook-link
         # execute: true  if we want to execute the code before rendering
         # https://github.com/danielfrg/mkdocs-jupyter?tab=readme-ov-file#execute-notebook
@@ -59,22 +59,31 @@ nav:
   - Home: index.md
   - Getting started:
     - getting_started/index.md
-    - Installing: getting_started/basic/install.md
-    - Basics:
-      - getting_started/basic/index.md
-      - Datasets, Samples, and Fields: getting_started/basic/datasets_samples_fields.md
-      - Tour of the Application: getting_started/basic/application_tour.md
-      - Visualizing Embeddings: getting_started/basic/viz_embeddings.md
-      - Subsetting and Sample Data: getting_started/basic/subset_sample.md
-      - Zero Shot Classification for Labeling: getting_started/basic/zero_shot_label.md
-      - Creating and Editing Fields and Labels: getting_started/basic/edit_fields.md
-      - Model Fine-Tuning: getting_started/basic/fine_tuning.md
-      - Model Evaluation: getting_started/basic/model_eval.md
-      - What's Next: getting_started/basic/next_steps.md
-    - Focused Getting Starteds:
-      - getting_started/focused_getting_starteds/index.md
-      - Medical Imaging: getting_started/focused_getting_starteds/medical_imaging/index.md
-  - FiftyOne Concepts:
+    - Installing: getting_started/core/install.md
+    - Virtualenvs: getting_started/core/virtualenv.md
+    - Core:
+      - getting_started/core/index.md
+      - Zero Shot Prediction:
+        - Classification: getting_started/core/zero-shot-prediction/zero-shot-classification.ipynb
+        - Detection: getting_started/core/zero-shot-prediction/zero-shot-detection.ipynb
+        - Segmentation: getting_started/core/zero-shot-prediction/zero-shot-segmentation.ipynb
+      - Model Evaluation:
+        - Introduction: getting_started/core/model_eval/index.md
+        - Basic Evaluation: getting_started/core/model_eval/step1.ipynb
+        - Model Evaluation Panel: getting_started/core/model_eval/step2.ipynb
+        - Datasets, Samples, and Fields: getting_started/core/datasets_samples_fields.md
+        - Tour of the Application: getting_started/core/application_tour.md
+        - Visualizing Embeddings: getting_started/core/viz_embeddings.md
+        - Subsetting and Sample Data: getting_started/core/subset_sample.md
+        - Creating and Editing Fields and Labels: getting_started/core/edit_fields.md
+        - Model Fine-Tuning: getting_started/core/fine_tuning.md
+        - Model Evaluation: getting_started/core/model_eval.md
+        - What's Next: getting_started/core/next_steps.md
+        - Troubleshooting: getting_started/core/troubleshooting.md
+    - Specialized:
+      - getting_started/specialized/index.md
+      - Medical Imaging: getting_started/specialized/medical_imaging/index.md
+  - User Guide:
     - fiftyone_concepts/index.md
     - Virtualenvs: fiftyone_concepts/virtualenv.md
     - Installation: fiftyone_concepts/install.md

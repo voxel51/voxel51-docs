@@ -104,8 +104,8 @@ Options:
     --skip-clone           Skip repository cloning
     --skip-python-api      Skip Python API documentation build
     --skip-ts-api          Skip TypeScript API documentation build
-    --skip-all-api         Skip all API documentation builds
-    --version VERSION      Specify the version number (default: 1.3)
+    --skip-all-api         Skip all API documentation builds though this will not prevent the clone
+    --version VERSION      Specify the FiftyOne version number to place in the pydoc (default: 1.3)
     --venv VENV_ACTIVATE   Specify the path to your venv's activate script (default: \$HOME/virtualenvs/vdoc-mkdocs/bin/activate)
     --repo-url URL         Specify the repository URL (default: https://github.com/voxel51/fiftyone.git)
 EOF

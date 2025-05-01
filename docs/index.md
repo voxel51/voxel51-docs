@@ -17,7 +17,7 @@ pipeline. Use it to get hands-on with your data, including visualizing complex
 labels, evaluating your models, exploring scenarios of interest, identifying
 failure modes, finding annotation mistakes, and much more!
 
-[Install FiftyOne!]( getting_started/basic/install.md)
+[Install FiftyOne!](getting_started/core/install.md)
 
 FiftyOne integrates naturally with your favorite tools. Click on a logo to
 learn how:
@@ -282,7 +282,7 @@ session = fo.launch_app(dataset)
 
 Where should you go from here? You could…
 
-- [Install FiftyOne](getting_started/basic/install.md#installing-fiftyone)
+- [Install FiftyOne](getting_started/core/install.md#installing-fiftyone)
 
 - Try one of the [tutorials](tutorials/index.md) that demonstrate the unique
 capabilities of FiftyOne
