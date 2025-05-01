@@ -16,7 +16,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  logo: _static/images/voxel51-logo-white-300.webp
+  logo: _static/images/voxel51-logo-white.png
   favicon: _static/images/icons/voxel51-166px.webp
   features:
     - navigation.path
