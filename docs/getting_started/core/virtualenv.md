@@ -1,3 +1,8 @@
+---
+keywords: >-
+  virtual environments, venv, best practice, version, packages, dependencies,
+  version, python, dependency
+---
 # Virtual Environment Setup [¶](\#virtual-environment-setup "Permalink to this headline")
 
 This page describes how to create a Python
@@ -11,17 +16,27 @@ may conflict with versions already installed on your machine.
 ## Creating a virtual environment using `venv` [¶](\#creating-a-virtual-environment-using-venv "Permalink to this headline")
 
 First, identify a suitable Python executable. On many systems (like MacOS), this will be
-`python3` , but it may be `python` on other systems instead. To confirm your
+`python3`, but it may be `python` on other systems instead. To confirm your
 Python version, pass `--version` to Python. Here is example output from running
 these commands:
 
-```python
-$ python --version
-Python 2.7.17
-$ python3 --version
-Python 3.9.20
+!!! abstract ""
 
-```
+    === "Python 3.x"
+
+        ```shell
+        $ python3 --version
+        Python 3.9.20
+
+        ```
+
+    === "Python 2.x"
+
+        ```shell
+        $ python --version
+        Python 2.7.17
+
+        ```
 
 In this case, `python3` should be used in the next step.
 
@@ -29,10 +44,25 @@ Navigate to a folder where you would like to create the virtual environment.
 Using the suitable Python version you have identified, run the following to
 create a virtual environment called `.venv` (you can choose any name, but .venv is the recommended standard in the Python [documentation](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments)):
 
-```bash
-# Create a virtual environment
-python3 -m venv .venv
-```
+!!! example ""
+
+    === "`venv` module"
+
+        ```shell
+        # Create a virtual environment
+        python3 -m venv .venv
+
+        ```
+
+    === "uv"
+
+        ```{ .shell .annotate }
+        uv venv .venv --python 3.11  # (1)!
+
+        ```
+
+        1. Replace `.venv` with another name or `3.11` with another Python version to use.
+        See [`uv` documentation](https://docs.astral.sh/uv/reference/cli/#uv-venv) for more details.
 
 Replace `python3` at the beginning of a command if your Python executable has a
 different name. This will create a new virtual environment in the `.venv` folder,
@@ -40,12 +70,31 @@ with standalone copies of Python and pip, as well as an isolated location to
 install packages to. However, this environment will not be used until it is
 _activated_. To activate the virtual environment, run the following command:
 
-```bash
-# Activate the virtual environment
-source .venv/bin/activate
-```
+!!! abstract ""
 
-After running this command, your shell prompt should begin with `(.venv)` , which
+    === "MacOS"
+
+        ```shell
+        # Activate the virtual environment
+        source .venv/bin/activate
+
+        ```
+
+    === "Linux"
+
+        ```shell
+        source .venv/bin/activate
+
+        ```
+
+    === "Windows"
+
+        ```powershell
+        .\.venv\Scripts\activate
+
+        ```
+
+After running this command, your shell prompt should begin with `(.venv)`, which
 indicates that the virtual environment has been activated. This state will only
 affect your current shell, so if you start a new shell, you will need to
 activate the virtual environment again to use it. When the virtual environment
@@ -53,11 +102,14 @@ is active, `python` without any suffix will refer to the Python version you
 used to create the virtual environment, so you can use this for the remainder
 of this guide. For example:
 
-```python
-$ python --version
-Python 3.9.20
+<!-- markdownlint-disable-next-line code-block-style -->
+```{ .shell .annotate }
+python --version
+Python 3.9.20 # (1)!
 
 ```
+
+1. Will return whichever version of Python 🐍 you have installed.
 
 Also note that `python` and `pip` live inside the `.venv` folder (in this output,
 the path to the current folder is replaced with `...`):
@@ -67,10 +119,21 @@ virtual environment. FiftyOne’s packages rely on some newer pip features, so
 older pip versions may fail to locate a downloadable version of FiftyOne
 entirely. To upgrade, run the following command:
 
-```python
-pip install --upgrade pip setuptools wheel build
+!!! example ""
 
-```
+    === "pip"
+
+        ```shell
+        pip install --upgrade pip setuptools wheel build
+
+        ```
+
+    === "uv"
+
+        ```shell
+        uv pip install -U pip setuptools wheel build
+
+        ```
 
 To leave an activated virtual environment and return to using your system-wide
 Python installation, run `deactivate`. For more documentation on `venv`,
@@ -84,14 +147,19 @@ which are listed here. These may be particularly useful to review if you are
 dealing with virtual environments frequently:
 
 - There is a similar
-[virtualenv package](https://pypi.org/project/virtualenv/)
+[`virtualenv` package](https://pypi.org/project/virtualenv/)
 ( `pip install virtualenv`) that supports older Python versions.
 
-- [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
+- [`virtualenvwrapper`](https://virtualenvwrapper.readthedocs.io/en/latest/)
 adds some convenient shell support for creating and managing virtual
 environments.
 
+- [`uv`](https://docs.astral.sh/uv/) a Rust based package manager that
+can manage virtual environments, Python installs, projects and tools.
+
 ## Warning
 
-We currently discourage using `pipenv` with FiftyOne, as it has known issues
-with installing packages from custom package indices.
+!!! warning
+
+    We currently discourage using `pipenv` with FiftyOne, as it has known issues
+    with installing packages from custom package indices.
