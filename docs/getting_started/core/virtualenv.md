@@ -102,6 +102,7 @@ is active, `python` without any suffix will refer to the Python version you
 used to create the virtual environment, so you can use this for the remainder
 of this guide. For example:
 
+<!-- markdownlint-disable-next-line code-block-style -->
 ```{ .shell .annotate }
 python --version
 Python 3.9.20 # (1)!
