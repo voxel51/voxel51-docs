@@ -9,12 +9,11 @@ voxel51.com
 """
 
 import argparse
-from itertools import takewhile
 import os
-
-import flickrapi
+from itertools import takewhile
 
 import eta.core.storage as etas
+import flickrapi
 
 
 def query_flickr(key, secret, query, number=50, path="data", query_in_path=True):

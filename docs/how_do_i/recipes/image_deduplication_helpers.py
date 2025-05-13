@@ -24,13 +24,11 @@ import os
 import random
 
 import eta.core.utils as etau
-
 import fiftyone.core.utils as fou
 import fiftyone.utils.image as foui
 
 fou.ensure_tf()
 from tensorflow.keras.datasets import cifar100  # pylint: disable=import-error
-
 
 DATASET_SIZE = 1000
 DATASET_DIR = os.path.join("/tmp/fiftyone/cifar100_with_duplicates")

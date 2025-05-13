@@ -1,6 +1,7 @@
+import base64
 import os
 from pathlib import Path
-import base64
+
 import nbformat
 
 JUPYTER_DIRS = ["./docs/tutorials", "./docs/how_do_i/recipes", "./docs/getting_started"]
