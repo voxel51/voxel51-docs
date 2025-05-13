@@ -14,7 +14,7 @@ repos:
     rev: v1.5.5
     hooks:
       - id: forbid-tabs
-        exclude: docs/_static/jquery-3.5.1.js
+        exclude: ^docs/_static/jquery-3.5.1.js
         exclude_types:
           - makefile
           - svg
@@ -36,7 +36,7 @@ repos:
     hooks:
       - id: codespell
         args:
-          - -Lfo,fom,dota,ative,ment,fot
+          - -L=fo,fom,dota,ative,ment,fot
         exclude: |
           (?x)^(
             .*.css|
@@ -48,7 +48,7 @@ repos:
             docs/_static/js/vendor/popper.min.js
           )$
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.37.0
+    rev: v1.37.1
     hooks:
       - id: yamllint
         entry: yamllint --config-file .yamllint.yaml
@@ -56,8 +56,43 @@ repos:
     rev: v1.7.7
     hooks:
       - id: actionlint
+  # TODO: fix all violations before enabling
+  # - repo: https://github.com/Yelp/detect-secrets
+  #   rev: v1.5.0
+  #   hooks:
+  #     - id: detect-secrets
+  #       # args:
+  #       #   - --exclude-secrets
+  #       #   - '(auth|secretName|secretKey)'
+  #       exclude_types:
+  #         - jupyter
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v4.2.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
   - repo: https://github.com/psf/black
     rev: 25.1.0
     hooks:
       - id: black
         language_version: python3.11
+  - repo: https://github.com/pycqa/isort
+    rev: 6.0.1
+    hooks:
+      - id: isort
+        name: isort (python)
+        args:
+          - --profile black
+  - repo: https://github.com/scop/pre-commit-shfmt
+    rev: v3.11.0-1
+    hooks:
+      - id: shfmt
+        args:
+          - --write
+          - --simplify
+          - --case-indent
+          - --indent=2
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.10.0.1
+    hooks:
+      - id: shellcheck
