@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.2.2
-      - name: Run pre-commit
-        uses: "voxel51/aloha-github-workflows/.github/actions/pre-commit@main"
-        with:
-          # HEAD is the PR merge commit `refs/pull/<PR_NUMBER>/merge`
-          # HEAD^1 is the PR target branch (same as `origin/${{ github.event.pull_request.base.ref }}`)
-          extra_args: --from-ref HEAD^1 --to-ref HEAD
+      - uses: actions/setup-python@v5.4.0
+      - name: Temporary SQLite/LZMA - Install missing libraries
+        run: sudo apt install -y libsqlite3-dev libbz2-dev liblzma-dev libreadline-dev
+      - name: install asdf & tools
+        uses: asdf-vm/actions/install@9cd779f40fe38688dd19505ccbc4eaaf018b44e7
+      - uses: pre-commit/action@v3.0.1
