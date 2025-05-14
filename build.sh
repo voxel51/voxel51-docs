@@ -258,6 +258,11 @@ main() {
       --options typedoc.js \
       --theme default
     log_info "Finished typedoc build"
+
+    # Inject <meta name="robots" ...> into all TypeDoc HTML files
+    log_info "Injecting <meta name='robots'> into all TypeDoc HTML files..."
+    find "$TS_API_DOC_DIR" -name "*.html" -exec sed -i.bak 's|<head>|<head>\n<meta name="robots" content="noindex,noarchive,nofollow" />|' {} +
+    find "$TS_API_DOC_DIR" -name "*.bak" -delete
   else
     log_info "Skipping TypeScript API documentation build..."
   fi
